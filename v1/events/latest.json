@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
   "version": "1",
-  "generated_at": "2026-11-14T15:49:31Z",
+  "generated_at": "2026-11-14T20:43:50Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,6 +9,50 @@
   "license": "CC-BY-4.0",
   "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
   "events": [
+    {
+      "time": "2026-11-14T20:43:50Z",
+      "type": "owner_recovered",
+      "severity": "info",
+      "network": "mainnet",
+      "title": "Owner xdcdb18…00a1 is back to the typical reward",
+      "detail": "Epoch 121907: 41.011942 XDC.",
+      "owner": "0xdb18a58a9e089369c97b8295dbf89631efe300a1",
+      "epoch": 121907,
+      "id": "62d84b7faaac8370"
+    },
+    {
+      "time": "2026-11-14T20:43:50Z",
+      "type": "owner_below_typical",
+      "severity": "warning",
+      "network": "mainnet",
+      "title": "Owner xdcdb18…00a1 earned 74 % of typical",
+      "detail": "Epoch 121905: 31.139363 XDC vs 42.001931 expected for 1 node(s); about 0.26 node(s)' worth missing.",
+      "owner": "0xdb18a58a9e089369c97b8295dbf89631efe300a1",
+      "epoch": 121905,
+      "id": "b56733db15221a84"
+    },
+    {
+      "time": "2026-11-14T20:43:50Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdc68a2…7f5a: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x68a20b568d8058d1498f5308719d1a139c4c7f5a",
+      "owner": "0xffd83c1ca48a321309e5c03dc1cfdf19b290c542",
+      "id": "77b0628ef97511f4"
+    },
+    {
+      "time": "2026-11-14T20:43:50Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdc1f91…eb20: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x1f9143c47f4e8c602a66206a41eae49518f5eb20",
+      "owner": "0x5fbd60e6458424950a0d8fa18cc3b27c5c6df4ac",
+      "id": "a993a71730f43c8d"
+    },
     {
       "time": "2026-11-14T15:49:31Z",
       "type": "status_slashed",

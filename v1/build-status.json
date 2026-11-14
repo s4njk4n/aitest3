@@ -1,10 +1,10 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/build-status.v1.json",
-  "last_build_at": "2026-11-14T15:46:18Z",
+  "last_build_at": "2026-11-14T20:40:35Z",
   "steps": {
     "epoch_rewards": {
       "ok": true,
-      "result": "Processed epochs 121896..121901; chain is at epoch 121905",
+      "result": "Processed epochs 121902..121907; chain is at epoch 121912",
       "notes": []
     },
     "validators": {
@@ -21,7 +21,7 @@
     },
     "yield": {
       "ok": true,
-      "result": "Updated (1566.3133 XDC/day per typical node over 0.19 days)",
+      "result": "Updated (1348.8731 XDC/day per typical node over 0.4 days)",
       "notes": []
     },
     "clients": {
@@ -45,7 +45,7 @@
     },
     "events": {
       "ok": true,
-      "result": "6 new event(s), 0 owner feed(s) updated",
+      "result": "4 new event(s), 1 owner feed(s) updated, 1 feed file(s) written",
       "notes": []
     },
     "catalog": {
