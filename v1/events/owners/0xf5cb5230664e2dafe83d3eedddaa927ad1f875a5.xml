@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>XDC Open Data: events for owner xdcf5cb…75a5</title>
+  <subtitle>Status changes, signing gaps and reward problems for the masternodes of 0xf5cb5230664e2dafe83d3eedddaa927ad1f875a5 (xdc form: xdcf5cb5230664e2dafe83d3eedddaa927ad1f875a5). Information only.</subtitle>
+  <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0xf5cb5230664e2dafe83d3eedddaa927ad1f875a5.xml" rel="self"/>
+  <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
+  <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0xf5cb5230664e2dafe83d3eedddaa927ad1f875a5.xml</id>
+  <updated>2026-01-01T00:00:00Z</updated>
+  <author><name>XDC Outpost</name></author>
+</feed>

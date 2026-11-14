@@ -1,0 +1,60 @@
+{
+  "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/build-status.v1.json",
+  "last_build_at": "2026-11-14T08:55:18Z",
+  "steps": {
+    "epoch_rewards": {
+      "ok": true,
+      "result": "Processed epochs 121895..121895; chain is at epoch 121895",
+      "notes": []
+    },
+    "validators": {
+      "ok": true,
+      "result": "Updated (369 candidates, 117 owners, with governance data)",
+      "notes": [
+        "Governance site's last-signed data looks stale (most masternodes would be flagged); not_signing_recently left out this run"
+      ]
+    },
+    "validators_apothem": {
+      "ok": true,
+      "result": "Updated (138 candidates, 105 owners, with governance data)",
+      "notes": []
+    },
+    "yield": {
+      "ok": true,
+      "result": "Updated (no daily rate yet: that needs at least two recorded epochs)",
+      "notes": []
+    },
+    "clients": {
+      "ok": true,
+      "result": "Updated (mainnet: 492 nodes reporting, 0 upcoming upgrade(s))",
+      "notes": [
+        "Network config at v2.7.1 unavailable: HTTP Error 404: Not Found",
+        "mainnet stats https://stats1.xinfin.network: HTTP Error 404: Not Found",
+        "mainnet stats https://stats.xinfin.network: <urlopen error timed out>"
+      ]
+    },
+    "ecosystem": {
+      "ok": true,
+      "result": "Updated (138 projects)",
+      "notes": []
+    },
+    "archive": {
+      "ok": true,
+      "result": "Skipped: set worker_url in config.json",
+      "notes": []
+    },
+    "events": {
+      "ok": true,
+      "result": "0 new event(s), 0 owner feed(s) updated, 117 feed file(s) written",
+      "notes": [
+        "First run: recorded a baseline; events start from the next run"
+      ]
+    },
+    "catalog": {
+      "ok": true,
+      "result": "No change (live datasets hidden until worker_url is set)",
+      "notes": []
+    }
+  },
+  "ok": true
+}

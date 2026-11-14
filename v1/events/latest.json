@@ -1,0 +1,12 @@
+{
+  "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
+  "version": "1",
+  "generated_at": "2026-11-14T08:57:15Z",
+  "update_interval_seconds": 3600,
+  "stale_after_seconds": 10800,
+  "source": "XDC Outpost (xdcoutpost.xyz)",
+  "docs": "https://xdcoutpost.xyz/XDC_Open_Data/",
+  "license": "CC-BY-4.0",
+  "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
+  "events": []
+}

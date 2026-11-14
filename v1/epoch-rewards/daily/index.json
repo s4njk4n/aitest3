@@ -1,0 +1,12 @@
+{
+  "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/history-index.v1.json",
+  "dataset": "epoch-rewards",
+  "format": "JSON: one file per UTC day (csv: the same as a spreadsheet).",
+  "files": [
+    {
+      "date": "2026-11-14",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-14.json",
+      "csv": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-14.csv"
+    }
+  ]
+}

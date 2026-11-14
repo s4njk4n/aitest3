@@ -1,0 +1,2883 @@
+{
+  "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/ecosystem-projects.v1.json",
+  "version": "1",
+  "generated_at": "2026-11-14T08:57:15Z",
+  "update_interval_seconds": 3600,
+  "stale_after_seconds": 10800,
+  "source": "XDC Outpost (xdcoutpost.xyz)",
+  "docs": "https://xdcoutpost.xyz/XDC_Open_Data/",
+  "license": "CC-BY-4.0",
+  "origin": "https://xdcoutpost.xyz/XDC_Atlas/",
+  "add_or_update": "Projects are listed through pull requests to https://github.com/s4njk4n/XDC_Atlas",
+  "count": 138,
+  "categories": {
+    "node-ops": "Nodes & masternodes",
+    "infra": "RPC & data infrastructure",
+    "dev": "Developer tooling",
+    "explorers": "Explorers & analytics",
+    "bridges": "Cross-chain & bridges",
+    "defi": "DeFi & staking",
+    "rwa": "RWA tokens & stablecoins",
+    "tradefi": "Trade finance & RWA",
+    "payments": "Payments & messaging",
+    "wallets": "Wallets",
+    "custody": "Institutional custody & staking",
+    "security": "Security",
+    "nft": "NFTs",
+    "gaming": "Gaming",
+    "apps": "Other apps",
+    "everyday": "Everyday spending & travel"
+  },
+  "projects": [
+    {
+      "id": "astrix",
+      "name": "Astrix",
+      "summary": "Community platform for XDC projects: on-chain hubs (Tribes) with profile NFTs, governance tokens, voting and roles.",
+      "category": "apps",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "community",
+        "governance"
+      ],
+      "by": "Astrix Tribes",
+      "by_url": null,
+      "links": {
+        "app": "https://astrix.live/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/astrix-live.png"
+    },
+    {
+      "id": "blockdegree",
+      "name": "Blockdegree",
+      "summary": "Blockchain training and certification for developers.",
+      "category": "apps",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "education"
+      ],
+      "by": "Blockdegree",
+      "by_url": null,
+      "links": {
+        "app": "https://www.blockdegree.org/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-blockdegree-org.png"
+    },
+    {
+      "id": "law-blocks-ai",
+      "name": "Law Blocks AI",
+      "summary": "Create cryptographically signed smart legal documents.",
+      "category": "apps",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "legal",
+        "ai"
+      ],
+      "by": "Law Blocks AI",
+      "by_url": null,
+      "links": {
+        "app": "https://lawblocks.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/lawblocks-io.png"
+    },
+    {
+      "id": "rewards-bunny",
+      "name": "Rewards Bunny",
+      "summary": "Rewards users for everyday actions through data and ad infrastructure.",
+      "category": "apps",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "rewards"
+      ],
+      "by": "Rewards Bunny",
+      "by_url": null,
+      "links": {
+        "app": "https://rewardsbunny.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/rewardsbunny-com.png"
+    },
+    {
+      "id": "vitalveda",
+      "name": "VitalVEDA",
+      "summary": "AI fitness platform with movement detection and gamification.",
+      "category": "apps",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "ai",
+        "fitness"
+      ],
+      "by": "VitalVEDA",
+      "by_url": null,
+      "links": {
+        "app": "https://vitalveda.fit/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/vitalveda-fit.png"
+    },
+    {
+      "id": "asterizm",
+      "name": "Asterizm",
+      "summary": "Cross-chain messaging infrastructure using on-chain validation.",
+      "category": "bridges",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "messaging",
+        "interoperability"
+      ],
+      "by": "Asterizm",
+      "by_url": null,
+      "links": {
+        "app": "https://asterizm.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/asterizm-io.png"
+    },
+    {
+      "id": "chainlink-ccip",
+      "name": "Chainlink CCIP",
+      "summary": "Cross-chain messaging and token transfers between XDC and other networks.",
+      "category": "bridges",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "ccip",
+        "messaging"
+      ],
+      "by": "Chainlink",
+      "by_url": null,
+      "links": {
+        "docs": "https://docs.chain.link/ccip/directory/mainnet/chain/xdc-mainnet"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/docs-chain-link.png"
+    },
+    {
+      "id": "layerzero",
+      "name": "LayerZero",
+      "summary": "Omnichain messaging protocol. The docs list XDC's endpoint, DVN and executor addresses.",
+      "category": "bridges",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "omnichain",
+        "oft"
+      ],
+      "by": "LayerZero",
+      "by_url": null,
+      "links": {
+        "app": "https://layerzero.network/",
+        "docs": "https://docs.layerzero.network/v2/deployments/chains/xdc"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/layerzero-network.png"
+    },
+    {
+      "id": "li-fi",
+      "name": "LI.FI",
+      "summary": "Bridge and DEX aggregator with a single API for cross-chain swaps.",
+      "category": "bridges",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "aggregator",
+        "api"
+      ],
+      "by": "LI.FI",
+      "by_url": null,
+      "links": {
+        "app": "https://li.fi/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/li-fi.png"
+    },
+    {
+      "id": "stargate",
+      "name": "Stargate",
+      "summary": "Bridge built on LayerZero, with USDC routes to and from XDC.",
+      "category": "bridges",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "bridge",
+        "usdc"
+      ],
+      "by": "Stargate",
+      "by_url": null,
+      "links": {
+        "app": "https://stargate.finance/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/stargate-finance.svg"
+    },
+    {
+      "id": "usdc-and-cctp-v2",
+      "name": "USDC and CCTP V2",
+      "summary": "Native USDC on XDC and Circle's burn-and-mint transfer protocol for moving it between chains.",
+      "category": "bridges",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "usdc",
+        "stablecoin",
+        "cctp"
+      ],
+      "by": "Circle",
+      "by_url": null,
+      "links": {
+        "docs": "https://www.circle.com/blog/now-available-usdc-cctp-v2-on-xdc-network"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-circle-com.svg"
+    },
+    {
+      "id": "wanbridge",
+      "name": "WanBridge",
+      "summary": "Decentralised bridge connecting XDC with Ethereum, BNB Chain, Polygon, Avalanche and others.",
+      "category": "bridges",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "bridge",
+        "usdt",
+        "usdc"
+      ],
+      "by": "Wanchain",
+      "by_url": null,
+      "links": {
+        "app": "https://bridge.wanchain.org/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/bridge-wanchain-org.png"
+    },
+    {
+      "id": "xdc-zero",
+      "name": "XDC Zero",
+      "summary": "XDC's own cross-chain framework for passing messages between subnets and mainnet.",
+      "category": "bridges",
+      "type": "library",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "subnet",
+        "messaging"
+      ],
+      "by": "XinFin",
+      "by_url": null,
+      "links": {
+        "repo": "https://github.com/XinFinOrg/XDC-Zero",
+        "docs": "https://docs.xdc.network/subnet/components/xdc_zero/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "anchorage",
+      "name": "Anchorage",
+      "summary": "Institutional digital-asset custody listed by XinFin as supporting XDC.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody"
+      ],
+      "by": "Anchorage",
+      "by_url": null,
+      "links": {
+        "app": "https://www.anchorage.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-anchorage-com.png"
+    },
+    {
+      "id": "bitgo",
+      "name": "BitGo",
+      "summary": "Regulated custody for XDC and USDC on XDC, with multisig and MPC hot and cold wallets.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody",
+        "mpc",
+        "usdc"
+      ],
+      "by": "BitGo",
+      "by_url": null,
+      "links": {
+        "app": "https://www.bitgo.com/",
+        "docs": "https://developers.bitgo.com/coins/xdc"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-bitgo-com.svg"
+    },
+    {
+      "id": "blockdaemon",
+      "name": "Blockdaemon",
+      "summary": "Hosted XDC masternodes for holders of 10M XDC, run on institutional infrastructure.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "masternode",
+        "hosting",
+        "staking"
+      ],
+      "by": "Blockdaemon",
+      "by_url": null,
+      "links": {
+        "app": "https://blockdaemon.com/protocols/xdc"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/blockdaemon-com.png"
+    },
+    {
+      "id": "cobo",
+      "name": "Cobo",
+      "summary": "Institutional digital-asset custody listed by XinFin as supporting XDC.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody"
+      ],
+      "by": "Cobo",
+      "by_url": null,
+      "links": {
+        "app": "https://www.cobo.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-cobo-com.png"
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "summary": "Institutional digital-asset custody listed by XinFin as supporting XDC.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody"
+      ],
+      "by": "Copper",
+      "by_url": null,
+      "links": {
+        "app": "https://copper.co/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/copper-co.svg"
+    },
+    {
+      "id": "dfns",
+      "name": "Dfns",
+      "summary": "Institutional digital-asset custody listed by XinFin as supporting XDC.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody"
+      ],
+      "by": "Dfns",
+      "by_url": null,
+      "links": {
+        "app": "https://dfns.co/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/dfns-co.png"
+    },
+    {
+      "id": "fireblocks",
+      "name": "Fireblocks",
+      "summary": "Institutional MPC custody: store, transfer and stake XDC, and add XDC to your product through its API.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody",
+        "mpc",
+        "api"
+      ],
+      "by": "Fireblocks",
+      "by_url": null,
+      "links": {
+        "app": "https://www.fireblocks.com/blog/xdc-x-fireblocks/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-fireblocks-com.png"
+    },
+    {
+      "id": "kiln",
+      "name": "Kiln",
+      "summary": "Institutional XDC staking, with custody through Copper and Fireblocks.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "staking"
+      ],
+      "by": "Kiln",
+      "by_url": null,
+      "links": {
+        "app": "https://www.kiln.fi/post/kiln-now-supports-xdc-staking"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-kiln-fi.png"
+    },
+    {
+      "id": "liminal",
+      "name": "Liminal",
+      "summary": "Institutional digital-asset custody listed by XinFin as supporting XDC.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody"
+      ],
+      "by": "Liminal",
+      "by_url": null,
+      "links": {
+        "app": "https://www.lmnl.app/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "utila",
+      "name": "Utila",
+      "summary": "Institutional digital-asset custody listed by XinFin as supporting XDC.",
+      "category": "custody",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "custody"
+      ],
+      "by": "Utila",
+      "by_url": null,
+      "links": {
+        "app": "https://utila.io/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "akka-finance",
+      "name": "Akka Finance",
+      "summary": "AI-powered DeFi liquidity aggregator.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "aggregator"
+      ],
+      "by": "Akka Finance",
+      "by_url": null,
+      "links": {
+        "app": "https://www.akka.finance/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-akka-finance.png"
+    },
+    {
+      "id": "fathom",
+      "name": "Fathom",
+      "summary": "Borrow FXD, an over-collateralised stablecoin, against XDC; plus lending, a DEX and RWA vaults.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "stablecoin",
+        "fxd",
+        "lending"
+      ],
+      "by": "Fathom",
+      "by_url": null,
+      "links": {
+        "app": "https://fathom.fi/",
+        "repo": "https://github.com/Into-the-Fathom"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/fathom-fi.png"
+    },
+    {
+      "id": "icecreamswap",
+      "name": "IceCreamSwap",
+      "summary": "Multichain DEX, aggregator and bridge that includes XDC.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "dex",
+        "bridge",
+        "aggregator"
+      ],
+      "by": "IceCreamSwap",
+      "by_url": null,
+      "links": {
+        "app": "https://icecreamswap.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/icecreamswap-com.png"
+    },
+    {
+      "id": "prime-numbers",
+      "name": "Prime Numbers",
+      "summary": "The Prime Numbers ecosystem home: DeFi and NFT protocols on XDC.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "defi",
+        "nft"
+      ],
+      "by": "Prime Numbers Labs",
+      "by_url": null,
+      "links": {
+        "app": "https://primenumbers.xyz/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/primenumbers-xyz.png"
+    },
+    {
+      "id": "primefi",
+      "name": "PrimeFi",
+      "summary": "Omnichain lending and borrowing protocol, with XDC among its supported chains.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "lending",
+        "omnichain"
+      ],
+      "by": "Prime Numbers Labs",
+      "by_url": null,
+      "links": {
+        "docs": "https://docs.primefi.xyz"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/docs-primefi-xyz.png"
+    },
+    {
+      "id": "primeport",
+      "name": "PrimePort",
+      "summary": "The largest NFT marketplace on XDC, with collection creation and multichain trading.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "nft",
+        "marketplace"
+      ],
+      "by": "Prime Numbers Labs",
+      "by_url": null,
+      "links": {
+        "app": "https://primeport.xyz/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/primeport-xyz.png"
+    },
+    {
+      "id": "primestaking",
+      "name": "PrimeStaking",
+      "summary": "Liquid staking for XDC: stake any amount, earn masternode rewards and hold psXDC. Masternode vaults for 10M holders.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "liquid-staking",
+        "psxdc",
+        "masternode"
+      ],
+      "by": "Prime Numbers Labs",
+      "by_url": null,
+      "links": {
+        "app": "https://primestaking.xyz/",
+        "docs": "https://docs.primestaking.xyz"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/primestaking-xyz.png"
+    },
+    {
+      "id": "xdc-sale",
+      "name": "xdc.sale",
+      "summary": "XSwap's decentralised launchpad for new tokens on XDC.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "launchpad"
+      ],
+      "by": "XSwap Protocol",
+      "by_url": null,
+      "links": {
+        "app": "https://xdc.sale/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/xdc-sale.png"
+    },
+    {
+      "id": "xswap",
+      "name": "XSwap",
+      "summary": "XDC's first AMM DEX, with farms, staking, token and liquidity lockers, a multisender and the xdc.sale launchpad.",
+      "category": "defi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "dex",
+        "launchpad",
+        "multisender"
+      ],
+      "by": "XSwap Protocol",
+      "by_url": null,
+      "links": {
+        "app": "https://xspswap.finance/",
+        "repo": "https://github.com/XSwapProtocol"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/xspswap-finance.png"
+    },
+    {
+      "id": "apothem-faucet",
+      "name": "Apothem faucet",
+      "summary": "Free test XDC for the Apothem testnet (chain ID 51).",
+      "category": "dev",
+      "type": "web-app",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "testnet",
+        "faucet"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://faucet.apothem.network/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "chainide",
+      "name": "ChainIDE",
+      "summary": "Cloud IDE for building, compiling and deploying contracts to XDC from the browser.",
+      "category": "dev",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "ide",
+        "solidity"
+      ],
+      "by": "ChainIDE",
+      "by_url": null,
+      "links": {
+        "app": "https://chainide.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/chainide-com.png"
+    },
+    {
+      "id": "gas-zip",
+      "name": "Gas.zip",
+      "summary": "Top up native gas, including XDC, on many chains from one transaction.",
+      "category": "dev",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "gas",
+        "multichain"
+      ],
+      "by": "Gas.zip",
+      "by_url": null,
+      "links": {
+        "app": "https://www.gas.zip/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-gas-zip.png"
+    },
+    {
+      "id": "roxonn",
+      "name": "Roxonn",
+      "summary": "Pays developers in XDC and ROXN for open-source GitHub contributions; businesses post work for them.",
+      "category": "dev",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "bounties",
+        "github"
+      ],
+      "by": "Roxonn",
+      "by_url": null,
+      "links": {
+        "app": "https://www.roxonn.com"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-roxonn-com.png"
+    },
+    {
+      "id": "subnet-deployment",
+      "name": "Subnet Deployment",
+      "summary": "Generator and scripts for launching your own XDC subnet, including a faucet server.",
+      "category": "dev",
+      "type": "self-host",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "subnet",
+        "faucet"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "repo": "https://github.com/XinFinOrg/Subnet-Deployment",
+        "docs": "https://docs.xdc.network/subnet/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "unitap",
+      "name": "Unitap",
+      "summary": "Gas faucet that gives new users a little XDC so they can make their first transactions.",
+      "category": "dev",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "faucet",
+        "onboarding",
+        "gas"
+      ],
+      "by": "Unitap",
+      "by_url": null,
+      "links": {
+        "app": "https://unitap.app/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/unitap-app.png"
+    },
+    {
+      "id": "xdc-remix",
+      "name": "XDC Remix",
+      "summary": "Browser IDE for writing, compiling and deploying Solidity contracts to XDC.",
+      "category": "dev",
+      "type": "web-app",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "solidity",
+        "ide"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://remix.xinfin.network/",
+        "docs": "https://docs.xdc.org/xdc-tools/xdc-remix"
+      },
+      "claimed": false
+    },
+    {
+      "id": "xdc-web3-domains",
+      "name": "XDC Web3 Domains",
+      "summary": ".xdc names that work as wallet addresses and website names.",
+      "category": "dev",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "domains",
+        "naming"
+      ],
+      "by": "XDC Web3 Domains",
+      "by_url": null,
+      "links": {
+        "app": "https://xdcdomains.xyz/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/xdcdomains-xyz.png"
+    },
+    {
+      "id": "xdc-connect",
+      "name": "xdc-connect",
+      "summary": "npm package that connects a web app to XDC wallets, both software and hardware.",
+      "category": "dev",
+      "type": "library",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "javascript",
+        "npm",
+        "wallet-connect"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://www.npmjs.com/package/xdc-connect"
+      },
+      "claimed": false
+    },
+    {
+      "id": "xdc3",
+      "name": "xdc3",
+      "summary": "JavaScript library for the XDC JSON-RPC API. Most EVM libraries such as ethers and viem also work against XDC RPCs.",
+      "category": "dev",
+      "type": "library",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "javascript",
+        "npm",
+        "sdk"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://www.npmjs.com/package/xdc3"
+      },
+      "claimed": false
+    },
+    {
+      "id": "xdposchain",
+      "name": "XDPoSChain",
+      "summary": "Source for the XDC client, forked from go-ethereum. Read it to understand XDPoS consensus and rewards.",
+      "category": "dev",
+      "type": "library",
+      "kind": "official",
+      "status": "active",
+      "license": "LGPL-3.0",
+      "tags": [
+        "client",
+        "go",
+        "consensus"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "repo": "https://github.com/XinFinOrg/XDPoSChain"
+      },
+      "claimed": false
+    },
+    {
+      "id": "coinsbee",
+      "name": "Coinsbee",
+      "summary": "Buy gift cards, top-ups and payment cards with crypto.",
+      "category": "everyday",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "Coinsbee",
+      "by_url": null,
+      "links": {
+        "app": "https://www.coinsbee.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-coinsbee-com.png"
+    },
+    {
+      "id": "fuelsharp-nsw",
+      "name": "FuelSharp NSW",
+      "summary": "Finds the cheapest fuel near you in New South Wales after your discounts, priced in AUDD, XDC or USDC.",
+      "category": "everyday",
+      "type": "web-app",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "fuel",
+        "audd",
+        "stablecoins"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/XDC_FuelSharpNSW/",
+        "repo": "https://github.com/s4njk4n/XDC_FuelSharpNSW"
+      },
+      "claimed": true
+    },
+    {
+      "id": "travala",
+      "name": "Travala",
+      "summary": "Travel booking that accepts crypto, including XDC.",
+      "category": "everyday",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "Travala",
+      "by_url": null,
+      "links": {
+        "app": "https://www.travala.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-travala-com.png"
+    },
+    {
+      "id": "apothem-explorer",
+      "name": "Apothem explorer",
+      "summary": "Block explorer for the Apothem testnet.",
+      "category": "explorers",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "explorer",
+        "testnet"
+      ],
+      "by": "XDCScan",
+      "by_url": null,
+      "links": {
+        "app": "https://testnet.xdcscan.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/testnet-xdcscan-com.png"
+    },
+    {
+      "id": "defillama-xdc",
+      "name": "DefiLlama: XDC",
+      "summary": "Total value locked, stablecoins and protocol rankings on XDC.",
+      "category": "explorers",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "defi",
+        "tvl",
+        "analytics"
+      ],
+      "by": "DefiLlama",
+      "by_url": null,
+      "links": {
+        "app": "https://defillama.com/chain/xdc"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/defillama-com.png"
+    },
+    {
+      "id": "tradefi-network",
+      "name": "TradeFi Network",
+      "summary": "Data and discovery layer for tokenised real-world assets on XDC: RWA, DeFi, staking and pool activity, with early-access API.",
+      "category": "explorers",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "rwa",
+        "analytics",
+        "tvl"
+      ],
+      "by": "TradeFi Network",
+      "by_url": null,
+      "links": {
+        "app": "https://tradefi.network/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/tradefi-network.png"
+    },
+    {
+      "id": "xdc-network-stats-outpost",
+      "name": "XDC Network Stats",
+      "summary": "Fast live stats: blocks as they land, masternodes, epoch progress, a node map and a searchable node table.",
+      "category": "explorers",
+      "type": "web-app",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "stats",
+        "nodes",
+        "masternode",
+        "live"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/XDC_Network_Stats/",
+        "repo": "https://github.com/s4njk4n/XDC_Network_Stats"
+      },
+      "claimed": true
+    },
+    {
+      "id": "network-stats",
+      "name": "XDC network stats (classic)",
+      "summary": "The original XinFin stats page: node count, block times and peers for mainnet.",
+      "category": "explorers",
+      "type": "web-app",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "stats",
+        "nodes"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://stats1.xinfin.network"
+      },
+      "claimed": false
+    },
+    {
+      "id": "xdcscan",
+      "name": "XDCScan",
+      "summary": "Mainnet block explorer with contract verification and an Etherscan-style API.",
+      "category": "explorers",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "explorer",
+        "api",
+        "verification"
+      ],
+      "by": "XDCScan",
+      "by_url": null,
+      "links": {
+        "app": "https://xdcscan.com/",
+        "docs": "https://docs.etherscan.io/etherscan-v2"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/xdcscan-com.png"
+    },
+    {
+      "id": "0xf-tbol",
+      "name": "0xFútbol",
+      "summary": "Web3 hub for football fans and developers.",
+      "category": "gaming",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "0xFútbol",
+      "by_url": null,
+      "links": {
+        "app": "https://0xfutbol.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/0xfutbol-com.svg"
+    },
+    {
+      "id": "avatarlife",
+      "name": "AvatarLife",
+      "summary": "Web3 metaverse with avatars and games.",
+      "category": "gaming",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "AvatarLife",
+      "by_url": null,
+      "links": {
+        "app": "https://avatarlife.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/avatarlife-com.png"
+    },
+    {
+      "id": "dopu",
+      "name": "Dopu",
+      "summary": "Token community focused on peer-to-peer payments and digital wallets.",
+      "category": "gaming",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "Dopu",
+      "by_url": null,
+      "links": {
+        "app": "https://dopu.ai/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/dopu-ai.png"
+    },
+    {
+      "id": "earnscape",
+      "name": "Earnscape",
+      "summary": "Mobile play-to-earn rewards launcher.",
+      "category": "gaming",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "Earnscape",
+      "by_url": null,
+      "links": {
+        "app": "https://earnscape.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/earnscape-com.svg"
+    },
+    {
+      "id": "eternis-death-match",
+      "name": "Eternis: Death Match",
+      "summary": "Cyborg fighting game with PvP play.",
+      "category": "gaming",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "Eternis: Death Match",
+      "by_url": null,
+      "links": {
+        "app": "https://eternisgame.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/eternisgame-com.png"
+    },
+    {
+      "id": "metasoccer",
+      "name": "MetaSoccer",
+      "summary": "Web3 soccer game with an in-game economy.",
+      "category": "gaming",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "MetaSoccer",
+      "by_url": null,
+      "links": {
+        "app": "https://metasoccer.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/metasoccer-com.png"
+    },
+    {
+      "id": "token-tails",
+      "name": "Token Tails",
+      "summary": "Play-to-save game where cat NFTs link to real shelter cats.",
+      "category": "gaming",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [],
+      "by": "Token Tails",
+      "by_url": null,
+      "links": {
+        "app": "https://tokentails.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/tokentails-com.png"
+    },
+    {
+      "id": "chainlist-xdc",
+      "name": "Chainlist: XDC",
+      "summary": "Every known public XDC RPC with live status, and one click to add XDC to your wallet.",
+      "category": "infra",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "rpc",
+        "wallet-setup"
+      ],
+      "by": "DefiLlama",
+      "by_url": null,
+      "links": {
+        "app": "https://chainlist.org/chain/50"
+      },
+      "claimed": false
+    },
+    {
+      "id": "dwellir",
+      "name": "Dwellir",
+      "summary": "Globally distributed XDC RPC endpoints with an API key, routed to the nearest location.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "rpc",
+        "api"
+      ],
+      "by": "Dwellir",
+      "by_url": null,
+      "links": {
+        "app": "https://www.dwellir.com/networks/xdc-network",
+        "docs": "https://www.dwellir.com/docs/xdc-network"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-dwellir-com.png"
+    },
+    {
+      "id": "envio",
+      "name": "Envio",
+      "summary": "Indexer with first-class XDC support: HyperSync, HyperRPC and HyperIndex for fast historical and live event data.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "indexer",
+        "graphql",
+        "hypersync"
+      ],
+      "by": "Envio",
+      "by_url": null,
+      "links": {
+        "app": "https://envio.dev/chains/xdc",
+        "docs": "https://docs.envio.dev/docs/HyperIndex/xdc"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/envio-dev.png"
+    },
+    {
+      "id": "goldsky",
+      "name": "Goldsky",
+      "summary": "Hosted subgraphs and data pipelines for XDC, compatible with The Graph's subgraph format.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "indexer",
+        "subgraph",
+        "graphql"
+      ],
+      "by": "Goldsky",
+      "by_url": null,
+      "links": {
+        "app": "https://goldsky.com/chains/xdc"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/goldsky-com.png"
+    },
+    {
+      "id": "orochi-network",
+      "name": "Orochi Network",
+      "summary": "Zero-knowledge data infrastructure for verifiable data processing.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "zk",
+        "data"
+      ],
+      "by": "Orochi Network",
+      "by_url": null,
+      "links": {
+        "app": "https://orochi.network/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/orochi-network.png"
+    },
+    {
+      "id": "plugin",
+      "name": "Plugin",
+      "summary": "XDC's home-grown decentralised oracle network for price feeds, VRF and custom data jobs.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "oracle",
+        "data-feeds",
+        "vrf"
+      ],
+      "by": "Plugin",
+      "by_url": null,
+      "links": {
+        "app": "https://plugin.global/",
+        "docs": "https://plugin.global/developers/docs.html"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/plugin-global.png"
+    },
+    {
+      "id": "razor-network",
+      "name": "Razor Network",
+      "summary": "Decentralised oracle network with an XDC integration.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "oracle"
+      ],
+      "by": "Razor Network",
+      "by_url": null,
+      "links": {
+        "app": "https://razor.network/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "storx",
+      "name": "StorX",
+      "summary": "Decentralised cloud storage that encrypts files and spreads them across storage nodes.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "storage",
+        "nodes"
+      ],
+      "by": "StorX",
+      "by_url": null,
+      "links": {
+        "app": "https://www.storx.tech/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-storx-tech.svg"
+    },
+    {
+      "id": "subquery",
+      "name": "SubQuery",
+      "summary": "Decentralised indexing and data network with XDC support.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "indexer",
+        "graphql"
+      ],
+      "by": "SubQuery",
+      "by_url": null,
+      "links": {
+        "app": "https://subquery.network/",
+        "docs": "https://github.com/XDC-Community/docs/blob/main/tools/indexers/subquery.md"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/subquery-network.png"
+    },
+    {
+      "id": "supra",
+      "name": "Supra",
+      "summary": "Cross-chain oracle providing off-chain data to smart contracts on XDC.",
+      "category": "infra",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "oracle",
+        "data-feeds"
+      ],
+      "by": "Supra",
+      "by_url": null,
+      "links": {
+        "app": "https://supra.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/supra-com.png"
+    },
+    {
+      "id": "cheyni",
+      "name": "Cheyni",
+      "summary": "Token-gated streaming platform built on utility NFTs.",
+      "category": "nft",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "streaming"
+      ],
+      "by": "Cheyni",
+      "by_url": null,
+      "links": {
+        "app": "https://cheyni.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/cheyni-io.png"
+    },
+    {
+      "id": "popcorncine",
+      "name": "PopCornCine",
+      "summary": "AI and blockchain platform for discovering and voting on film trailers.",
+      "category": "nft",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "film"
+      ],
+      "by": "PopCornCine",
+      "by_url": null,
+      "links": {
+        "app": "https://www.popcorncine.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-popcorncine-io.png"
+    },
+    {
+      "id": "masternode-governance-api",
+      "name": "Masternode governance API",
+      "summary": "REST API behind the masternode dApp: candidates, rewards per epoch, slashing and signer activity, no node needed.",
+      "category": "node-ops",
+      "type": "service",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "masternode",
+        "api",
+        "rewards"
+      ],
+      "by": "XinFin",
+      "by_url": null,
+      "links": {
+        "app": "https://mn.xinfin.network/api",
+        "docs": "https://www.xdc.dev/ruslan_wing/supercharge-masternode-monitoring-with-the-xdc-governance-dapp-api-1bep"
+      },
+      "claimed": false
+    },
+    {
+      "id": "masternode-portal",
+      "name": "Masternode portal",
+      "summary": "Apply for, stake and manage an XDC masternode or standby node.",
+      "category": "node-ops",
+      "type": "web-app",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "masternode",
+        "staking"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://master.xinfin.network/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "masternode-rewards-calculator",
+      "name": "Masternode Rewards Calculator",
+      "summary": "Totals an address's epoch rewards for any period, in your own time zone, with CSV export.",
+      "category": "node-ops",
+      "type": "web-app",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "masternode",
+        "rewards",
+        "csv",
+        "tax"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/XDC_Masternode_Rewards_Calculator/",
+        "repo": "https://github.com/s4njk4n/XDC_Masternode_Rewards_Calculator"
+      },
+      "claimed": true
+    },
+    {
+      "id": "plugin-multinode-tools",
+      "name": "Plugin Multinode Tools",
+      "summary": "Scripts for running and updating many Plugin oracle nodes at once.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "archived",
+      "license": "",
+      "tags": [
+        "plugin",
+        "oracle",
+        "multi-node"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/Plugin_Multinode_Tools"
+      },
+      "claimed": true
+    },
+    {
+      "id": "primexdc-nodes",
+      "name": "PrimeXDC Nodes",
+      "summary": "Real-time dashboard for XDC's masternodes: status, stake, rewards, uptime, slashing and governance, with favourites.",
+      "category": "node-ops",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "masternode",
+        "monitoring",
+        "rewards",
+        "slashing"
+      ],
+      "by": "Prime Numbers Labs",
+      "by_url": null,
+      "links": {
+        "app": "https://nodes.primexdc.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/nodes-primexdc-com.png"
+    },
+    {
+      "id": "publicnexus",
+      "name": "PublicNexus load balancer",
+      "summary": "Load balancer configuration for spreading RPC traffic across several XDC full nodes.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "archived",
+      "license": "",
+      "tags": [
+        "rpc",
+        "load-balancing"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/publicnexus_updated_endpoints"
+      },
+      "claimed": true
+    },
+    {
+      "id": "storx-multinode-tools",
+      "name": "StorX Multinode Tools",
+      "summary": "Scripts for running and updating many StorX storage nodes at once.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "archived",
+      "license": "",
+      "tags": [
+        "storx",
+        "storage",
+        "multi-node"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/StorX_Multinode_Tools"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-chain-snapshots",
+      "name": "XDC chain snapshots",
+      "summary": "Download recent XDC mainnet and Apothem chain snapshots to bring a new node up without syncing from block zero.",
+      "category": "node-ops",
+      "type": "service",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "snapshot",
+        "sync",
+        "apothem"
+      ],
+      "by": "XDC Network",
+      "by_url": null,
+      "links": {
+        "app": "https://rpc.xdc.network/snapshots/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "xdc-epoch-notifier",
+      "name": "XDC Epoch Notifier",
+      "summary": "A daily message with each masternode's epoch rewards, run for free from your own GitHub account.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "masternode",
+        "rewards",
+        "github-actions"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/XDC_Epoch_Notifier/",
+        "repo": "https://github.com/s4njk4n/XDC_Epoch_Notifier"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-fieldmedic",
+      "name": "XDC FieldMedic",
+      "summary": "A repair bot for RPC endpoints that detects a stuck or unhealthy node and brings it back.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "in-development",
+      "license": "MIT",
+      "tags": [
+        "rpc",
+        "self-healing"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-network-stats",
+      "name": "XDC Network Stats",
+      "summary": "Live network dashboard: best block, TPS, block time, masternodes, standby queue, peers and node locations.",
+      "category": "node-ops",
+      "type": "web-app",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "stats",
+        "nodes",
+        "tps"
+      ],
+      "by": "XDC Network",
+      "by_url": null,
+      "links": {
+        "app": "https://stats.xdc.network/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "xdc-node-behind-cgnat",
+      "name": "XDC Node Behind CGNAT",
+      "summary": "Keeps the peer count up on nodes that have no public IP address, such as home connections behind CGNAT.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "peers",
+        "networking",
+        "home-node"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/XDC_Node_Behind_CGNAT"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-secure-rpc-wss",
+      "name": "XDC Secure RPC & WSS",
+      "summary": "Puts a private, HTTPS-secured RPC and WebSocket endpoint in front of your own XDC node. Self-host it, or have it installed for you.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "rpc",
+        "wss",
+        "security",
+        "nginx"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/Plugin-XDC-Secure-RPC-WSS"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-sentinel",
+      "name": "XDC Sentinel",
+      "summary": "Alerts your phone when a node goes offline or loses peers. Free to self-host, or hosted for you.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "monitoring",
+        "alerts",
+        "uptime"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/XDC_Sentinel"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-tycoon",
+      "name": "XDC Tycoon",
+      "summary": "Watches masternode owner addresses and alerts you to reward, slashing and status changes.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "masternode",
+        "rewards",
+        "alerts"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/XDC_Tycoon"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xinfin-node",
+      "name": "XinFin-Node",
+      "summary": "The official Docker setup for running an XDC mainnet or Apothem testnet node.",
+      "category": "node-ops",
+      "type": "self-host",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "docker",
+        "node"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "repo": "https://github.com/XinFinOrg/XinFin-Node"
+      },
+      "claimed": false
+    },
+    {
+      "id": "cyclebit",
+      "name": "Cyclebit",
+      "summary": "Lets retailers accept XDC in store and online.",
+      "category": "payments",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "merchants"
+      ],
+      "by": "Cyclebit",
+      "by_url": null,
+      "links": {
+        "app": "https://www.cyclebit.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-cyclebit-io.png"
+    },
+    {
+      "id": "ledgermail",
+      "name": "LedgerMail",
+      "summary": "Blockchain-based decentralised email.",
+      "category": "payments",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "email",
+        "messaging"
+      ],
+      "by": "LedgerMail",
+      "by_url": null,
+      "links": {
+        "app": "https://ledgermail.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/ledgermail-io.png"
+    },
+    {
+      "id": "resmic",
+      "name": "Resmic",
+      "summary": "Crypto payment gateway for businesses and individuals, with XDC support.",
+      "category": "payments",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "payment-gateway",
+        "merchants"
+      ],
+      "by": "Resmic",
+      "by_url": null,
+      "links": {
+        "app": "https://resmic.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/resmic-com.png"
+    },
+    {
+      "id": "xdc-pqonchain",
+      "name": "XDC PQOnchain",
+      "summary": "Sends messages on XDC mainnet with post-quantum encryption (ML-KEM-768 and AES-256-GCM). Keys never leave your browser.",
+      "category": "payments",
+      "type": "web-app",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "messaging",
+        "post-quantum",
+        "encryption"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/XDC_PQOnchain/",
+        "repo": "https://github.com/s4njk4n/XDC_PQOnchain"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-proof",
+      "name": "XDC Proof",
+      "summary": "Turns a confirmed XDC transaction into a PDF receipt you can file or send.",
+      "category": "payments",
+      "type": "web-app",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "receipts",
+        "pdf",
+        "accounting"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/XDC_Proof/",
+        "repo": "https://github.com/s4njk4n/XDC_Proof"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-send-offline-helper",
+      "name": "XDC Send Offline Helper",
+      "summary": "Prepares a transaction for an offline device to sign, then broadcasts the signed result.",
+      "category": "payments",
+      "type": "web-app",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "cold-storage",
+        "signing",
+        "security"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "app": "https://xdcoutpost.xyz/XDC_Send_Offline_Helper/",
+        "repo": "https://github.com/s4njk4n/XDC_Send_Offline_Helper"
+      },
+      "claimed": true
+    },
+    {
+      "id": "xdc-shopbot",
+      "name": "XDC ShopBot",
+      "summary": "A Telegram bot that sells digital products for XDC and delivers them automatically once payment lands.",
+      "category": "payments",
+      "type": "bot",
+      "kind": "community",
+      "status": "active",
+      "license": "MIT",
+      "tags": [
+        "telegram",
+        "commerce"
+      ],
+      "by": "s4njk4n",
+      "by_url": "https://github.com/s4njk4n",
+      "links": {
+        "repo": "https://github.com/s4njk4n/XDC_ShopBot",
+        "demo": "https://t.me/xdcshopbot"
+      },
+      "claimed": true
+    },
+    {
+      "id": "audd",
+      "name": "AUDD",
+      "summary": "Regulated Australian dollar stablecoin, live on XDC. Its AUDDapt grant program funds AUDD payment apps built on XDC.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "stablecoin",
+        "aud",
+        "grants"
+      ],
+      "by": "AUDC (Novatti Group)",
+      "by_url": null,
+      "links": {
+        "app": "https://www.audd.digital/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-audd-digital.png"
+    },
+    {
+      "id": "bigwater-protocol",
+      "name": "BigWater Protocol",
+      "summary": "Rewards sustainable actions with clean air and water outcomes.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "refi",
+        "nft"
+      ],
+      "by": "BigWater",
+      "by_url": null,
+      "links": {
+        "app": "https://bigwater.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/bigwater-io.png"
+    },
+    {
+      "id": "comtech-gold",
+      "name": "ComTech Gold",
+      "summary": "Tokenised physical gold for institutions and retail users.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "gold",
+        "commodities"
+      ],
+      "by": "ComTech Gold",
+      "by_url": null,
+      "links": {
+        "app": "https://comtechgold.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/comtechgold-com.png"
+    },
+    {
+      "id": "eurs",
+      "name": "EURS",
+      "summary": "Euro stablecoin backed 1:1 by reserves, available on XDC.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "stablecoin",
+        "eur"
+      ],
+      "by": "STASIS",
+      "by_url": null,
+      "links": {
+        "app": "https://stasis.net/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/stasis-net.png"
+    },
+    {
+      "id": "fandora",
+      "name": "Fandora",
+      "summary": "Co-investment and tokenisation of content IP.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "ip",
+        "media"
+      ],
+      "by": "Fandora",
+      "by_url": null,
+      "links": {
+        "app": "https://fandora.app/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/fandora-app.png"
+    },
+    {
+      "id": "kinesis",
+      "name": "Kinesis",
+      "summary": "Gold- and silver-backed digital currencies (KAU and KAG).",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "gold",
+        "silver"
+      ],
+      "by": "Kinesis",
+      "by_url": null,
+      "links": {
+        "app": "https://kinesis.money/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "redcurry",
+      "name": "Redcurry",
+      "summary": "Digital currency backed by commercial real estate.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "real-estate"
+      ],
+      "by": "Redcurry",
+      "by_url": null,
+      "links": {
+        "app": "https://redcurry.co/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/redcurry-co.png"
+    },
+    {
+      "id": "scenium",
+      "name": "Scenium",
+      "summary": "Investment platform for stocks, REITs, ETFs and tokenised private assets.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "investing",
+        "private-assets"
+      ],
+      "by": "Scenium",
+      "by_url": null,
+      "links": {
+        "app": "https://www.scenium.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-scenium-io.png"
+    },
+    {
+      "id": "usdc",
+      "name": "USDC",
+      "summary": "Native USD stablecoin on XDC, issued by Circle and movable across chains with CCTP V2.",
+      "category": "rwa",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "stablecoin",
+        "usd"
+      ],
+      "by": "Circle",
+      "by_url": null,
+      "links": {
+        "docs": "https://www.circle.com/blog/now-available-usdc-cctp-v2-on-xdc-network"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-circle-com.svg"
+    },
+    {
+      "id": "0xteam",
+      "name": "0xTeam",
+      "summary": "Web3 audits, penetration testing and monitoring.",
+      "category": "security",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "audit"
+      ],
+      "by": "0xTeam",
+      "by_url": null,
+      "links": {
+        "app": "https://www.0xteam.space/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-0xteam-space.png"
+    },
+    {
+      "id": "certik-skynet-xdc",
+      "name": "CertiK Skynet: XDC",
+      "summary": "Security score, audit results and monitoring for the XDC Network.",
+      "category": "security",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "audit",
+        "monitoring"
+      ],
+      "by": "CertiK",
+      "by_url": null,
+      "links": {
+        "app": "https://skynet.certik.com/projects/xdc-network"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/skynet-certik-com.png"
+    },
+    {
+      "id": "oxorio",
+      "name": "Oxorio",
+      "summary": "Smart contract audits for EVM, Solidity and ZK.",
+      "category": "security",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "audit"
+      ],
+      "by": "Oxorio",
+      "by_url": null,
+      "links": {
+        "app": "https://oxor.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/oxor-io.png"
+    },
+    {
+      "id": "securedapp",
+      "name": "SecureDApp",
+      "summary": "Smart contract audits, dApp development and security tooling.",
+      "category": "security",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "audit"
+      ],
+      "by": "SecureDApp",
+      "by_url": null,
+      "links": {
+        "app": "https://securedapp.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/securedapp-io.png"
+    },
+    {
+      "id": "slowmist",
+      "name": "SlowMist",
+      "summary": "Blockchain security audits and threat monitoring; audited XDPoSChain.",
+      "category": "security",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "audit"
+      ],
+      "by": "SlowMist",
+      "by_url": null,
+      "links": {
+        "app": "https://www.slowmist.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-slowmist-com.png"
+    },
+    {
+      "id": "solidityscan",
+      "name": "SolidityScan",
+      "summary": "Automated scanner for vulnerabilities in Solidity contracts.",
+      "category": "security",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "scanner",
+        "solidity"
+      ],
+      "by": "SolidityScan",
+      "by_url": null,
+      "links": {
+        "app": "https://solidityscan.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/solidityscan-com.png"
+    },
+    {
+      "id": "eteu",
+      "name": "eTEU",
+      "summary": "IG P&I-approved electronic bill of lading recorded on a public blockchain.",
+      "category": "tradefi",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "bill-of-lading",
+        "shipping"
+      ],
+      "by": "eTEU",
+      "by_url": null,
+      "links": {
+        "app": "https://eteu.co.uk/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/eteu-co-uk.png"
+    },
+    {
+      "id": "growlimitless",
+      "name": "GrowLimitLess",
+      "summary": "Connects Southeast Asian SMEs and manufacturers with finance, export opportunities and investors.",
+      "category": "tradefi",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "sme",
+        "trade-finance"
+      ],
+      "by": "GrowLimitLess",
+      "by_url": null,
+      "links": {
+        "app": "https://gll.one/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/gll-one.png"
+    },
+    {
+      "id": "tradefinex",
+      "name": "TradeFinex",
+      "summary": "Peer-to-peer trade finance platform for creating and funding trade instruments on XDC.",
+      "category": "tradefi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "trade-finance",
+        "rwa"
+      ],
+      "by": "TradeFinex",
+      "by_url": null,
+      "links": {
+        "app": "https://www.tradefinex.org/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-tradefinex-org.png"
+    },
+    {
+      "id": "xdc-trade-network",
+      "name": "XDC Trade Network",
+      "summary": "Suite of dApps digitising the trade finance process end to end.",
+      "category": "tradefi",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "trade-finance"
+      ],
+      "by": "XDC Trade Network",
+      "by_url": null,
+      "links": {
+        "app": "https://www.xdctrade.network/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-xdctrade-network.png"
+    },
+    {
+      "id": "yodaplus-asset-tokenization",
+      "name": "Yodaplus asset tokenization",
+      "summary": "Platform for turning physical and financial assets into tokens on XDC.",
+      "category": "tradefi",
+      "type": "service",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "tokenization",
+        "rwa"
+      ],
+      "by": "Yodaplus",
+      "by_url": null,
+      "links": {
+        "app": "https://yodaplus.com/asset-tokenization.html"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/yodaplus-com.png"
+    },
+    {
+      "id": "arculus",
+      "name": "Arculus",
+      "summary": "Card-based cold storage wallet.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Arculus",
+      "by_url": null,
+      "links": {
+        "app": "https://www.getarculus.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-getarculus-com.png"
+    },
+    {
+      "id": "bifrost",
+      "name": "Bifrost",
+      "summary": "Mobile wallet with XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Bifrost",
+      "by_url": null,
+      "links": {
+        "app": "https://apps.apple.com/gb/app/bifrost-wallet/id1577198351"
+      },
+      "claimed": false
+    },
+    {
+      "id": "bitfi",
+      "name": "Bitfi",
+      "summary": "Hardware wallet with XDC support.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Bitfi",
+      "by_url": null,
+      "links": {
+        "app": "https://bitfi.com/order"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/bitfi-com.png"
+    },
+    {
+      "id": "d-cent",
+      "name": "D'CENT",
+      "summary": "Biometric hardware wallet and mobile app with XDC support.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "hardware",
+        "mobile"
+      ],
+      "by": "IoTrust",
+      "by_url": null,
+      "links": {
+        "app": "https://dcentwallet.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/dcentwallet-com.png"
+    },
+    {
+      "id": "doru",
+      "name": "Doru",
+      "summary": "Air-gapped Android wallet.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Doru",
+      "by_url": null,
+      "links": {
+        "app": "https://play.google.com/store/apps/details?id=com.rawgenerate"
+      },
+      "claimed": false
+    },
+    {
+      "id": "ellipal",
+      "name": "Ellipal",
+      "summary": "Air-gapped hardware wallet with XDC support.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Ellipal",
+      "by_url": null,
+      "links": {
+        "app": "https://www.ellipal.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/www-ellipal-com.png"
+    },
+    {
+      "id": "freewallet",
+      "name": "Freewallet",
+      "summary": "Web and mobile wallet with XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Freewallet",
+      "by_url": null,
+      "links": {
+        "app": "https://app.freewallet.org/auth/registration"
+      },
+      "claimed": false
+    },
+    {
+      "id": "guarda",
+      "name": "Guarda",
+      "summary": "Multi-platform wallet (web, mobile, desktop, extension) with XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "mobile",
+        "desktop"
+      ],
+      "by": "Guarda",
+      "by_url": null,
+      "links": {
+        "app": "https://guarda.co/app/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/guarda-co.png"
+    },
+    {
+      "id": "imtoken",
+      "name": "imToken",
+      "summary": "Mobile wallet with an optional imKey hardware device.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "imToken",
+      "by_url": null,
+      "links": {
+        "app": "https://token.im/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/token-im.png"
+    },
+    {
+      "id": "infinity-wallet",
+      "name": "Infinity Wallet",
+      "summary": "Desktop and web wallet with XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Infinity Wallet",
+      "by_url": null,
+      "links": {
+        "app": "https://infinitywallet.io/download/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/infinitywallet-io.png"
+    },
+    {
+      "id": "ledger",
+      "name": "Ledger",
+      "summary": "Hardware wallet with XDC support.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "hardware"
+      ],
+      "by": "Ledger",
+      "by_url": null,
+      "links": {
+        "app": "https://shop.ledger.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/shop-ledger-com.png"
+    },
+    {
+      "id": "mathwallet",
+      "name": "MathWallet",
+      "summary": "Web and mobile wallet with an XDC view.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "MathWallet",
+      "by_url": null,
+      "links": {
+        "app": "https://mathwallet.org/evm/#/xdc/assets"
+      },
+      "claimed": false
+    },
+    {
+      "id": "metamask",
+      "name": "MetaMask",
+      "summary": "Browser and mobile wallet; add XDC as a custom network.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "MetaMask",
+      "by_url": null,
+      "links": {
+        "app": "https://metamask.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/metamask-io.png"
+    },
+    {
+      "id": "mixin",
+      "name": "Mixin",
+      "summary": "Messenger with a built-in wallet that supports XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Mixin",
+      "by_url": null,
+      "links": {
+        "app": "https://apps.apple.com/us/app/id1322324266"
+      },
+      "claimed": false
+    },
+    {
+      "id": "mycrypto",
+      "name": "MyCrypto",
+      "summary": "Web and desktop wallet interface.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "MyCrypto",
+      "by_url": null,
+      "links": {
+        "app": "https://app.mycrypto.com/add-account"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/app-mycrypto-com.png"
+    },
+    {
+      "id": "myetherwallet",
+      "name": "MyEtherWallet",
+      "summary": "Web and mobile wallet interface.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "MyEtherWallet",
+      "by_url": null,
+      "links": {
+        "app": "https://www.myetherwallet.com/wallet/access"
+      },
+      "claimed": false
+    },
+    {
+      "id": "nabox",
+      "name": "Nabox",
+      "summary": "Mobile and browser wallet with XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "Nabox",
+      "by_url": null,
+      "links": {
+        "app": "https://chrome.google.com/webstore/detail/nabox-wallet/nknhiehlklippafakaeklbeglecifhad"
+      },
+      "claimed": false
+    },
+    {
+      "id": "onto",
+      "name": "ONTO",
+      "summary": "Mobile and browser wallet with XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "ONTO",
+      "by_url": null,
+      "links": {
+        "app": "https://chrome.google.com/webstore/detail/onto-wallet/ifckdpamphokdglkkdomedpdegcjhjdp"
+      },
+      "claimed": false
+    },
+    {
+      "id": "rabby",
+      "name": "Rabby",
+      "summary": "Browser and mobile EVM wallet that supports XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "browser",
+        "mobile"
+      ],
+      "by": "DeBank",
+      "by_url": null,
+      "links": {
+        "app": "https://chromewebstore.google.com/detail/rabby-wallet/acmacodkjbdgmoleebolmdjonilkdbch"
+      },
+      "claimed": false
+    },
+    {
+      "id": "tangem",
+      "name": "Tangem",
+      "summary": "Card-style hardware wallet with XDC support.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "hardware"
+      ],
+      "by": "Tangem",
+      "by_url": null,
+      "links": {
+        "app": "https://tangem.com/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/tangem-com.png"
+    },
+    {
+      "id": "trezor",
+      "name": "Trezor",
+      "summary": "Hardware wallet with XDC support.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "hardware"
+      ],
+      "by": "Trezor",
+      "by_url": null,
+      "links": {
+        "app": "https://trezor.io/"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/trezor-io.png"
+    },
+    {
+      "id": "xdc-web-wallet",
+      "name": "XDC web wallet",
+      "summary": "Browser-based wallet for holding and sending XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://wallet.xdc.network/"
+      },
+      "claimed": false
+    },
+    {
+      "id": "xdcpay",
+      "name": "XDCPay",
+      "summary": "Browser extension wallet for XDC and XRC-20 tokens.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "official",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "wallet",
+        "extension"
+      ],
+      "by": "XinFinOrg",
+      "by_url": "https://github.com/XinFinOrg",
+      "links": {
+        "app": "https://chromewebstore.google.com/detail/xdcpay/dgimfmajflciajjbhbkibdbfmpncbnmj",
+        "docs": "https://docs.xdc.org/xdc-tools/xdc-pay"
+      },
+      "claimed": false
+    },
+    {
+      "id": "zerion",
+      "name": "Zerion",
+      "summary": "Web, mobile and browser wallet that supports XDC.",
+      "category": "wallets",
+      "type": "web-app",
+      "kind": "third-party",
+      "status": "active",
+      "license": "",
+      "tags": [
+        "browser",
+        "mobile"
+      ],
+      "by": "Zerion",
+      "by_url": null,
+      "links": {
+        "app": "https://app.zerion.io/connect-wallet"
+      },
+      "claimed": false,
+      "icon_url": "https://xdcoutpost.xyz/XDC_Atlas/icons/app-zerion-io.png"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/history-index.v1.json",
+  "dataset": "validators/apothem",
+  "format": "NDJSON: one JSON object per line, oldest first. One file per UTC day.",
+  "files": [
+    {
+      "date": "2026-11-14",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/history/2026-11-14.ndjson",
+      "lines": 1
+    }
+  ]
+}
