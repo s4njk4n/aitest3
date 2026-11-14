@@ -4,6 +4,48 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-01-01T00:00:00Z</updated>
+  <updated>2026-11-14T15:49:31Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[critical] xdc830d…34a1: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:08abc612c9d26597</id>
+    <updated>2026-11-14T15:49:31Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[critical] xdc68a2…7f5a: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:8d9175882a8ee79a</id>
+    <updated>2026-11-14T15:49:31Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[critical] xdc1f91…eb20: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:f9896ce6055c1209</id>
+    <updated>2026-11-14T15:49:31Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[critical] xdca34e…d013: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:e4d1fdfd7c4bebd4</id>
+    <updated>2026-11-14T15:49:31Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc8d95…31a6: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:ca8601dae1d6cc62</id>
+    <updated>2026-11-14T15:49:31Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc59eb…64e9: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:27cb80c14c2dba06</id>
+    <updated>2026-11-14T15:49:31Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
 </feed>

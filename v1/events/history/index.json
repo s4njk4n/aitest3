@@ -2,5 +2,11 @@
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/history-index.v1.json",
   "dataset": "events",
   "format": "NDJSON: one JSON object per line, oldest first. One file per UTC day.",
-  "files": []
+  "files": [
+    {
+      "date": "2026-11-14",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/history/2026-11-14.ndjson",
+      "lines": 6
+    }
+  ]
 }
