@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards-daily.v1.json",
+  "title": "XDC epoch rewards per owner per UTC day",
+  "description": "Totals of rewards credited to each owner address on one UTC day, all of the owner's masternodes combined. For accounting and tax records.",
+  "type": "object",
+  "required": [
+    "date",
+    "owners"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "date": {
+      "type": "string",
+      "description": "UTC day.",
+      "format": "date"
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "Last updated. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "note": {
+      "type": "string",
+      "description": "How to read this file."
+    },
+    "epochs": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "description": "Epoch number."
+      },
+      "description": "Epochs paid on this day that are included."
+    },
+    "owners": {
+      "type": "object",
+      "description": "Keyed by owner address (lowercase 0x).",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "reward_wei": {
+            "type": "string",
+            "description": "Total for the day (unverified epochs left out). Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+            "pattern": "^[0-9]+$"
+          },
+          "reward_xdc": {
+            "type": "number",
+            "description": "Same in XDC, rounded."
+          },
+          "epochs_paid": {
+            "type": "integer",
+            "description": "Epochs this owner was paid on this day (unverified epochs left out)."
+          },
+          "node_count": {
+            "type": "integer",
+            "description": "The most eligible masternodes the owner had in any epoch counted that day."
+          },
+          "unverified": {
+            "type": "array",
+            "description": "Epochs on this day whose figure for this owner was marked unverified (see the epoch-rewards schema). They are NOT included in reward_wei or epochs_paid: check them against your own records.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "epoch": {
+                  "type": "integer",
+                  "description": "Epoch the figure was paid in."
+                },
+                "measured_wei": {
+                  "type": "string",
+                  "description": "The raw measured figure in wei; part of it may not be reward.",
+                  "pattern": "^-?[0-9]+$"
+                },
+                "measured_xdc": {
+                  "type": "number",
+                  "description": "Same in XDC, rounded."
+                }
+              }
+            }
+          },
+          "value_usd": {
+            "type": "number",
+            "description": "Sum of each epoch's value at the price recorded then."
+          },
+          "epochs_valued": {
+            "type": "integer",
+            "description": "How many of this owner's epochs value_usd covers."
+          }
+        }
+      }
+    }
+  }
+}

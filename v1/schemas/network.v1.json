@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/network.v1.json",
+  "title": "XDC network snapshot",
+  "description": "Chain head, block time, gas price and epoch progress for Mainnet and Apothem, refreshed every 5 minutes. Read with standard eth_* calls only; the epoch and round come from the block header. History lines (NDJSON) use this shape without the metadata fields.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "When this data was produced. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often this document is regenerated."
+    },
+    "stale_after_seconds": {
+      "type": "integer",
+      "description": "If generated_at is older than this, treat the data as stale (the feed may have stopped)."
+    },
+    "source": {
+      "type": "string",
+      "description": "Who publishes this feed."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Human-readable documentation.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX licence identifier for the data."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional remark about this copy of the data."
+    },
+    "live_url": {
+      "type": "string",
+      "description": "For hourly copies: the live URL this was copied from.",
+      "format": "uri"
+    },
+    "networks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/snapshot"
+      }
+    }
+  },
+  "required": [
+    "generated_at",
+    "networks"
+  ],
+  "$defs": {
+    "snapshot": {
+      "type": "object",
+      "required": [
+        "network",
+        "chain_id",
+        "status"
+      ],
+      "properties": {
+        "network": {
+          "type": "string",
+          "description": "Network key.",
+          "enum": [
+            "mainnet",
+            "apothem"
+          ]
+        },
+        "chain_id": {
+          "type": "integer",
+          "description": "EVM chain ID: 50 for Mainnet, 51 for the Apothem testnet.",
+          "enum": [
+            50,
+            51
+          ]
+        },
+        "status": {
+          "type": "string",
+          "description": "ok: everything read. partial: some fields could not be read (see errors). down: no data.",
+          "enum": [
+            "ok",
+            "partial",
+            "down"
+          ]
+        },
+        "error": {
+          "type": "string",
+          "description": "Why the snapshot failed, when status is down."
+        },
+        "rpc_used": {
+          "type": "string",
+          "description": "RPC endpoint the block data came from.",
+          "format": "uri"
+        },
+        "block_number": {
+          "type": "integer",
+          "description": "Latest block number."
+        },
+        "block_hash": {
+          "type": "string",
+          "description": "Latest block hash."
+        },
+        "block_time": {
+          "type": "string",
+          "description": "Timestamp of the latest block. ISO 8601, UTC.",
+          "format": "date-time"
+        },
+        "avg_block_time_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Average seconds per block over the last 100 blocks."
+        },
+        "gas_price_wei": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Current gas price. Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+          "pattern": "^[0-9]+$"
+        },
+        "gas_price_gwei": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Current gas price in gwei (for display)."
+        },
+        "epoch": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "XDPoS 2.0 epoch progress, from the round in the latest block header. Epochs are 900 rounds; rounds can be skipped, so timings are estimates.",
+          "properties": {
+            "number": {
+              "type": "integer",
+              "description": "Current epoch number."
+            },
+            "round": {
+              "type": "integer",
+              "description": "Current consensus round."
+            },
+            "rounds_into_epoch": {
+              "type": "integer",
+              "description": "Rounds completed in the current epoch (0-899)."
+            },
+            "rounds_per_epoch": {
+              "type": "integer",
+              "description": "Rounds per epoch (900)."
+            },
+            "est_seconds_to_next_epoch": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "description": "Estimated seconds until the next epoch starts."
+            }
+          }
+        },
+        "errors": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Error text."
+          },
+          "description": "Problems reading individual fields."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/catalog.v1.json",
+  "title": "XDC Open Data catalog",
+  "description": "Entry point listing every dataset.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "This file's JSON Schema.",
+      "format": "uri"
+    },
+    "name": {
+      "type": "string",
+      "description": "Catalog name."
+    },
+    "description": {
+      "type": "string",
+      "description": "What this is."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Docs.",
+      "format": "uri"
+    },
+    "llms_txt": {
+      "type": "string",
+      "description": "llms.txt.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "Data licence."
+    },
+    "conventions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "description": "Convention."
+      }
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "url",
+          "schema"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Dataset id."
+          },
+          "title": {
+            "type": "string",
+            "description": "Title."
+          },
+          "description": {
+            "type": "string",
+            "description": "What it contains."
+          },
+          "url": {
+            "type": "string",
+            "description": "Latest data.",
+            "format": "uri"
+          },
+          "schema": {
+            "type": "string",
+            "description": "JSON Schema.",
+            "format": "uri"
+          },
+          "update_interval_seconds": {
+            "type": "integer",
+            "description": "Refresh interval."
+          },
+          "format": {
+            "type": "string",
+            "description": "Media type."
+          },
+          "history": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string",
+                "description": "History index.",
+                "format": "uri"
+              },
+              "line_schema": {
+                "type": "string",
+                "description": "Schema for each line.",
+                "format": "uri"
+              },
+              "format": {
+                "type": "string",
+                "description": "Media type."
+              },
+              "one_file_per": {
+                "type": "string",
+                "description": "Period per file."
+              }
+            }
+          },
+          "fallback_url": {
+            "type": "string",
+            "description": "Hourly copy to use if the live URL is unreachable.",
+            "format": "uri"
+          },
+          "daily_totals": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string",
+                "description": "Index of daily files.",
+                "format": "uri"
+              },
+              "schema": {
+                "type": "string",
+                "description": "Schema.",
+                "format": "uri"
+              },
+              "description": {
+                "type": "string",
+                "description": "What it is."
+              }
+            }
+          },
+          "monthly_csv": {
+            "type": "object",
+            "properties": {
+              "index": {
+                "type": "string",
+                "description": "Index of monthly CSV files.",
+                "format": "uri"
+              },
+              "description": {
+                "type": "string",
+                "description": "Columns."
+              }
+            }
+          },
+          "atom": {
+            "type": "string",
+            "description": "Atom feed of the same data.",
+            "format": "uri"
+          },
+          "owner_feed": {
+            "type": "object",
+            "properties": {
+              "url_template": {
+                "type": "string",
+                "description": "URL with {owner} to replace by a lowercase 0x owner address."
+              },
+              "description": {
+                "type": "string",
+                "description": "What it is."
+              }
+            }
+          }
+        }
+      }
+    },
+    "changes": {
+      "type": "string",
+      "description": "Changelog for machine users.",
+      "format": "uri"
+    },
+    "build_status": {
+      "type": "string",
+      "description": "Status of the hourly build.",
+      "format": "uri"
+    },
+    "publisher": {
+      "type": "object"
+    },
+    "repository": {
+      "type": "string",
+      "description": "Source code.",
+      "format": "uri"
+    },
+    "license_url": {
+      "type": "string",
+      "description": "Licence text.",
+      "format": "uri"
+    },
+    "fair_use": {
+      "type": "string",
+      "description": "Polling guidance."
+    },
+    "disclaimer": {
+      "type": "string",
+      "description": "Not advice; figures may contain errors."
+    },
+    "license_note": {
+      "type": "string",
+      "description": "What the licence covers."
+    },
+    "alerts": {
+      "type": "object",
+      "description": "Only present when push alerts are switched on.",
+      "properties": {
+        "ntfy_server": {
+          "type": "string",
+          "description": "ntfy server.",
+          "format": "uri"
+        },
+        "network_topic": {
+          "type": "string",
+          "description": "Topic for network-wide events."
+        },
+        "delivery": {
+          "type": "string",
+          "description": "How often messages are sent."
+        }
+      }
+    }
+  }
+}

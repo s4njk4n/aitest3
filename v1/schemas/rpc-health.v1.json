@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/rpc-health.v1.json",
+  "title": "XDC RPC endpoint health",
+  "description": "Status of public XDC JSON-RPC endpoints, checked server-side every 5 minutes with eth_blockNumber. History lines (NDJSON) use this same shape without the metadata fields.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "When this data was produced. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often this document is regenerated."
+    },
+    "stale_after_seconds": {
+      "type": "integer",
+      "description": "If generated_at is older than this, treat the data as stale (the feed may have stopped)."
+    },
+    "source": {
+      "type": "string",
+      "description": "Who publishes this feed."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Human-readable documentation.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX licence identifier for the data."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional remark about this copy of the data."
+    },
+    "live_url": {
+      "type": "string",
+      "description": "For hourly copies: the live URL this was copied from.",
+      "format": "uri"
+    },
+    "checked_from": {
+      "type": "string",
+      "description": "Where the checks run from."
+    },
+    "check_method": {
+      "type": "string",
+      "description": "The request used for each check."
+    },
+    "endpoint_list_source": {
+      "type": "string",
+      "description": "Where the list of endpoints came from (normally XDC Atlas)."
+    },
+    "thresholds": {
+      "type": "object",
+      "description": "Rules used to decide each status.",
+      "properties": {
+        "timeout_ms": {
+          "type": "integer",
+          "description": "A check with no answer within this time counts as down."
+        },
+        "degraded_lag_blocks": {
+          "type": "integer",
+          "description": "More blocks behind the network than this is degraded."
+        },
+        "degraded_latency_ms": {
+          "type": "integer",
+          "description": "Slower than this is degraded."
+        }
+      }
+    },
+    "networks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/network"
+      }
+    }
+  },
+  "required": [
+    "generated_at",
+    "networks"
+  ],
+  "$defs": {
+    "network": {
+      "type": "object",
+      "required": [
+        "network",
+        "chain_id",
+        "endpoints",
+        "recommended"
+      ],
+      "properties": {
+        "network": {
+          "type": "string",
+          "description": "Network key.",
+          "enum": [
+            "mainnet",
+            "apothem"
+          ]
+        },
+        "chain_id": {
+          "type": "integer",
+          "description": "EVM chain ID: 50 for Mainnet, 51 for the Apothem testnet.",
+          "enum": [
+            50,
+            51
+          ]
+        },
+        "best_block": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Network head: the highest block number at least two endpoints agree on."
+        },
+        "endpoints_checked": {
+          "type": "integer",
+          "description": "HTTPS endpoints checked."
+        },
+        "endpoints_ok": {
+          "type": "integer",
+          "description": "Endpoints with status ok."
+        },
+        "endpoints_degraded": {
+          "type": "integer",
+          "description": "Endpoints with status degraded."
+        },
+        "endpoints_down": {
+          "type": "integer",
+          "description": "Endpoints with status down."
+        },
+        "recommended": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Endpoint URL.",
+            "format": "uri"
+          },
+          "description": "Up to 3 healthy endpoints, best first (least lag, then best 24 h uptime, then lowest latency). Use the first one if you just need a working RPC."
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/endpoint"
+          }
+        },
+        "not_checked": {
+          "type": "array",
+          "description": "Listed endpoints not checked in this run: WebSocket (and any other non-HTTPS) endpoints, and any left for a later run when the list is longer than one run can check.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string",
+                "description": "Endpoint URL."
+              },
+              "provider": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Who runs it."
+              },
+              "reason": {
+                "type": "string",
+                "description": "Why it is not checked."
+              }
+            }
+          }
+        }
+      }
+    },
+    "endpoint": {
+      "type": "object",
+      "required": [
+        "url",
+        "status"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "description": "Endpoint URL.",
+          "format": "uri"
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Who runs the endpoint."
+        },
+        "privacy": {
+          "type": "string",
+          "description": "What the provider says about request logging, as listed in XDC Atlas: none, limited, yes or unspecified."
+        },
+        "status": {
+          "type": "string",
+          "description": "ok: answered, in sync and fast. degraded: answered but lagging, slow or inconsistent. down: no valid answer.",
+          "enum": [
+            "ok",
+            "degraded",
+            "down"
+          ]
+        },
+        "block_number": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Block number this endpoint reported."
+        },
+        "lag_blocks": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Blocks behind best_block (0 = in sync).",
+          "minimum": 0
+        },
+        "latency_ms": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Round-trip time of this check in milliseconds."
+        },
+        "error": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Plain-language reason when status is not ok."
+        },
+        "uptime_24h_pct": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Share of checks in the last 24 hours that got a valid block number, in percent.",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "avg_latency_24h_ms": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Average latency of answered checks in the last 24 hours."
+        },
+        "checks_24h": {
+          "type": "integer",
+          "description": "Number of checks in the last 24 hours."
+        },
+        "recommended_by_atlas": {
+          "type": "boolean",
+          "description": "XDC Atlas pins this endpoint as a recommended option."
+        }
+      }
+    }
+  }
+}

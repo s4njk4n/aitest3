@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>XDC Open Data: free JSON for AI agents and scripts | XDC Outpost</title>
+  <meta name="license" content="MIT">
+  <meta name="description" content="Free, open JSON about the XDC Network: live RPC endpoint health, network and epoch snapshot, masternode epoch rewards by owner with daily totals, validators and stake, and ecosystem projects. No API key, CORS open, with JSON Schemas and llms.txt.">
+  <link rel="canonical" href="https://xdcoutpost.xyz/XDC_Open_Data/">
+  <link rel="alternate" type="application/json" href="https://xdcoutpost.xyz/XDC_Open_Data/v1/index.json" title="XDC Open Data catalog">
+  <link rel="alternate" type="text/plain" href="https://xdcoutpost.xyz/XDC_Open_Data/llms.txt" title="llms.txt">
+  <link rel="alternate" type="application/atom+xml" href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" title="XDC network events">
+  <meta name="theme-color" content="#F7F9FC">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xdcoutpost.xyz/XDC_Open_Data/">
+  <meta property="og:title" content="XDC Open Data">
+  <meta property="og:description" content="Free JSON about the XDC Network for AI agents and scripts. No API key.">
+  <meta property="og:image" content="https://xdcoutpost.xyz/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@s4njk4n">
+  <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+    @font-face {
+      font-family: "Instrument Sans";
+      src: url("/assets/fonts/instrument-sans.woff2") format("woff2-variations");
+      font-weight: 400 700; font-stretch: 75% 100%; font-display: swap;
+    }
+    :root {
+      --night: #F7F9FC;  --deep: #EEF2F7;  --dusk: #FFFFFF;  --raised: #E7EEF6;
+      --line: #DFE5ED;   --line-2: #C9D3DF;
+      --ink: #0F1E33;    --mist: #475569;  --faint: #64748B; --off: #94A3B8;
+      --signal: #1D5C96; --flare: #8C6A24; --danger: #B4483A; --ok: #1F8A62; --amber: #8F6410;
+      --display: "Instrument Sans", "Helvetica Neue", "Segoe UI", sans-serif;
+      --body: "Instrument Sans", "Helvetica Neue", "Segoe UI", sans-serif;
+      --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+      --wrap: 76rem; --gutter: clamp(1.25rem, 4vw, 2.5rem);
+      --shadow: 0 1px 3px rgb(15 30 51 / 0.05);
+      color-scheme: light;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body { margin: 0; background: var(--night); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: var(--signal); text-underline-offset: 0.2em; }
+    a:hover { color: var(--ink); }
+    :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; border-radius: 4px; }
+    [hidden] { display: none !important; }
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+    .skip { position: absolute; left: 1rem; top: -3rem; background: var(--signal); color: #fff; padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; z-index: 2000; }
+    .skip:focus { top: 1rem; }
+    .eyebrow { display: flex; align-items: center; gap: 0.7rem; margin: 0 0 1rem; font-family: var(--mono); font-size: 0.74rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--signal); }
+    .eyebrow::before { content: ""; width: 1.6rem; height: 1px; background: currentColor; opacity: 0.7; }
+    .label { font-family: var(--mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
+    code, pre { font-family: var(--mono); font-size: 0.84em; }
+    p code, li code, td code { color: var(--ink); background: var(--deep); padding: 0.05rem 0.35rem; border-radius: 4px; word-break: break-word; }
+
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: flex; align-items: center; gap: 0.6rem; color: var(--ink); text-decoration: none; font-family: var(--display); font-weight: 600; letter-spacing: -0.01em; white-space: nowrap; }
+    .brand svg { flex: none; }
+    .brand .sub { color: var(--mist); font-weight: 500; }
+    .site-nav { display: flex; align-items: center; }
+    .site-nav a { color: var(--mist); text-decoration: none; font-weight: 500; white-space: nowrap; }
+    @media (max-width: 640px) { .brand .sub { display: none; } }
+    @media (max-width: 480px) { .brand .txt { display: none; } }
+
+    .hero { padding: clamp(2.5rem, 6vw, 4.25rem) 0 clamp(2rem, 4vw, 3rem); }
+    .hero h1 { font-family: var(--display); font-weight: 600; margin: 0 0 1.25rem; text-wrap: balance; }
+    .hero h1 .accent { color: var(--signal); }
+    .hero .lede { font-size: clamp(1.05rem, 1.8vw, 1.2rem); margin: 0 0 1.5rem; max-width: 40em; color: var(--mist); }
+    .pills { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1.5rem; padding: 0; list-style: none; }
+    .pills li { font-size: 0.85rem; font-weight: 500; padding: 0.25rem 0.7rem; border-radius: 999px; border: 1px solid var(--line-2); background: #fff; }
+    .statusrow { display: flex; flex-wrap: wrap; gap: 0.6rem 1.75rem; }
+    .status { display: inline-flex; align-items: center; gap: 0.55rem; margin: 0; font-size: 0.9rem; color: var(--mist); }
+    .status .dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--off); flex: none; }
+    .status[data-state="live"] { color: var(--ok); } .status[data-state="live"] .dot { background: var(--ok); }
+    .status[data-state="stale"] { color: var(--amber); } .status[data-state="stale"] .dot { background: var(--amber); }
+    .status[data-state="down"] { color: var(--danger); } .status[data-state="down"] .dot { background: var(--danger); }
+
+    section.block { padding: clamp(2.25rem, 5vw, 3.5rem) 0; border-top: 1px solid var(--line); }
+    section.block h2 { font-weight: 600; font-size: clamp(1.35rem, 2.6vw, 1.7rem); letter-spacing: -0.02em; line-height: 1.15; margin: 0 0 0.6rem; }
+    section.block .intro { color: var(--mist); margin: 0 0 1.5rem; max-width: 44em; }
+    .grid { display: grid; gap: 1rem; }
+    @media (min-width: 860px) { .grid.two { grid-template-columns: 1fr 1fr; } }
+    .ds { background: var(--dusk); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.35rem; box-shadow: var(--shadow); }
+    .ds h3 { margin: 0 0 0.35rem; font-size: 1.1rem; font-weight: 600; }
+    .ds p { margin: 0 0 0.85rem; color: var(--mist); font-size: 0.95rem; }
+    .ds .meta { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; font-size: 0.85rem; margin: 0 0 0.75rem; color: var(--faint); }
+    .ds .links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .btn-ghost { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.8rem; border-radius: 6px; border: 1px solid var(--line-2); background: #fff; color: var(--ink); font-weight: 600; font-size: 0.85rem; text-decoration: none; }
+    .btn-ghost:hover { border-color: var(--ink); color: var(--ink); }
+    .feedfind { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0; }
+    .feedfind input { flex: 1 1 22rem; min-width: 0; font-family: var(--mono); font-size: 0.85rem; padding: 0.45rem 0.6rem; border: 1px solid var(--line-2); border-radius: 6px; background: #fff; color: var(--ink); }
+    .feedfind button { cursor: pointer; }
+    #feed-out { margin: 0.3rem 0 0; font-size: 0.92rem; color: var(--mist); }
+    .urlline { display: block; font-family: var(--mono); font-size: 0.8rem; color: var(--ink); background: var(--deep); padding: 0.45rem 0.6rem; border-radius: 6px; margin: 0 0 0.85rem; overflow-x: auto; white-space: nowrap; }
+
+    .tabs { display: inline-flex; padding: 0.2rem; gap: 0.15rem; border-radius: 8px; border: 1px solid var(--line-2); background: #fff; margin: 0 0 0.75rem; }
+    .tabs button { border: 0; background: none; cursor: pointer; padding: 0.38rem 0.85rem; border-radius: 6px; color: var(--mist); font: inherit; font-size: 0.88rem; font-weight: 500; }
+    .tabs button[aria-selected="true"] { background: var(--ink); color: #fff; }
+    pre { margin: 0; background: #0F1E33; color: #E7EEF6; border-radius: 10px; padding: 1rem 1.15rem; overflow-x: auto; line-height: 1.55; }
+    .notes { margin: 0; padding-left: 1.1rem; color: var(--mist); }
+    .notes li { margin: 0 0 0.6rem; }
+    .notes li::marker { color: var(--signal); }
+    .notes strong { color: var(--ink); font-weight: 600; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.92rem; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+    th, td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-weight: 600; background: var(--deep); }
+    .tablewrap { overflow-x: auto; }
+
+    .site-footer { border-top: 1px solid var(--line); padding: 2rem 0 calc(2rem + env(safe-area-inset-bottom)); color: var(--mist); font-size: 0.88rem; }
+    .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem 2rem; }
+    .site-footer p { margin: 0; }
+  </style>
+  <link rel="stylesheet" href="/assets/outpost.css">
+  <script src="/assets/outpost.js" defer></script>
+  <script src="/assets/analytics.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DataCatalog",
+    "name": "XDC Open Data",
+    "url": "https://xdcoutpost.xyz/XDC_Open_Data/",
+    "description": "Free, open JSON about the XDC Network for AI agents and scripts: RPC endpoint health, network snapshot, validators, masternode epoch rewards and yield, events, client versions and ecosystem projects. No API key.",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "creator": { "@type": "Person", "name": "s4njk4n", "url": "https://xdcoutpost.xyz/", "sameAs": ["https://github.com/s4njk4n", "https://x.com/s4njk4n"] },
+    "keywords": ["XDC Network", "XDC", "XinFin", "RPC", "masternode", "validator", "staking", "epoch rewards", "blockchain data", "open data", "AI agents"],
+    "dataset": [
+      { "@type": "Dataset", "name": "XDC RPC endpoint health", "description": "Status, block lag, latency and 24-hour uptime of public XDC RPC endpoints, checked every 5 minutes.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true, "temporalCoverage": "2026-11/..",
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/rpc-health/hourly.json" }] },
+      { "@type": "Dataset", "name": "XDC network snapshot", "description": "Latest block, block time, gas price and epoch progress for XDC Mainnet and Apothem.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true, "temporalCoverage": "2026-11/..",
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/network/hourly.json" }] },
+      { "@type": "Dataset", "name": "XDC validators and stake", "description": "Every XDC masternode candidate with owner address, stake and status, signing activity and 30-day history, plus owner concentration.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true, "temporalCoverage": "2026-11/..",
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/latest.json" }] },
+      { "@type": "Dataset", "name": "XDC masternode realised yield", "description": "What XDC masternodes actually earned over 1, 7 and 30 days: typical node XDC per day and APR, and per-owner rewards and APR, from measured rewards.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true, "temporalCoverage": "2026-11/..",
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/yield/latest.json" }] },
+      { "@type": "Dataset", "name": "XDC network events", "description": "Masternode status changes, slashing, nodes that stop signing, unpaid owners and RPC outages, each reported once.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true,
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/latest.json" }, { "@type": "DataDownload", "encodingFormat": "application/atom+xml", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" }] },
+      { "@type": "Dataset", "name": "XDC node client versions and upcoming upgrades", "description": "Client versions in use on XDC Mainnet and Apothem, share on the latest release, and scheduled network upgrades.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true,
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/clients/latest.json" }] },
+      { "@type": "Dataset", "name": "XDC masternode epoch rewards", "description": "Rewards credited to each node owner at every XDC Mainnet epoch switch, with daily per-owner totals for accounting.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true, "temporalCoverage": "2026-11/..",
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/latest.json" }] },
+      { "@type": "Dataset", "name": "XDC ecosystem projects", "description": "Tools, apps and services built on XDC, curated in XDC Atlas.", "license": "https://creativecommons.org/licenses/by/4.0/", "isAccessibleForFree": true,
+        "distribution": [{ "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://xdcoutpost.xyz/XDC_Open_Data/v1/ecosystem/projects.json" }] }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#datasets">Skip to the datasets</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-beacon" viewBox="0 0 32 32">
+      <path d="M11 29 L16 11 L21 29 M12.6 23 H19.4 M13.8 18 H18.2" fill="none" stroke="#0F1E33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="16" cy="7.5" r="3" fill="#B08433"/>
+      <path d="M9.5 4.5 A9 9 0 0 0 9.5 10.5 M22.5 4.5 A9 9 0 0 1 22.5 10.5" fill="none" stroke="#B08433" stroke-width="1.75" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="wrap">
+      <a class="brand" href="https://xdcoutpost.xyz/">
+        <svg aria-hidden="true"><use href="#i-beacon"/></svg>
+        <span class="txt">XDC Outpost</span> <span class="sub">/ Open Data</span>
+      </a>
+      <nav class="site-nav" aria-label="XDC Outpost">
+        <a href="/XDC_Open_Data/" aria-current="page"><span class="full">Open data</span><span class="short">Data</span></a>
+        <a href="/XDC_Network_Stats/"><span class="full">Network stats</span><span class="short">Stats</span></a>
+        <a href="/#tools">Tools</a>
+        <a class="wide" href="/XDC_Atlas/">Atlas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <div class="wrap">
+        <p class="eyebrow">Agents &amp; machines · open data</p>
+        <h1 id="title">XDC data, <span class="accent">ready for machines</span></h1>
+        <p class="lede">Free JSON about the XDC Network that AI agents, scripts, dashboards and validator operators can read directly: which RPC endpoints are healthy right now, the latest block and epoch, every validator with its owner and stake, rewards by owner for every epoch and day, and the projects building on XDC.</p>
+        <ul class="pills" aria-label="Features">
+          <li>No API key</li><li>CORS open</li><li>JSON Schema for every file</li><li>llms.txt</li><li>Daily history</li><li>CC BY 4.0</li>
+        </ul>
+        <div class="statusrow">
+          <p class="status" id="live-status" data-state="idle" role="status"><span class="dot" aria-hidden="true"></span><span>Live feed: checking…</span></p>
+          <p class="status" id="build-status" data-state="idle" role="status"><span class="dot" aria-hidden="true"></span><span>Hourly data: checking…</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="datasets" aria-labelledby="ds-title">
+      <div class="wrap">
+        <h2 id="ds-title">Datasets</h2>
+        <p class="intro">Everything below is also listed, machine-readably, in the catalog at <a href="v1/index.json"><code>v1/index.json</code></a>. Agents should start there or at <a href="llms.txt"><code>llms.txt</code></a>.</p>
+        <div class="grid two" id="ds-grid">
+          <noscript><p>Open the <a href="v1/index.json">catalog</a> for the list of datasets and their URLs.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="quick-start" aria-labelledby="qs-title">
+      <div class="wrap">
+        <h2 id="qs-title">Quick start</h2>
+        <p class="intro">Find a healthy XDC Mainnet RPC endpoint right now. Add <code>?pretty</code> to any live URL to read it in a browser.</p>
+        <div class="tabs" role="tablist" aria-label="Language">
+          <button type="button" role="tab" aria-selected="true" data-tab="curl">curl</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="py">Python</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="js">JavaScript</button>
+        </div>
+        <pre data-code="curl"><code>curl -s <span class="u-rpc">RPC_HEALTH_URL</span> \
+  | jq -r '.networks[] | select(.network=="mainnet") | .recommended[0]'</code></pre>
+        <pre data-code="py" hidden><code>import json, urllib.request
+
+url = "<span class="u-rpc">RPC_HEALTH_URL</span>"
+data = json.load(urllib.request.urlopen(url))
+mainnet = next(n for n in data["networks"] if n["network"] == "mainnet")
+print("Use:", mainnet["recommended"][0])
+for e in mainnet["endpoints"]:
+    print(f'{e["status"]:9} {e["uptime_24h_pct"]}%  {e["url"]}')</code></pre>
+        <pre data-code="js" hidden><code>const res = await fetch("<span class="u-rpc">RPC_HEALTH_URL</span>");
+const data = await res.json();
+const mainnet = data.networks.find(n =&gt; n.network === "mainnet");
+console.log("Use:", mainnet.recommended[0]);
+
+// Is the data fresh?
+const age = (Date.now() - Date.parse(data.generated_at)) / 1000;
+if (age &gt; data.stale_after_seconds) console.warn("Feed looks stale");</code></pre>
+      </div>
+    </section>
+
+    <section class="block" id="conventions" aria-labelledby="cv-title">
+      <div class="wrap grid two">
+        <div>
+          <h2 id="cv-title">Conventions</h2>
+          <ul class="notes">
+            <li><strong>Freshness.</strong> Every file has <code>generated_at</code>, <code>update_interval_seconds</code> and <code>stale_after_seconds</code>. If the data is older than that, don't trust it.</li>
+            <li><strong>Amounts.</strong> Token amounts are exact integer wei as strings in <code>*_wei</code> fields (1 XDC = 10<sup>18</sup> wei). The <code>*_xdc</code> numbers are rounded, for display only.</li>
+            <li><strong>Addresses.</strong> Lowercase <code>0x…</code> hex. Swap <code>0x</code> for <code>xdc</code> to get the XDC-style form.</li>
+            <li><strong>Times.</strong> ISO 8601 in UTC, ending in <code>Z</code>.</li>
+            <li><strong>Versions.</strong> Paths start with <code>/v1/</code>. Within v1, fields are only ever added; anything breaking gets <code>/v2/</code>. Changes are listed in <a href="v1/changes.json"><code>v1/changes.json</code></a>.</li>
+            <li><strong>History.</strong> One NDJSON file per UTC day (one JSON object per line), listed in each dataset's <code>history/index.json</code>.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Good to know</h2>
+          <ul class="notes">
+            <li><strong>Rewards are measured, not reported.</strong> XDC adds epoch rewards straight to balances in the first block of each epoch (90&nbsp;% to the node's owner, 10&nbsp;% to the foundation). Each owner's reward is their balance change across that block, less their own transactions, any block fees and any XDC moved to or from them by contracts (such as a stake withdrawal). A figure that can't be fully explained is marked <code>unverified</code> and kept out of every total. Rewards paid at the start of epoch N are for epoch N−2.</li>
+            <li><strong>Owners, not nodes.</strong> An owner with several masternodes gets one combined figure. Each epoch's <em>typical node reward</em> (from owners running a single node) shows what each owner should have received, so <code>vs_typical</code> and <code>shortfall_nodes</code> reveal under-performing setups.</li>
+            <li><strong>Is a node online?</strong> Validators carry the last block each node signed, and <code>not_signing_recently</code> flags a masternode that hasn't signed for about an hour.</li>
+            <li><strong>For accounts.</strong> Daily owner totals in XDC as JSON and CSV, plus a CSV per month. Any epoch left out of a total as unverified is listed beside it. Apply your own price source for fiat values.</li>
+            <li id="alerts-note"><strong>Alerts for your nodes.</strong> <code>events</code> reports each change once: slashing, status changes, nodes that stop signing, unpaid owners and RPC outages. Every owner address has its own Atom feed of just its nodes' events, to follow in any feed reader with notifications (or <a href="v1/events/feed.xml">everything in one feed</a>). Enter your owner or masternode address:
+              <form class="feedfind" id="feed-form"><input id="feed-addr" placeholder="xdc… or 0x…" autocomplete="off" spellcheck="false" aria-label="Owner or masternode address"><button class="btn-ghost" type="submit">Find my feed</button></form>
+              <p id="feed-out" aria-live="polite"></p>
+              Our feeds and alerts never ask you to click a link, sign in, sign a transaction or send anything; treat any message that does as fake.</li>
+            <li><strong>For AI assistants.</strong> The <a href="https://github.com/s4njk4n/XDC_Open_Data_MCP">XDC Open Data MCP server</a> lets Claude and other assistants query all of this directly.</li>
+            <li><strong>Fair use and fallback.</strong> Poll no faster than each dataset's update interval and cache what you fetch. If a live URL is unreachable, use the <code>hourly.json</code> copies on this site, which are refreshed every hour.</li>
+            <li><strong>Not advice.</strong> Information only. No personal data is published.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="sources" aria-labelledby="src-title">
+      <div class="wrap">
+        <h2 id="src-title">Where the data comes from</h2>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Dataset</th><th>Source</th><th>Refresh</th></tr></thead>
+            <tbody>
+              <tr><td>RPC health</td><td>Every endpoint in the <a href="/XDC_Atlas/#rpc-status">XDC Atlas RPC list</a>, checked from Cloudflare's servers, so endpoints that block browsers still show their real status. WebSocket endpoints aren't checked yet</td><td>5 min</td></tr>
+              <tr><td>Network snapshot</td><td>Public XDC RPC endpoints</td><td>5 min</td></tr>
+              <tr><td>Epoch rewards</td><td>Owner balances either side of each epoch's first block, read from archive RPC endpoints</td><td>Hourly</td></tr>
+              <tr><td>Validators</td><td>The XDC validator contract and block headers, plus signing activity from the <a href="https://master.xinfin.network/">XDC governance site</a></td><td>Hourly</td></tr>
+              <tr><td>Realised yield</td><td>This feed's own measured rewards; simple annualised rates</td><td>Hourly</td></tr>
+              <tr><td>Events</td><td>Changes between hourly runs of the datasets above</td><td>Hourly</td></tr>
+              <tr><td>Client versions</td><td>Versions nodes report to the public XinFin stats server, and the <a href="https://github.com/XinFinOrg/XDPoSChain/releases">XDPoSChain releases</a></td><td>Hourly</td></tr>
+              <tr><td>Ecosystem projects</td><td><a href="/XDC_Atlas/">XDC Atlas</a> listings</td><td>Hourly</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> XDC Outpost, by <a href="https://github.com/s4njk4n?tab=repositories" target="_blank" rel="noopener">s4njk4n</a>. Source on <a href="https://github.com/s4njk4n/XDC_Open_Data" target="_blank" rel="noopener">GitHub</a>.<br>Data is CC BY 4.0: free to use with credit to XDC Outpost. Code is MIT.</p>
+      <p class="foot-note">Built and run independently; not operated by the XDC Foundation or XinFin. Provided as is, for information only, without warranty. Not financial, tax or investment advice. CC BY 4.0 covers XDC Outpost's own work; data from third-party services remains subject to their terms.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    var $ = function (s) { return document.querySelector(s); };
+    var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var every = function (s) { return s >= 3600 ? (s / 3600) + " h" : (s / 60) + " min"; };
+    var ago = function (iso) {
+      var s = Math.max(0, Math.round((Date.now() - Date.parse(iso)) / 1000));
+      return s < 90 ? s + " s ago" : s < 5400 ? Math.round(s / 60) + " min ago" : Math.round(s / 3600) + " h ago";
+    };
+    function setStatus(el, state, text) { el.dataset.state = state; el.lastElementChild.textContent = text; }
+    $("#year").textContent = new Date().getFullYear();
+
+    // Code tabs
+    document.querySelectorAll(".tabs button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.querySelectorAll(".tabs button").forEach(function (x) { x.setAttribute("aria-selected", x === b); });
+        document.querySelectorAll("pre[data-code]").forEach(function (p) { p.hidden = p.dataset.code !== b.dataset.tab; });
+      });
+    });
+
+    // Owner feed finder: accepts an owner or a masternode address (xdc or 0x form).
+    $("#feed-form").addEventListener("submit", function (ev) {
+      ev.preventDefault();
+      var out = $("#feed-out"), raw = $("#feed-addr").value.trim().toLowerCase().replace(/^xdc/, "0x");
+      if (!/^0x[0-9a-f]{40}$/.test(raw)) { out.textContent = "That doesn't look like an XDC address (xdc or 0x followed by 40 hex characters)."; return; }
+      out.textContent = "Looking it up…";
+      fetch("v1/validators/latest.json").then(function (r) { return r.json(); }).then(function (v) {
+        var cands = v.candidates || [], asNode = cands.find(function (c) { return c.candidate === raw; });
+        var owner = asNode ? asNode.owner : raw, isOwner = cands.some(function (c) { return c.owner === owner; });
+        if (!owner || !isOwner) { out.textContent = "No current masternode candidate has this address as its owner or node address."; return; }
+        var url = new URL("v1/events/owners/" + owner + ".xml", location.href).href;
+        out.innerHTML = (asNode ? "That masternode's owner is <code>" + esc("xdc" + owner.slice(2)) + "</code>. " : "") +
+          'Your feed: <code class="urlline">' + esc(url) + '</code>Add it to a feed reader that sends notifications.';
+      }).catch(function () { out.textContent = "Couldn't load the validator list just now. Your feed is v1/events/owners/<owner address in 0x form>.xml"; });
+    });
+
+    fetch("v1/index.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (cat) {
+      var grid = $("#ds-grid");
+      grid.innerHTML = cat.datasets.map(function (d) {
+        var links = '<a class="btn-ghost" href="' + esc(d.url) + (d.url.indexOf(cat.docs) === 0 ? "" : "?pretty") + '">Open</a>' +
+          '<a class="btn-ghost" href="' + esc(d.schema) + '">Schema</a>' +
+          (d.history ? '<a class="btn-ghost" href="' + esc(d.history.index) + '">History</a>' : "") +
+          (d.fallback_url ? '<a class="btn-ghost" href="' + esc(d.fallback_url) + '">Hourly copy</a>' : "") +
+          (d.daily_totals ? '<a class="btn-ghost" href="' + esc(d.daily_totals.index) + '">Daily totals</a>' : "") +
+          (d.monthly_csv ? '<a class="btn-ghost" href="' + esc(d.monthly_csv.index) + '">Monthly CSV</a>' : "") +
+          (d.atom ? '<a class="btn-ghost" href="' + esc(d.atom) + '">Atom feed</a>' : "");
+        return '<article class="ds"><h3>' + esc(d.title) + '</h3><p>' + esc(d.description) + '</p>' +
+          '<div class="meta"><span>Every ' + every(d.update_interval_seconds) + '</span><span>JSON</span>' + (d.history ? "<span>Daily NDJSON history</span>" : "") + '</div>' +
+          '<code class="urlline">' + esc(d.url) + '</code><div class="links">' + links + '</div></article>';
+      }).join("");
+
+      if (cat.alerts && cat.alerts.network_topic) {
+        var server = cat.alerts.ntfy_server || "https://ntfy.sh";
+        document.getElementById("alerts-note").insertAdjacentHTML("beforeend", ' Network-wide push alerts: subscribe in the <a href="https://ntfy.sh">ntfy</a> app to <code>' +
+          esc(cat.alerts.network_topic) + '</code>' + (server === "https://ntfy.sh" ? "" : " on the server <code>" + esc(server) + "</code>") + ' (at most one message an hour).');
+      }
+      var rpc = cat.datasets.find(function (d) { return d.id === "rpc-health"; });
+      var url = rpc ? rpc.url : cat.docs + "v1/rpc-health/hourly.json";
+      document.querySelectorAll(".u-rpc").forEach(function (s) { s.textContent = url; });
+
+      var st = cat.datasets.find(function (d) { return d.id === "feed-status"; });
+      if (!st) { setStatus($("#live-status"), "stale", "Live feed: not connected yet"); }
+      else fetch(st.url).then(function (r) { return r.json(); }).then(function (s) {
+        if (!s.last_run_at) { setStatus($("#live-status"), "stale", "Live feed: no data yet"); return; }
+        setStatus($("#live-status"), s.stale ? "stale" : (s.ok ? "live" : "stale"), "Live feed: last run " + ago(s.last_run_at) + (s.ok ? "" : " (with errors)"));
+      }).catch(function () { setStatus($("#live-status"), "down", "Live feed: unreachable"); });
+
+      fetch(cat.build_status, { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (b) {
+        var age = (Date.now() - Date.parse(b.last_build_at)) / 1000;
+        setStatus($("#build-status"), age > 3 * 3600 ? "stale" : (b.ok ? "live" : "stale"), "Hourly data: updated " + ago(b.last_build_at) + (b.ok ? "" : " (some steps failed)"));
+      }).catch(function () { setStatus($("#build-status"), "stale", "Hourly data: not published yet"); });
+    }).catch(function () {
+      $("#ds-grid").innerHTML = '<p>Could not load the catalog. Open <a href="v1/index.json">v1/index.json</a> directly.</p>';
+    });
+  })();
+  </script>
+</body>
+</html>

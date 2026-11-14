@@ -1,0 +1,13 @@
+{
+  "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/changes.v1.json",
+  "description": "Changes to XDC Open Data that machine users should know about, newest first. Within v1, fields are only ever added; anything breaking gets a new /v2/ path and an entry here well in advance.",
+  "changes": [
+    {
+      "date": "2026-11-13",
+      "version": "1.0.0",
+      "type": "launch",
+      "summary": "First release: rpc-health, network, epoch-rewards (with daily and monthly CSV), validators (Mainnet and Apothem), yield, events (JSON, Atom feed, and an Atom feed per owner address), clients, ecosystem-projects.",
+      "datasets": ["rpc-health", "network", "feed-status", "epoch-rewards", "validators", "validators-apothem", "yield", "events", "clients", "ecosystem-projects"]
+    }
+  ]
+}

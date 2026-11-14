@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/ecosystem-projects.v1.json",
+  "title": "XDC ecosystem projects",
+  "description": "Tools, apps and services built on XDC, curated in XDC Atlas.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "When this data was produced. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often this document is regenerated."
+    },
+    "stale_after_seconds": {
+      "type": "integer",
+      "description": "If generated_at is older than this, treat the data as stale (the feed may have stopped)."
+    },
+    "source": {
+      "type": "string",
+      "description": "Who publishes this feed."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Human-readable documentation.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX licence identifier for the data."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional remark about this copy of the data."
+    },
+    "live_url": {
+      "type": "string",
+      "description": "For hourly copies: the live URL this was copied from.",
+      "format": "uri"
+    },
+    "origin": {
+      "type": "string",
+      "description": "Where this list is curated.",
+      "format": "uri"
+    },
+    "add_or_update": {
+      "type": "string",
+      "description": "How to add or change a listing."
+    },
+    "count": {
+      "type": "integer",
+      "description": "Number of projects."
+    },
+    "categories": {
+      "description": "Category id to display name, as published by XDC Atlas.",
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "description": "Display name."
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Stable identifier."
+          },
+          "name": {
+            "type": "string",
+            "description": "Project name."
+          },
+          "summary": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "What it does and who it is for."
+          },
+          "category": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Category id, for example node-ops, wallets or defi. Every id and its display name is in categories."
+          },
+          "type": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "web-app, self-host, bot, library or service."
+          },
+          "kind": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "community, official or third-party."
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "active, in-development or archived."
+          },
+          "license": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Software licence, if stated."
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Tag."
+            }
+          },
+          "by": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Author or organisation."
+          },
+          "by_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Author link.",
+            "format": "uri"
+          },
+          "links": {
+            "type": "object",
+            "description": "Any of app, repo, docs, demo.",
+            "additionalProperties": {
+              "type": "string",
+              "description": "Link.",
+              "format": "uri"
+            }
+          },
+          "claimed": {
+            "type": "boolean",
+            "description": "The project's owner has confirmed this listing."
+          },
+          "icon_url": {
+            "type": "string",
+            "description": "Project icon.",
+            "format": "uri"
+          },
+          "tip_address": {
+            "type": "string",
+            "description": "Optional address to tip the author directly."
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "generated_at",
+    "projects"
+  ]
+}

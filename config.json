@@ -1,0 +1,59 @@
+{
+  "worker_url": "https://xdc-open-data.YOUR-SUBDOMAIN.workers.dev",
+  "site_url": "https://xdcoutpost.xyz/XDC_Open_Data/",
+  "repo_url": "https://github.com/s4njk4n/XDC_Open_Data",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "mainnet_rpcs": [
+    "https://rpc.plugin.global/xdcmainnet",
+    "https://erpc.xinfin.network",
+    "https://rpc.xdc.org",
+    "https://rpc.xinfin.network",
+    "https://rpc.ankr.com/xdc"
+  ],
+  "archive_rpcs": [
+    "https://earpc.xinfin.network",
+    "https://rpc.ankr.com/xdc",
+    "https://erpc.xinfin.network",
+    "https://arpc.xinfin.network",
+    "https://rpc.plugin.global/xdcmainnet"
+  ],
+  "governance_api": [
+    "https://master.xinfin.network/api",
+    "https://mn.xinfin.network/api"
+  ],
+  "include_node_names": false,
+  "include_data_centers": true,
+  "prices": {
+    "enabled": false,
+    "note": "Leave off unless you hold a CoinGecko licence that permits redistributing its data (their free and standard plans do not). When off, no prices or USD values are published."
+  },
+  "apothem": {
+    "rpcs": [
+      "https://rpc.plugin.global/xdcapothem",
+      "https://erpc.apothem.network",
+      "https://rpc.apothem.network"
+    ],
+    "governance_api": [
+      "https://master.apothem.network/api",
+      "https://mn.apothem.network/api"
+    ]
+  },
+  "alerts": {
+    "enabled": false,
+    "note": "Push alerts to ONE ntfy topic that only this feed can publish to. Needs the NTFY_TOKEN repository secret and a topic reserved as read-only for everyone else (paid ntfy.sh plan or your own ntfy server); without both, nothing is sent. Owners get their own events through the free per-owner Atom feeds instead.",
+    "ntfy_server": "https://ntfy.sh",
+    "network_topic": "",
+    "severities": [
+      "critical",
+      "warning"
+    ],
+    "networks": [
+      "mainnet"
+    ],
+    "max_per_day": 24
+  },
+  "max_epochs_per_run": 6,
+  "atlas_tools_url": "https://xdcoutpost.xyz/XDC_Atlas/data/tools.json",
+  "atlas_base_url": "https://xdcoutpost.xyz/XDC_Atlas/"
+}

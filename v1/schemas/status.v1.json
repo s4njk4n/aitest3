@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/status.v1.json",
+  "title": "Live feed status",
+  "description": "Health of the live feed itself.",
+  "type": "object",
+  "required": [
+    "last_run_at",
+    "ok"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "last_run_at": {
+      "type": "string",
+      "description": "When the last scheduled run finished. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "run_duration_ms": {
+      "type": "integer",
+      "description": "How long the last run took."
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often runs are scheduled."
+    },
+    "seconds_since_last_run": {
+      "type": "integer",
+      "description": "Age of the last run when this response was served."
+    },
+    "stale": {
+      "type": "boolean",
+      "description": "True if the last run is older than three intervals: the feed may have stopped."
+    },
+    "endpoints_checked": {
+      "type": "integer",
+      "description": "Endpoints checked in the last run."
+    },
+    "endpoint_list_source": {
+      "type": "string",
+      "description": "Where the endpoint list came from."
+    },
+    "ok": {
+      "type": "boolean",
+      "description": "True if the last run had no errors."
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Error text."
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Information that is not an error, such as endpoints left for a later run."
+      }
+    }
+  }
+}

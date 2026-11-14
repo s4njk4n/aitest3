@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/build-status.v1.json",
+  "title": "Hourly builder status",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "This file's JSON Schema.",
+      "format": "uri"
+    },
+    "last_build_at": {
+      "type": "string",
+      "description": "When the hourly build ran. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "ok": {
+      "type": "boolean",
+      "description": "All steps succeeded."
+    },
+    "steps": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean",
+            "description": "Step succeeded."
+          },
+          "result": {
+            "type": "string",
+            "description": "What it did."
+          },
+          "error": {
+            "type": "string",
+            "description": "Why it failed."
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Note."
+            }
+          }
+        }
+      }
+    }
+  }
+}

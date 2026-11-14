@@ -1,0 +1,429 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards.v1.json",
+  "title": "XDC epoch rewards by owner",
+  "description": "Masternode rewards credited to owners at the most recent epoch switch on XDC Mainnet. Rewards go to the owner address (90 %; voters 0 %, foundation 10 %), so an owner with several masternodes receives one combined amount.",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "When this data was produced. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often this document is regenerated."
+    },
+    "stale_after_seconds": {
+      "type": "integer",
+      "description": "If generated_at is older than this, treat the data as stale (the feed may have stopped)."
+    },
+    "source": {
+      "type": "string",
+      "description": "Who publishes this feed."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Human-readable documentation.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX licence identifier for the data."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional remark about this copy of the data."
+    },
+    "live_url": {
+      "type": "string",
+      "description": "For hourly copies: the live URL this was copied from.",
+      "format": "uri"
+    },
+    "network": {
+      "type": "string",
+      "description": "Always mainnet.",
+      "enum": [
+        "mainnet"
+      ]
+    },
+    "chain_id": {
+      "type": "integer",
+      "description": "Always 50.",
+      "enum": [
+        50
+      ]
+    },
+    "paid_in_epoch": {
+      "type": "integer",
+      "description": "Epoch whose first block credited these rewards."
+    },
+    "rewarded_epoch": {
+      "type": "integer",
+      "description": "Epoch the rewards were earned in (paid_in_epoch - 2). XDC pays rewards two epochs later."
+    },
+    "paid_at_block": {
+      "type": "integer",
+      "description": "The epoch switch block that credited the rewards."
+    },
+    "paid_at_block_hash": {
+      "type": "string",
+      "description": "Hash of that block."
+    },
+    "paid_at_time": {
+      "type": "string",
+      "description": "Timestamp of that block. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "method": {
+      "type": "string",
+      "description": "balance_change: measured from each owner's balance across the epoch switch block (rewards are not transfers). reward_files: exact figures from eth_getRewardByHash.",
+      "enum": [
+        "balance_change",
+        "reward_files"
+      ]
+    },
+    "price": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Null unless the publisher has switched prices on (they are off by default): then the XDC price when the epoch was recorded, and null for epochs filled in later.",
+      "properties": {
+        "usd": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in US dollars."
+        },
+        "aud": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in Australian dollars."
+        },
+        "eur": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in euros."
+        },
+        "source": {
+          "type": "string",
+          "description": "Price source."
+        },
+        "at": {
+          "type": "string",
+          "description": "When the price was read. ISO 8601, UTC.",
+          "format": "date-time"
+        }
+      }
+    },
+    "typical_node_reward": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "What one fully working masternode earned this epoch: the median reward of owners who run exactly one masternode. Null if fewer than 3 such owners were paid.",
+      "properties": {
+        "reward_wei": {
+          "type": "string",
+          "description": "Typical reward per node (owner share). Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+          "pattern": "^[0-9]+$"
+        },
+        "reward_xdc": {
+          "type": "number",
+          "description": "Same in XDC, rounded."
+        },
+        "from_single_node_owners": {
+          "type": "integer",
+          "description": "How many single-node owners the median is taken from."
+        },
+        "note": {
+          "type": "string",
+          "description": "Explanation."
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "masternodes_eligible": {
+          "type": "integer",
+          "description": "Masternodes at the start of the rewarded epoch (from that epoch switch block's header)."
+        },
+        "owners": {
+          "type": "integer",
+          "description": "Distinct owner addresses of those masternodes."
+        },
+        "owners_paid": {
+          "type": "integer",
+          "description": "Owners whose reward was above zero (unverified rows not counted)."
+        },
+        "owners_unverified": {
+          "type": "integer",
+          "description": "Owner rows marked unverified: their measured figure could not be fully explained, so they are left out of every total here. 0 in a normal epoch."
+        },
+        "owners_with_several_nodes": {
+          "type": "integer",
+          "description": "Owners running more than one eligible masternode."
+        },
+        "owners_below_typical": {
+          "type": "integer",
+          "description": "Owners who received less than 98 % of node_count x typical reward (unverified rows not counted)."
+        },
+        "shortfall_nodes": {
+          "type": "number",
+          "description": "Total shortfall across owners, in typical-node rewards."
+        },
+        "owner_rewards_wei": {
+          "type": "string",
+          "description": "Sum of owner rewards (unverified rows left out). Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+          "pattern": "^[0-9]+$"
+        },
+        "owner_rewards_xdc": {
+          "type": "number",
+          "description": "Same in XDC, rounded."
+        },
+        "implied_all_rewards_xdc": {
+          "type": "number",
+          "description": "owner_rewards scaled up to include the 10 % foundation share (owner share is 90 %). Like owner_rewards, it leaves out unverified rows, so it is below the true total when there are any."
+        },
+        "value_usd": {
+          "type": "number",
+          "description": "Owner rewards valued at the recorded price."
+        }
+      }
+    },
+    "slashed_in_rewarded_epoch": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+        "pattern": "^0x[0-9a-f]{40}$"
+      },
+      "description": "Nodes listed as penalised in the first block of the rewarded epoch (they were not eligible for its rewards)."
+    },
+    "method_note": {
+      "type": "string",
+      "description": "Plain-language description of the method."
+    },
+    "data_from": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The RPC endpoint the figures were read from. A private endpoint is shown as 'private RPC'."
+    },
+    "internal_transfers": {
+      "type": "object",
+      "description": "How XDC moved by contracts in the epoch's first block was handled. Such amounts are not rewards, so they are taken out of each owner's figure.",
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "call_traces",
+            "validator_withdraw_events",
+            "none_needed",
+            "not_needed_exact_figures"
+          ],
+          "description": "call_traces: contract calls were traced (debug_traceBlockByNumber) and the amounts they moved excluded exactly, apart from any calls counted in contract_txs_unchecked. validator_withdraw_events: no RPC offered traces; stake withdrawals were still excluded exactly from the validator contract's Withdraw events, and other contract calls are counted in contract_txs_unchecked. none_needed: the block had no contract calls. not_needed_exact_figures: exact protocol figures were used (method is reward_files)."
+        },
+        "source": {
+          "type": "string",
+          "description": "RPC endpoint that provided the call traces."
+        },
+        "contract_txs_unchecked": {
+          "type": "integer",
+          "description": "Successful contract calls in the block that could not be traced. 0 means every figure is fully explained. Above 0, XDC that one of those calls moved to or from an owner is still inside that owner's figure; rows where there is a sign of that are marked unverified."
+        },
+        "trc21_check": {
+          "type": "string",
+          "description": "Present only if the list of fee-sponsored (TRC21) tokens could not be read; sponsored fees in this block may then be slightly misattributed."
+        },
+        "note": {
+          "type": "string",
+          "description": "Explanation."
+        }
+      }
+    },
+    "split": {
+      "type": "object",
+      "description": "How each node's reward is split by the protocol.",
+      "properties": {
+        "owner_pct": {
+          "type": "integer",
+          "description": "Owner share."
+        },
+        "voters_pct": {
+          "type": "integer",
+          "description": "Voter share."
+        },
+        "foundation_pct": {
+          "type": "integer",
+          "description": "Foundation share."
+        }
+      }
+    },
+    "owners": {
+      "type": "array",
+      "description": "One row per owner of an eligible masternode, highest reward first. Zero means the owner's nodes were eligible but not paid (for example they did not sign).",
+      "items": {
+        "type": "object",
+        "required": [
+          "owner",
+          "reward_wei",
+          "node_count",
+          "nodes"
+        ],
+        "properties": {
+          "owner": {
+            "type": "string",
+            "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+            "pattern": "^0x[0-9a-f]{40}$"
+          },
+          "reward_wei": {
+            "type": "string",
+            "description": "Total credited to this owner in this block for all their masternodes, in wei (exact integer string). On a row marked unverified this is the raw measured figure, which can be too high, too low or negative.",
+            "pattern": "^-?[0-9]+$"
+          },
+          "reward_xdc": {
+            "type": "number",
+            "description": "Same in XDC, rounded."
+          },
+          "node_count": {
+            "type": "integer",
+            "description": "Eligible masternodes run by this owner."
+          },
+          "expected_wei": {
+            "type": "string",
+            "description": "node_count x typical node reward: what the owner would get if every node earned the typical full reward. Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+            "pattern": "^[0-9]+$"
+          },
+          "expected_xdc": {
+            "type": "number",
+            "description": "Same in XDC, rounded."
+          },
+          "vs_typical": {
+            "type": "number",
+            "description": "reward / expected. 1.0 means every node earned the typical reward; 0.8 with 5 nodes means about one node's reward is missing. Not given on unverified rows (nor are the shortfall fields and below_typical)."
+          },
+          "shortfall_xdc": {
+            "type": "number",
+            "description": "expected minus reward, if positive."
+          },
+          "shortfall_nodes": {
+            "type": "number",
+            "description": "The shortfall in typical-node rewards (for example 1.0 = one node's worth missing)."
+          },
+          "below_typical": {
+            "type": "boolean",
+            "description": "True if vs_typical is below 0.98."
+          },
+          "value_usd": {
+            "type": "number",
+            "description": "Value at the recorded price."
+          },
+          "nodes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "candidate",
+                "reward_wei",
+                "basis"
+              ],
+              "properties": {
+                "candidate": {
+                  "type": "string",
+                  "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+                  "pattern": "^0x[0-9a-f]{40}$"
+                },
+                "reward_wei": {
+                  "type": "string",
+                  "description": "This node's reward (owner share). See basis for how exact it is. Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+                  "pattern": "^[0-9]+$"
+                },
+                "reward_xdc": {
+                  "type": "number",
+                  "description": "Same in XDC, rounded."
+                },
+                "basis": {
+                  "type": "string",
+                  "description": "measured: the owner runs only this node, so the owner's balance change is this node's reward. equal_share_estimate: the owner's total divided equally between their nodes (each node's real share depends on its signing). exact: from eth_getRewardByHash. unverified: an equal share of an owner figure that is itself marked unverified.",
+                  "enum": [
+                    "measured",
+                    "equal_share_estimate",
+                    "exact",
+                    "unverified"
+                  ]
+                }
+              }
+            },
+            "description": "This owner's eligible masternodes."
+          },
+          "adjusted_for_txs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Transaction hash."
+            },
+            "description": "Transactions in this block that involved this owner. Their value and fees, and any XDC moved inside them that could be traced, were taken into account."
+          },
+          "internal_transfers_excluded_xdc": {
+            "type": "number",
+            "description": "Net XDC this owner received from contracts in this block (for example a stake withdrawal), taken out because it is not a reward. Negative if the owner's XDC went into contracts."
+          },
+          "block_fees_excluded_xdc": {
+            "type": "number",
+            "description": "Transaction fees of this block paid to this owner because their masternode produced it. XDC pays block fees to the producer's owner; they are not epoch rewards, so they are taken out."
+          },
+          "unverified": {
+            "type": "boolean",
+            "description": "Present (true) when this figure could not be fully explained: it is negative; or a contract call the owner sent or received in this block could not be traced; or it is more than 20 % above expected while the block had untraced contract calls. Part of it may not be reward, so the row is left out of totals, daily totals, yield and events. See note for which case applies."
+          },
+          "note": {
+            "type": "string",
+            "description": "Why the row is unverified."
+          }
+        }
+      }
+    },
+    "masternodes_without_owner": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+        "pattern": "^0x[0-9a-f]{40}$"
+      },
+      "description": "Eligible masternodes whose owner could not be read."
+    },
+    "foundation_wallet_nodes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+        "pattern": "^0x[0-9a-f]{40}$"
+      },
+      "description": "Only present if the foundation wallet itself owns eligible masternodes. That wallet is paid 10 % of every node's reward in the same block, so its own nodes cannot be measured separately and it has no owner row."
+    }
+  },
+  "required": [
+    "generated_at",
+    "paid_in_epoch",
+    "method",
+    "owners"
+  ]
+}

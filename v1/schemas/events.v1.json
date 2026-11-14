@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
+  "title": "XDC network events",
+  "type": "object",
+  "required": [
+    "events"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "When this data was produced. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often this document is regenerated."
+    },
+    "stale_after_seconds": {
+      "type": "integer",
+      "description": "If generated_at is older than this, treat the data as stale (the feed may have stopped)."
+    },
+    "source": {
+      "type": "string",
+      "description": "Who publishes this feed."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Human-readable documentation.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX licence identifier for the data."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional remark about this copy of the data."
+    },
+    "live_url": {
+      "type": "string",
+      "description": "For hourly copies: the live URL this was copied from.",
+      "format": "uri"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "event.v1.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+# Optional: only needed if you deploy with the Wrangler CLI. Setting the Worker up
+# in the Cloudflare dashboard needs none of this.
+#
+#   npx wrangler login
+#   npx wrangler kv namespace create STATE      # paste the id it prints below
+#   npx wrangler deploy
+
+name = "xdc-open-data"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "STATE"
+id = "PASTE_YOUR_KV_NAMESPACE_ID_HERE"
+
+[triggers]
+crons = ["*/5 * * * *"]

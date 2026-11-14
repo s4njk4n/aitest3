@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/changes.v1.json",
+  "title": "XDC Open Data changelog",
+  "type": "object",
+  "required": [
+    "changes"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Schema.",
+      "format": "uri"
+    },
+    "description": {
+      "type": "string",
+      "description": "What this is."
+    },
+    "changes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "summary"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "Date of the change.",
+            "format": "date"
+          },
+          "version": {
+            "type": "string",
+            "description": "Feed version."
+          },
+          "type": {
+            "type": "string",
+            "description": "launch, added, changed, deprecated or removed."
+          },
+          "summary": {
+            "type": "string",
+            "description": "What changed."
+          },
+          "datasets": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "description": "Dataset id."
+            }
+          }
+        }
+      }
+    }
+  }
+}

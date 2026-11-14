@@ -1,0 +1,399 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/yield.v1.json",
+  "title": "XDC masternode realised yield",
+  "description": "What masternodes actually earned over 1, 7 and 30 days, from measured epoch rewards.",
+  "type": "object",
+  "required": [
+    "generated_at",
+    "typical_masternode",
+    "owners"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "When this data was produced. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often this document is regenerated."
+    },
+    "stale_after_seconds": {
+      "type": "integer",
+      "description": "If generated_at is older than this, treat the data as stale (the feed may have stopped)."
+    },
+    "source": {
+      "type": "string",
+      "description": "Who publishes this feed."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Human-readable documentation.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX licence identifier for the data."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional remark about this copy of the data."
+    },
+    "live_url": {
+      "type": "string",
+      "description": "For hourly copies: the live URL this was copied from.",
+      "format": "uri"
+    },
+    "network": {
+      "type": "string",
+      "description": "Always mainnet.",
+      "enum": [
+        "mainnet"
+      ]
+    },
+    "chain_id": {
+      "type": "integer",
+      "description": "Always 50.",
+      "enum": [
+        50
+      ]
+    },
+    "as_of_day": {
+      "type": "string",
+      "description": "Last UTC day with recorded epochs.",
+      "format": "date"
+    },
+    "price": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Null unless the publisher has switched prices on (they are off by default): then the XDC price when the epoch was recorded, and null for epochs filled in later.",
+      "properties": {
+        "usd": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in US dollars."
+        },
+        "aud": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in Australian dollars."
+        },
+        "eur": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in euros."
+        },
+        "source": {
+          "type": "string",
+          "description": "Price source."
+        },
+        "at": {
+          "type": "string",
+          "description": "When the price was read. ISO 8601, UTC.",
+          "format": "date-time"
+        }
+      }
+    },
+    "min_candidate_stake_xdc": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "description": "Minimum candidate stake from the validator contract."
+    },
+    "method_note": {
+      "type": "string",
+      "description": "How to read this file."
+    },
+    "typical_masternode": {
+      "type": "object",
+      "properties": {
+        "1d": {
+          "type": "object",
+          "properties": {
+            "epochs": {
+              "type": "integer",
+              "description": "Epochs recorded in the window."
+            },
+            "epochs_with_typical": {
+              "type": "integer",
+              "description": "Epochs with a typical node reward."
+            },
+            "days_covered": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "Days of data behind the figures: epochs recorded x the average epoch length."
+            },
+            "complete": {
+              "type": "boolean",
+              "description": "True if at least 90 % of the window's epochs are recorded."
+            },
+            "typical_node_reward_per_epoch_xdc": {
+              "type": "number",
+              "description": "Average typical node reward per epoch (owner share)."
+            },
+            "typical_node_xdc_per_day": {
+              "type": "number",
+              "description": "Typical node reward per epoch x epochs per day (so epochs missing from the record do not lower it)."
+            },
+            "typical_node_xdc_per_year": {
+              "type": "number",
+              "description": "Per day x 365."
+            },
+            "apr_pct_on_min_stake": {
+              "type": "number",
+              "description": "Per year / minimum candidate stake, in percent (simple, no compounding)."
+            },
+            "typical_node_usd_per_day": {
+              "type": "number",
+              "description": "Per day at the current price."
+            }
+          }
+        },
+        "7d": {
+          "type": "object",
+          "properties": {
+            "epochs": {
+              "type": "integer",
+              "description": "Epochs recorded in the window."
+            },
+            "epochs_with_typical": {
+              "type": "integer",
+              "description": "Epochs with a typical node reward."
+            },
+            "days_covered": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "Days of data behind the figures: epochs recorded x the average epoch length."
+            },
+            "complete": {
+              "type": "boolean",
+              "description": "True if at least 90 % of the window's epochs are recorded."
+            },
+            "typical_node_reward_per_epoch_xdc": {
+              "type": "number",
+              "description": "Average typical node reward per epoch (owner share)."
+            },
+            "typical_node_xdc_per_day": {
+              "type": "number",
+              "description": "Typical node reward per epoch x epochs per day (so epochs missing from the record do not lower it)."
+            },
+            "typical_node_xdc_per_year": {
+              "type": "number",
+              "description": "Per day x 365."
+            },
+            "apr_pct_on_min_stake": {
+              "type": "number",
+              "description": "Per year / minimum candidate stake, in percent (simple, no compounding)."
+            },
+            "typical_node_usd_per_day": {
+              "type": "number",
+              "description": "Per day at the current price."
+            }
+          }
+        },
+        "30d": {
+          "type": "object",
+          "properties": {
+            "epochs": {
+              "type": "integer",
+              "description": "Epochs recorded in the window."
+            },
+            "epochs_with_typical": {
+              "type": "integer",
+              "description": "Epochs with a typical node reward."
+            },
+            "days_covered": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "Days of data behind the figures: epochs recorded x the average epoch length."
+            },
+            "complete": {
+              "type": "boolean",
+              "description": "True if at least 90 % of the window's epochs are recorded."
+            },
+            "typical_node_reward_per_epoch_xdc": {
+              "type": "number",
+              "description": "Average typical node reward per epoch (owner share)."
+            },
+            "typical_node_xdc_per_day": {
+              "type": "number",
+              "description": "Typical node reward per epoch x epochs per day (so epochs missing from the record do not lower it)."
+            },
+            "typical_node_xdc_per_year": {
+              "type": "number",
+              "description": "Per day x 365."
+            },
+            "apr_pct_on_min_stake": {
+              "type": "number",
+              "description": "Per year / minimum candidate stake, in percent (simple, no compounding)."
+            },
+            "typical_node_usd_per_day": {
+              "type": "number",
+              "description": "Per day at the current price."
+            }
+          }
+        }
+      }
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "owner"
+        ],
+        "properties": {
+          "owner": {
+            "type": "string",
+            "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+            "pattern": "^0x[0-9a-f]{40}$"
+          },
+          "masternodes_now": {
+            "type": "integer",
+            "description": "Masternodes this owner has now."
+          },
+          "owner_stake_xdc": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "Owner's own stake across those masternodes."
+          },
+          "1d": {
+            "type": "object",
+            "properties": {
+              "epochs": {
+                "type": "integer",
+                "description": "Epochs this owner had eligible nodes in (epochs where their figure was unverified are left out of this whole object)."
+              },
+              "reward_xdc": {
+                "type": "number",
+                "description": "Measured rewards in the window."
+              },
+              "avg_vs_typical": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Average of vs_typical over the window (1.0 = every node earned the typical reward)."
+              },
+              "shortfall_nodes": {
+                "type": "number",
+                "description": "Sum of shortfall_nodes over the window."
+              },
+              "zero_reward_epochs": {
+                "type": "integer",
+                "description": "Epochs the owner received nothing."
+              },
+              "apr_pct": {
+                "type": "number",
+                "description": "The owner's measured rewards over the epochs they had eligible nodes, annualised (simple, no compounding), divided by their own stake per masternode x average masternodes, in percent."
+              },
+              "avg_masternodes": {
+                "type": "number",
+                "description": "Average eligible masternodes the owner had per epoch in the window."
+              }
+            }
+          },
+          "7d": {
+            "type": "object",
+            "properties": {
+              "epochs": {
+                "type": "integer",
+                "description": "Epochs this owner had eligible nodes in (epochs where their figure was unverified are left out of this whole object)."
+              },
+              "reward_xdc": {
+                "type": "number",
+                "description": "Measured rewards in the window."
+              },
+              "avg_vs_typical": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Average of vs_typical over the window (1.0 = every node earned the typical reward)."
+              },
+              "shortfall_nodes": {
+                "type": "number",
+                "description": "Sum of shortfall_nodes over the window."
+              },
+              "zero_reward_epochs": {
+                "type": "integer",
+                "description": "Epochs the owner received nothing."
+              },
+              "apr_pct": {
+                "type": "number",
+                "description": "The owner's measured rewards over the epochs they had eligible nodes, annualised (simple, no compounding), divided by their own stake per masternode x average masternodes, in percent."
+              },
+              "avg_masternodes": {
+                "type": "number",
+                "description": "Average eligible masternodes the owner had per epoch in the window."
+              }
+            }
+          },
+          "30d": {
+            "type": "object",
+            "properties": {
+              "epochs": {
+                "type": "integer",
+                "description": "Epochs this owner had eligible nodes in (epochs where their figure was unverified are left out of this whole object)."
+              },
+              "reward_xdc": {
+                "type": "number",
+                "description": "Measured rewards in the window."
+              },
+              "avg_vs_typical": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Average of vs_typical over the window (1.0 = every node earned the typical reward)."
+              },
+              "shortfall_nodes": {
+                "type": "number",
+                "description": "Sum of shortfall_nodes over the window."
+              },
+              "zero_reward_epochs": {
+                "type": "integer",
+                "description": "Epochs the owner received nothing."
+              },
+              "apr_pct": {
+                "type": "number",
+                "description": "The owner's measured rewards over the epochs they had eligible nodes, annualised (simple, no compounding), divided by their own stake per masternode x average masternodes, in percent."
+              },
+              "avg_masternodes": {
+                "type": "number",
+                "description": "Average eligible masternodes the owner had per epoch in the window."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

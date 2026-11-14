@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/event.v1.json",
+  "title": "XDC network event",
+  "type": "object",
+  "required": [
+    "id",
+    "time",
+    "type",
+    "severity",
+    "title"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable id; the same change is never reported twice."
+    },
+    "time": {
+      "type": "string",
+      "description": "When this feed noticed the change (checked hourly). ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "type": {
+      "type": "string",
+      "description": "What happened.",
+      "enum": [
+        "status_masternode",
+        "status_standby",
+        "status_slashed",
+        "stopped_signing",
+        "resumed_signing",
+        "candidate_added",
+        "candidate_removed",
+        "owner_unpaid",
+        "owner_below_typical",
+        "owner_recovered",
+        "rpc_down",
+        "rpc_up"
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "description": "critical: act now. warning: look soon. info: for the record.",
+      "enum": [
+        "critical",
+        "warning",
+        "info"
+      ]
+    },
+    "network": {
+      "type": "string",
+      "description": "mainnet or apothem.",
+      "enum": [
+        "mainnet",
+        "apothem"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "description": "One-line summary."
+    },
+    "detail": {
+      "type": "string",
+      "description": "Details."
+    },
+    "candidate": {
+      "type": "string",
+      "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+      "pattern": "^0x[0-9a-f]{40}$"
+    },
+    "owner": {
+      "type": "string",
+      "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+      "pattern": "^0x[0-9a-f]{40}$"
+    },
+    "node_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Node name from the governance site, if known."
+    },
+    "epoch": {
+      "type": "integer",
+      "description": "Epoch the event is about (reward events)."
+    },
+    "endpoint": {
+      "type": "string",
+      "description": "RPC endpoint (RPC events).",
+      "format": "uri"
+    }
+  }
+}

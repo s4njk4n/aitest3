@@ -1,0 +1,41 @@
+# XDC Open Data
+
+> Free, open JSON about the XDC Network (chain ID 50; Apothem testnet 51) for AI agents and scripts. No API key, no sign-up, CORS open. Published by XDC Outpost (xdcoutpost.xyz). Licence: CC-BY-4.0. Information only; not financial, tax or investment advice.
+
+Start with the catalog, which lists every dataset with its URL, JSON Schema and update interval:
+https://xdcoutpost.xyz/XDC_Open_Data/v1/index.json
+
+Conventions: timestamps are ISO 8601 UTC. Token amounts are exact integer wei as strings in *_wei fields (1 XDC = 10^18 wei); *_xdc fields are rounded for display. Addresses are lowercase 0x hex (swap 0x for xdc if a user expects the xdc form). Every file has generated_at and update_interval_seconds; data older than stale_after_seconds is stale. Please poll no faster than the update interval.
+
+## Datasets
+
+- [XDC epoch rewards by owner (Mainnet)](https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/latest.json): Masternode rewards credited at the most recent epoch switch, per owner address. Rewards are not transfers: they are measured from each owner's balance change across the epoch switch block. An owner with several nodes gets one combined amount, so each row also gives the owner's node count, the typical reward of one fully working node (from single-node owners), what the owner should have received, any shortfall, and an equal-share estimate per node. A figure that cannot be fully explained is marked unverified and left out of totals. Rewards paid in epoch N are for epoch N-2. Updates every 60 min. Schema: https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards.v1.json. Daily history: https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/history/index.json. Per-owner daily totals: https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/index.json. Monthly CSV: https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/monthly/index.json
+- [XDC validators and candidates (Mainnet)](https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/latest.json): Every masternode candidate: owner address, stake and status (MASTERNODE, STANDBY or SLASHED), plus totals by status, the largest owners and owner concentration (how few owners hold 1/3 or 1/2 of masternode seats). Where the XDC governance dApp API is reachable, each candidate also has the last block it signed and a flag for masternodes that have stopped signing. Updates every 60 min. Schema: https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators.v1.json. Daily history: https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/history/index.json
+- [XDC validators and candidates (Apothem testnet)](https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/latest.json): The same as the Mainnet validators dataset, for the Apothem testnet (chain 51), so teams can test against it. Updates every 60 min. Schema: https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators.v1.json. Daily history: https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/history/index.json
+- [XDC network events](https://xdcoutpost.xyz/XDC_Open_Data/v1/events/latest.json): Changes worth acting on, each reported once: masternode status changes (MASTERNODE, STANDBY, SLASHED), nodes that stop or resume signing, candidates added or removed, owners who receive no reward or fall below 90 % of the typical reward (and recover), and RPC endpoints going down or coming back. Also as an Atom feed of everything, and an Atom feed per owner address with just that owner's Mainnet events. Updates every 60 min. Schema: https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json. Daily history: https://xdcoutpost.xyz/XDC_Open_Data/v1/events/history/index.json. Atom feed: https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml. Per-owner Atom feed: https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/{owner}.xml
+- [XDC node client versions and upcoming upgrades](https://xdcoutpost.xyz/XDC_Open_Data/v1/clients/latest.json): Client versions reported by nodes to the public XinFin stats server (all nodes and masternodes, share on the latest release, each masternode's version), the latest XDPoSChain release, and network upgrades scheduled by block number with estimated dates. Mainnet and Apothem. Updates every 60 min. Schema: https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json
+- [XDC masternode realised yield (Mainnet)](https://xdcoutpost.xyz/XDC_Open_Data/v1/yield/latest.json): What masternodes actually earned over the last 1, 7 and 30 days, from measured rewards: the typical fully working node's XDC per epoch, per day and per year, APR on the minimum stake, and for each owner their rewards, APR on their own stake, average performance against the typical node, and zero-reward epochs. Updates every 60 min. Schema: https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/yield.v1.json
+- [XDC ecosystem projects](https://xdcoutpost.xyz/XDC_Open_Data/v1/ecosystem/projects.json): Tools, apps and services built on XDC, curated in XDC Atlas: name, summary, category, status, licence and links. Updates every 60 min. Schema: https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/ecosystem-projects.v1.json
+
+## Answering common questions
+
+- Is an address a masternode, who owns it, and how much is staked? validators `candidates` (lowercase 0x form): `status`, `owner`, `stake_xdc`, `owner_stake_xdc`, `votes_xdc`.
+- Is a masternode online right now? validators `candidates`: `governance.blocks_since_last_signed`, `not_signing_recently`.
+- How reliable has a node been? validators `candidates`: `history_30d` (masternode and slashed epochs).
+- How decentralised are XDC validators? validators `summary.owner_concentration`.
+- How much did an owner earn last epoch? epoch-rewards `owners`: `reward_wei` (exact) or `reward_xdc`; one combined figure for all the owner's masternodes (`node_count`). If the row has `unverified: true`, the figure could not be fully explained (see its `note`): say so rather than quoting it as the reward.
+- How much did one node earn? Each owner row has `nodes`; a node's `basis` says what its figure is: `measured` or `exact` is that node's own reward, `equal_share_estimate` is the owner's total split evenly between their nodes, and `unverified` should not be quoted.
+- Is an owner's setup under-performing? epoch-rewards `owners`: `vs_typical` (1.0 = every node earned the typical reward), `shortfall_nodes`, `below_typical`.
+- What does an XDC masternode earn? yield `typical_masternode.30d`: `typical_node_xdc_per_day`, `apr_pct_on_min_stake` (check `complete`).
+- What has an owner earned over a period, at what rate? yield `owners` (`30d.reward_xdc`, `30d.apr_pct`); for specific dates, the epoch-rewards daily files or monthly CSV (epochs listed under `unverified` are not in the totals).
+- Did anything happen to a node? events: filter by `candidate` or `owner`. One owner's events as Atom: https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/<owner address, lowercase 0x>.xml.
+- Is a node on the latest client version? clients `networks[].masternodes.by_candidate`; upcoming upgrades in `networks[].upgrades.upcoming`.
+- Has the data format changed? v1/changes.json.
+
+## Optional
+
+- [Docs](https://xdcoutpost.xyz/XDC_Open_Data/): human-readable guide with examples
+- [Source code](https://github.com/s4njk4n/XDC_Open_Data): builder scripts, schemas and the Cloudflare Worker
+- [XDC Atlas](https://xdcoutpost.xyz/XDC_Atlas/): directory of XDC tools, guides and RPC endpoints
+- [XDC Network Stats](https://xdcoutpost.xyz/XDC_Network_Stats/): live network stats page
+- [Masternode Rewards Calculator](https://xdcoutpost.xyz/XDC_Masternode_Rewards_Calculator/): rewards for one owner over any period

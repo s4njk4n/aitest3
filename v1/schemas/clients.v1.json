@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json",
+  "title": "XDC node client versions and upcoming upgrades",
+  "type": "object",
+  "required": [
+    "networks"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "URL of the JSON Schema for this document.",
+      "format": "uri"
+    },
+    "version": {
+      "type": "string",
+      "description": "Major version of this document's format. Fields are only added within a version."
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "When this data was produced. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "update_interval_seconds": {
+      "type": "integer",
+      "description": "How often this document is regenerated."
+    },
+    "stale_after_seconds": {
+      "type": "integer",
+      "description": "If generated_at is older than this, treat the data as stale (the feed may have stopped)."
+    },
+    "source": {
+      "type": "string",
+      "description": "Who publishes this feed."
+    },
+    "docs": {
+      "type": "string",
+      "description": "Human-readable documentation.",
+      "format": "uri"
+    },
+    "license": {
+      "type": "string",
+      "description": "SPDX licence identifier for the data."
+    },
+    "note": {
+      "type": "string",
+      "description": "Optional remark about this copy of the data."
+    },
+    "live_url": {
+      "type": "string",
+      "description": "For hourly copies: the live URL this was copied from.",
+      "format": "uri"
+    },
+    "latest_release": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "Release tag."
+        },
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Release name."
+        },
+        "published_at": {
+          "type": "string",
+          "description": "Release date. ISO 8601, UTC.",
+          "format": "date-time"
+        },
+        "url": {
+          "type": "string",
+          "description": "Release page.",
+          "format": "uri"
+        }
+      }
+    },
+    "networks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "network": {
+            "type": "string",
+            "description": "mainnet or apothem."
+          },
+          "chain_id": {
+            "type": "integer",
+            "description": "Chain ID."
+          },
+          "stats_source": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Stats server the versions came from."
+          },
+          "nodes_reporting": {
+            "type": "integer",
+            "description": "Active nodes reporting to the stats server."
+          },
+          "versions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "version": {
+                  "type": "string",
+                  "description": "Client version, e.g. v2.6.0-stable."
+                },
+                "nodes": {
+                  "type": "integer",
+                  "description": "How many."
+                }
+              }
+            }
+          },
+          "on_latest_release_pct": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "description": "Share of reporting nodes on the latest release or newer."
+          },
+          "masternodes": {
+            "type": "object",
+            "properties": {
+              "total": {
+                "type": "integer",
+                "description": "Masternodes now."
+              },
+              "reporting": {
+                "type": "integer",
+                "description": "Of those, reporting a version (matched by coinbase)."
+              },
+              "versions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "version": {
+                      "type": "string",
+                      "description": "Client version, e.g. v2.6.0-stable."
+                    },
+                    "masternodes": {
+                      "type": "integer",
+                      "description": "How many."
+                    }
+                  }
+                }
+              },
+              "on_latest_release_pct": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "Share of reporting masternodes on the latest release or newer."
+              },
+              "by_candidate": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string",
+                  "description": "Version."
+                },
+                "description": "Masternode address to the client version it reports."
+              }
+            }
+          },
+          "upgrades": {
+            "type": "object",
+            "properties": {
+              "head_block": {
+                "type": "integer",
+                "description": "Current block."
+              },
+              "avg_block_time_seconds": {
+                "type": "number",
+                "description": "Recent average block time."
+              },
+              "source": {
+                "type": "string",
+                "description": "Where upgrades are read from."
+              },
+              "upcoming": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "fork": {
+                      "type": "string",
+                      "description": "Name in the client config, e.g. PragueBlock."
+                    },
+                    "block": {
+                      "type": "integer",
+                      "description": "Activation block."
+                    },
+                    "blocks_to_go": {
+                      "type": "integer",
+                      "description": "Blocks until activation."
+                    },
+                    "eta": {
+                      "type": "string",
+                      "description": "Estimated activation time at the current block rate. ISO 8601, UTC.",
+                      "format": "date-time"
+                    },
+                    "in_latest_release": {
+                      "type": "boolean",
+                      "description": "Scheduled in the latest release (nodes must run it or newer)."
+                    },
+                    "note": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "description": "Caveat."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

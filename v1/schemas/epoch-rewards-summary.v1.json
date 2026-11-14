@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards-summary.v1.json",
+  "title": "XDC epoch rewards summary (history line)",
+  "description": "One NDJSON line per epoch in v1/epoch-rewards/history/*.ndjson.",
+  "type": "object",
+  "required": [
+    "paid_in_epoch",
+    "method"
+  ],
+  "properties": {
+    "network": {
+      "type": "string",
+      "description": "Always mainnet.",
+      "enum": [
+        "mainnet"
+      ]
+    },
+    "chain_id": {
+      "type": "integer",
+      "description": "Always 50.",
+      "enum": [
+        50
+      ]
+    },
+    "paid_in_epoch": {
+      "type": "integer",
+      "description": "Epoch whose first block credited these rewards."
+    },
+    "rewarded_epoch": {
+      "type": "integer",
+      "description": "Epoch the rewards were earned in (paid_in_epoch - 2). XDC pays rewards two epochs later."
+    },
+    "paid_at_block": {
+      "type": "integer",
+      "description": "The epoch switch block that credited the rewards."
+    },
+    "paid_at_block_hash": {
+      "type": "string",
+      "description": "Hash of that block."
+    },
+    "paid_at_time": {
+      "type": "string",
+      "description": "Timestamp of that block. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "method": {
+      "type": "string",
+      "description": "balance_change: measured from each owner's balance across the epoch switch block (rewards are not transfers). reward_files: exact figures from eth_getRewardByHash.",
+      "enum": [
+        "balance_change",
+        "reward_files"
+      ]
+    },
+    "price": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Null unless the publisher has switched prices on (they are off by default): then the XDC price when the epoch was recorded, and null for epochs filled in later.",
+      "properties": {
+        "usd": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in US dollars."
+        },
+        "aud": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in Australian dollars."
+        },
+        "eur": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "XDC in euros."
+        },
+        "source": {
+          "type": "string",
+          "description": "Price source."
+        },
+        "at": {
+          "type": "string",
+          "description": "When the price was read. ISO 8601, UTC.",
+          "format": "date-time"
+        }
+      }
+    },
+    "typical_node_reward": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "What one fully working masternode earned this epoch: the median reward of owners who run exactly one masternode. Null if fewer than 3 such owners were paid.",
+      "properties": {
+        "reward_wei": {
+          "type": "string",
+          "description": "Typical reward per node (owner share). Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+          "pattern": "^[0-9]+$"
+        },
+        "reward_xdc": {
+          "type": "number",
+          "description": "Same in XDC, rounded."
+        },
+        "from_single_node_owners": {
+          "type": "integer",
+          "description": "How many single-node owners the median is taken from."
+        },
+        "note": {
+          "type": "string",
+          "description": "Explanation."
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "properties": {
+        "masternodes_eligible": {
+          "type": "integer",
+          "description": "Masternodes at the start of the rewarded epoch (from that epoch switch block's header)."
+        },
+        "owners": {
+          "type": "integer",
+          "description": "Distinct owner addresses of those masternodes."
+        },
+        "owners_paid": {
+          "type": "integer",
+          "description": "Owners whose reward was above zero (unverified rows not counted)."
+        },
+        "owners_unverified": {
+          "type": "integer",
+          "description": "Owner rows marked unverified: their measured figure could not be fully explained, so they are left out of every total here. 0 in a normal epoch."
+        },
+        "owners_with_several_nodes": {
+          "type": "integer",
+          "description": "Owners running more than one eligible masternode."
+        },
+        "owners_below_typical": {
+          "type": "integer",
+          "description": "Owners who received less than 98 % of node_count x typical reward (unverified rows not counted)."
+        },
+        "shortfall_nodes": {
+          "type": "number",
+          "description": "Total shortfall across owners, in typical-node rewards."
+        },
+        "owner_rewards_wei": {
+          "type": "string",
+          "description": "Sum of owner rewards (unverified rows left out). Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+          "pattern": "^[0-9]+$"
+        },
+        "owner_rewards_xdc": {
+          "type": "number",
+          "description": "Same in XDC, rounded."
+        },
+        "implied_all_rewards_xdc": {
+          "type": "number",
+          "description": "owner_rewards scaled up to include the 10 % foundation share (owner share is 90 %). Like owner_rewards, it leaves out unverified rows, so it is below the true total when there are any."
+        },
+        "value_usd": {
+          "type": "number",
+          "description": "Owner rewards valued at the recorded price."
+        }
+      }
+    },
+    "slashed_in_rewarded_epoch": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Address in lowercase 0x hex. Replace 0x with xdc for the XDC-style form.",
+        "pattern": "^0x[0-9a-f]{40}$"
+      },
+      "description": "Nodes listed as penalised in the first block of the rewarded epoch (they were not eligible for its rewards)."
+    }
+  }
+}

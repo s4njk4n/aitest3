@@ -1,0 +1,129 @@
+{
+  "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/catalog.v1.json",
+  "name": "XDC Open Data",
+  "description": "Free, open JSON about the XDC Network for AI agents, scripts and dashboards. No API key, no sign-up, CORS open.",
+  "publisher": {
+    "name": "XDC Outpost",
+    "url": "https://xdcoutpost.xyz/"
+  },
+  "docs": "https://xdcoutpost.xyz/XDC_Open_Data/",
+  "llms_txt": "https://xdcoutpost.xyz/XDC_Open_Data/llms.txt",
+  "repository": "https://github.com/s4njk4n/XDC_Open_Data",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "conventions": {
+    "timestamps": "ISO 8601, UTC, ending in Z",
+    "token_amounts": "Exact integer wei as strings (*_wei); *_xdc fields are rounded to 6 decimals for display",
+    "addresses": "Lowercase 0x-prefixed hex. For the xdc form, replace the leading 0x with xdc",
+    "freshness": "Every file has generated_at and update_interval_seconds; treat data older than stale_after_seconds as stale",
+    "versioning": "Paths start with /v1/. Fields are only added within v1; breaking changes get /v2/"
+  },
+  "fair_use": "Poll no faster than each dataset's update_interval_seconds. Cache responses. No key needed.",
+  "disclaimer": "Information only, provided as is without warranty. Not financial, tax or investment advice. Reward figures are measured from public chain data and may contain errors; check important figures against your own records.",
+  "license_note": "CC BY 4.0 covers XDC Outpost's own work in this feed. Data that comes from third-party services remains subject to their terms.",
+  "build_status": "https://xdcoutpost.xyz/XDC_Open_Data/v1/build-status.json",
+  "changes": "https://xdcoutpost.xyz/XDC_Open_Data/v1/changes.json",
+  "datasets": [
+    {
+      "id": "epoch-rewards",
+      "title": "XDC epoch rewards by owner (Mainnet)",
+      "description": "Masternode rewards credited at the most recent epoch switch, per owner address. Rewards are not transfers: they are measured from each owner's balance change across the epoch switch block. An owner with several nodes gets one combined amount, so each row also gives the owner's node count, the typical reward of one fully working node (from single-node owners), what the owner should have received, any shortfall, and an equal-share estimate per node. A figure that cannot be fully explained is marked unverified and left out of totals. Rewards paid in epoch N are for epoch N-2.",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/latest.json",
+      "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards.v1.json",
+      "update_interval_seconds": 3600,
+      "format": "application/json",
+      "history": {
+        "index": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/history/index.json",
+        "line_schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards-summary.v1.json",
+        "format": "application/x-ndjson",
+        "one_file_per": "UTC day"
+      },
+      "daily_totals": {
+        "index": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/index.json",
+        "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards-daily.v1.json",
+        "description": "Per-owner reward totals for each UTC day, for accounting and tax. Each day is also a CSV file (csv link in the index)."
+      },
+      "monthly_csv": {
+        "index": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/monthly/index.json",
+        "description": "One CSV per month: a row per owner per day (date, owner, owner_xdc_form, reward_xdc, reward_wei, epochs_paid, node_count, unverified_epochs)."
+      }
+    },
+    {
+      "id": "validators",
+      "title": "XDC validators and candidates (Mainnet)",
+      "description": "Every masternode candidate: owner address, stake and status (MASTERNODE, STANDBY or SLASHED), plus totals by status, the largest owners and owner concentration (how few owners hold 1/3 or 1/2 of masternode seats). Where the XDC governance dApp API is reachable, each candidate also has the last block it signed and a flag for masternodes that have stopped signing.",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/latest.json",
+      "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators.v1.json",
+      "update_interval_seconds": 3600,
+      "format": "application/json",
+      "history": {
+        "index": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/history/index.json",
+        "line_schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators-summary.v1.json",
+        "format": "application/x-ndjson",
+        "one_file_per": "UTC day"
+      }
+    },
+    {
+      "id": "validators-apothem",
+      "title": "XDC validators and candidates (Apothem testnet)",
+      "description": "The same as the Mainnet validators dataset, for the Apothem testnet (chain 51), so teams can test against it.",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/latest.json",
+      "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators.v1.json",
+      "update_interval_seconds": 3600,
+      "format": "application/json",
+      "history": {
+        "index": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/history/index.json",
+        "line_schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators-summary.v1.json",
+        "format": "application/x-ndjson",
+        "one_file_per": "UTC day"
+      }
+    },
+    {
+      "id": "events",
+      "title": "XDC network events",
+      "description": "Changes worth acting on, each reported once: masternode status changes (MASTERNODE, STANDBY, SLASHED), nodes that stop or resume signing, candidates added or removed, owners who receive no reward or fall below 90 % of the typical reward (and recover), and RPC endpoints going down or coming back. Also as an Atom feed of everything, and an Atom feed per owner address with just that owner's Mainnet events.",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/latest.json",
+      "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
+      "update_interval_seconds": 3600,
+      "format": "application/json",
+      "history": {
+        "index": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/history/index.json",
+        "line_schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/event.v1.json",
+        "format": "application/x-ndjson",
+        "one_file_per": "UTC day"
+      },
+      "atom": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml",
+      "owner_feed": {
+        "url_template": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/{owner}.xml",
+        "description": "Atom feed of one owner's Mainnet events. {owner} is the owner address in lowercase 0x form. Exists for every current candidate owner. Only this feed can write to it."
+      }
+    },
+    {
+      "id": "clients",
+      "title": "XDC node client versions and upcoming upgrades",
+      "description": "Client versions reported by nodes to the public XinFin stats server (all nodes and masternodes, share on the latest release, each masternode's version), the latest XDPoSChain release, and network upgrades scheduled by block number with estimated dates. Mainnet and Apothem.",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/clients/latest.json",
+      "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json",
+      "update_interval_seconds": 3600,
+      "format": "application/json"
+    },
+    {
+      "id": "yield",
+      "title": "XDC masternode realised yield (Mainnet)",
+      "description": "What masternodes actually earned over the last 1, 7 and 30 days, from measured rewards: the typical fully working node's XDC per epoch, per day and per year, APR on the minimum stake, and for each owner their rewards, APR on their own stake, average performance against the typical node, and zero-reward epochs.",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/yield/latest.json",
+      "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/yield.v1.json",
+      "update_interval_seconds": 3600,
+      "format": "application/json"
+    },
+    {
+      "id": "ecosystem-projects",
+      "title": "XDC ecosystem projects",
+      "description": "Tools, apps and services built on XDC, curated in XDC Atlas: name, summary, category, status, licence and links.",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/ecosystem/projects.json",
+      "schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/ecosystem-projects.v1.json",
+      "update_interval_seconds": 3600,
+      "format": "application/json"
+    }
+  ]
+}

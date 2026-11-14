@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators-summary.v1.json",
+  "title": "XDC validators summary (history line)",
+  "type": "object",
+  "required": [
+    "generated_at"
+  ],
+  "properties": {
+    "generated_at": {
+      "type": "string",
+      "description": "When recorded. ISO 8601, UTC.",
+      "format": "date-time"
+    },
+    "block_number": {
+      "type": "integer",
+      "description": "Block the data was read at."
+    },
+    "epoch": {
+      "type": "integer",
+      "description": "Epoch at that block."
+    },
+    "epoch_switch_block": {
+      "type": "integer",
+      "description": "First block of that epoch, whose header lists the masternodes and slashed nodes."
+    },
+    "candidates": {
+      "type": "integer",
+      "description": "Candidates listed: every address the validator contract lists with stake, plus the current masternodes and slashed nodes."
+    },
+    "by_status": {
+      "type": "object",
+      "description": "Count and stake per status.",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "count": {
+            "type": "integer",
+            "description": "Candidates."
+          },
+          "stake_wei": {
+            "type": "string",
+            "description": "Total stake. Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+            "pattern": "^[0-9]+$"
+          },
+          "stake_xdc": {
+            "type": "number",
+            "description": "Same in XDC."
+          }
+        }
+      }
+    },
+    "total_stake_wei": {
+      "type": "string",
+      "description": "Total stake of listed candidates (owner stake plus votes). Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+      "pattern": "^[0-9]+$"
+    },
+    "total_stake_xdc": {
+      "type": "number",
+      "description": "Same in XDC."
+    },
+    "unique_owners": {
+      "type": "integer",
+      "description": "Distinct owner addresses."
+    },
+    "masternode_owners": {
+      "type": "integer",
+      "description": "Distinct owners with at least one masternode."
+    },
+    "owners_with_several_masternodes": {
+      "type": "integer",
+      "description": "Owners with more than one masternode."
+    },
+    "governance_api": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Governance API the governance fields came from, or null if it was unreachable."
+    },
+    "masternodes_not_signing_recently": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Masternodes with not_signing_recently = true. Null when the governance site was unreachable or its data looked out of date."
+    },
+    "status_differs_from_governance": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Candidates whose status here differs from the governance site (usually timing)."
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Public parameters of the validator contract.",
+      "properties": {
+        "min_candidate_stake_wei": {
+          "type": "string",
+          "description": "Minimum stake to propose a masternode candidate. Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+          "pattern": "^[0-9]+$"
+        },
+        "min_candidate_stake_xdc": {
+          "type": "number",
+          "description": "Same in XDC."
+        },
+        "min_voter_stake_wei": {
+          "type": "string",
+          "description": "Minimum vote. Exact integer wei as a decimal string (1 XDC = 10^18 wei).",
+          "pattern": "^[0-9]+$"
+        },
+        "min_voter_stake_xdc": {
+          "type": "number",
+          "description": "Same in XDC."
+        },
+        "max_masternodes": {
+          "type": "integer",
+          "description": "Maximum number of masternodes."
+        },
+        "candidate_withdraw_delay_blocks": {
+          "type": "integer",
+          "description": "Blocks before a resigned owner can withdraw stake."
+        },
+        "voter_withdraw_delay_blocks": {
+          "type": "integer",
+          "description": "Blocks before an unvoted amount can be withdrawn."
+        }
+      }
+    },
+    "owner_concentration": {
+      "type": "object",
+      "properties": {
+        "one_third": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Fewest owners holding more than 1/3 of masternode seats."
+        },
+        "one_half": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Fewest owners holding more than 1/2 of masternode seats."
+        },
+        "note": {
+          "type": "string",
+          "description": "Caveat."
+        }
+      }
+    }
+  }
+}
