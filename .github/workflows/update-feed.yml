@@ -1,0 +1,90 @@
+name: Update open data feed
+
+# Every hour: builds the JSON files in v1/ and commits them, and GitHub Pages serves them.
+# GitHub can start scheduled runs a few minutes late (occasionally it skips one); the feed copes with both.
+
+on:
+  schedule:
+    - cron: "11 * * * *"
+  workflow_dispatch:
+    inputs:
+      diagnose:
+        description: "Also print which RPC endpoints support what (tick this on the first run)"
+        type: boolean
+        default: false
+      backfill:
+        description: "Also fill in this many earlier epochs (0-200; there are about 48 epochs a day)"
+        type: string
+        default: "0"
+
+permissions:
+  contents: write   # commit the generated files
+  pages: write      # ask GitHub Pages to publish them (end of the last step)
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - name: Check out the newest files
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref }}   # the branch as it is now, even if this run had to wait for an earlier one
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install the optional websocket client
+        run: python -m pip install --quiet websocket-client || echo "websocket-client not installed; client versions will use the stats server's REST API only"
+
+      - name: Build the feed
+        id: build
+        timeout-minutes: 40
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          PRIVATE_ARCHIVE_RPC: ${{ secrets.PRIVATE_ARCHIVE_RPC }}
+          DIAGNOSE: ${{ inputs.diagnose && '--diagnose' || '' }}
+          BACKFILL: ${{ inputs.backfill || '0' }}
+        run: |
+          case "$BACKFILL" in ''|*[!0-9]*) BACKFILL=0 ;; esac
+          python scripts/build_feed.py ${DIAGNOSE:+"$DIAGNOSE"} --backfill "$BACKFILL"
+
+      # Runs even if the build step failed or ran out of time: whatever it finished is saved, and every
+      # file is written whole, so a half-finished run cannot publish a broken file.
+      - name: Commit and publish
+        if: ${{ !cancelled() && steps.build.conclusion != 'skipped' }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A v1 state llms.txt
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -q -m "Update feed $(date -u +%Y-%m-%dT%H:%MZ)"
+          pushed=false
+          for _ in 1 2 3; do
+            if git push -q; then pushed=true; break; fi
+            echo "Push refused (something else was pushed first); rebasing and trying again."
+            git pull -q --rebase
+          done
+          if [ "$pushed" != true ]; then
+            echo "::error::Could not push the update after 3 tries."
+            exit 1
+          fi
+          # A push made by a workflow does not always start a GitHub Pages build, so ask for one.
+          curl -fsS -o /dev/null -X POST \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/pages/builds" \
+            || echo "::notice::Could not ask GitHub Pages for a build (is Pages switched on under Settings > Pages?). The files are committed either way."

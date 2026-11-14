@@ -1,0 +1,54 @@
+name: Compact repository history
+
+# The hourly job adds a commit every hour. Four times a year this squashes the history into a single commit
+# so the repository stays small. The files themselves do not change, and nothing published changes.
+#
+# GitHub may refuse this push from the built-in token, because the squashed commit contains the workflow
+# files. If it does, the run ends with a warning and nothing is changed. The one-time fix is a repository
+# secret named COMPACT_TOKEN holding a fine-grained personal access token for this repository with
+# "Contents" and "Workflows" set to read and write.
+
+on:
+  schedule:
+    - cron: "41 3 2 1,4,7,10 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed   # shared with the hourly job, so the two never run at the same time
+  cancel-in-progress: false
+
+jobs:
+  compact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the newest files
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref }}
+          token: ${{ secrets.COMPACT_TOKEN || github.token }}
+
+      - name: Squash the history into one commit
+        run: |
+          branch="$GITHUB_REF_NAME"
+          before="$(git rev-parse HEAD)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # A new commit with no parent that holds exactly the files of the current one.
+          git checkout -q --orphan compacted
+          git commit -q -m "Compact history $(date -u +%Y-%m-%d) (files unchanged)"
+          if [ "$(git rev-parse 'HEAD^{tree}')" != "$(git rev-parse "$before^{tree}")" ]; then
+            echo "::error::The squashed commit does not hold exactly the same files. Nothing was pushed."
+            exit 1
+          fi
+          # --force-with-lease: only if the branch is still where it was when this run checked it out.
+          if out="$(git push --force-with-lease="refs/heads/$branch:$before" origin "HEAD:refs/heads/$branch" 2>&1)"; then
+            echo "$out"
+            echo "History compacted into one commit."
+          else
+            echo "$out"
+            echo "::warning::GitHub did not accept the squashed history, so nothing was changed. If the message above mentions 'workflow', add a repository secret named COMPACT_TOKEN: a fine-grained personal access token for this repository with Contents and Workflows set to read and write."
+          fi
