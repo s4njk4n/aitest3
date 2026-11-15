@@ -6,7 +6,12 @@
     {
       "date": "2026-11-14",
       "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/history/2026-11-14.ndjson",
-      "lines": 19
+      "lines": 23
+    },
+    {
+      "date": "2026-11-15",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/history/2026-11-15.ndjson",
+      "lines": 2
     }
   ]
 }
