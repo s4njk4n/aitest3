@@ -12,6 +12,11 @@
       "date": "2026-11-15",
       "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/history/2026-11-15.ndjson",
       "lines": 4
+    },
+    {
+      "date": "2026-11-16",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/history/2026-11-16.ndjson",
+      "lines": 1
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json",
   "version": "1",
-  "generated_at": "2026-11-15T21:03:22Z",
+  "generated_at": "2026-11-16T01:03:27Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -19,7 +19,7 @@
       "network": "mainnet",
       "chain_id": 50,
       "stats_source": "wss://stats1.xinfin.network/primus",
-      "nodes_reporting": 491,
+      "nodes_reporting": 490,
       "versions": [
         {
           "version": "v3.0.0-devnet",
@@ -39,7 +39,7 @@
         },
         {
           "version": "v2.7.0-stable",
-          "nodes": 270
+          "nodes": 269
         },
         {
           "version": "v2.7.0-devnet",
@@ -87,8 +87,8 @@
       },
       "on_latest_release_pct": 17.1,
       "upgrades": {
-        "head_block": 109432352,
-        "avg_block_time_seconds": 2.542,
+        "head_block": 109437864,
+        "avg_block_time_seconds": 2.781,
         "upcoming": [],
         "source": "params/config_networks.go in XinFinOrg/XDPoSChain (latest release and master)"
       }
@@ -97,15 +97,15 @@
       "network": "apothem",
       "chain_id": 51,
       "stats_source": "https://api.apothem.network",
-      "nodes_reporting": 137,
+      "nodes_reporting": 135,
       "versions": [
         {
           "version": "v3.0.0-testnet-2-8bea8665",
-          "nodes": 2
+          "nodes": 1
         },
         {
           "version": "v3.0.0-testnet-2",
-          "nodes": 120
+          "nodes": 119
         },
         {
           "version": "v3.0.0-testnet-1",
@@ -145,7 +145,7 @@
         }
       ],
       "masternodes": {
-        "total": 103,
+        "total": 101,
         "reporting": 92,
         "versions": [
           {
@@ -255,14 +255,14 @@
       },
       "on_latest_release_pct": 95.6,
       "upgrades": {
-        "head_block": 85430265,
-        "avg_block_time_seconds": 2.18,
+        "head_block": 85437247,
+        "avg_block_time_seconds": 2.024,
         "upcoming": [
           {
             "fork": "PragueBlock",
             "block": 87633000,
-            "blocks_to_go": 2202735,
-            "eta": "2027-01-10T10:56:03.300000Z",
+            "blocks_to_go": 2195753,
+            "eta": "2027-01-06T11:33:30.072000Z",
             "in_latest_release": false,
             "note": "Only in development code (master), not yet in a release"
           }
