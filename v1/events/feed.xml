@@ -4,8 +4,43 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-16T07:59:51Z</updated>
+  <updated>2026-11-16T18:32:03Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] xdcf75c…999b: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:bfa5ccd195b89d22</id>
+    <updated>2026-11-16T18:32:03Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcdf4f…4763: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:b2565b2aab0501f1</id>
+    <updated>2026-11-16T18:32:03Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdca6cb…4aac: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:58add9dd14c07863</id>
+    <updated>2026-11-16T18:32:03Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc1a56…6ccd: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:c7c6b2a92146a9c1</id>
+    <updated>2026-11-16T18:32:03Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdca34e…d013: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:44bf9a6ce06b0d7e</id>
+    <updated>2026-11-16T18:32:03Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
   <entry>
     <title>[critical] xdca34e…d013: MASTERNODE → SLASHED</title>
     <id>urn:xdc-open-data:event:3e22323285127b9b</id>
