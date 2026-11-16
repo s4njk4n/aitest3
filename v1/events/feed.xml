@@ -4,8 +4,29 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-16T01:03:27Z</updated>
+  <updated>2026-11-16T07:59:51Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[critical] xdca34e…d013: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:3e22323285127b9b</id>
+    <updated>2026-11-16T07:59:51Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc830d…34a1: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:93330ce39e0383c9</id>
+    <updated>2026-11-16T07:59:51Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc1f91…eb20: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:3d1d518eb75b4a74</id>
+    <updated>2026-11-16T07:59:51Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
   <entry>
     <title>[critical] xdcdf4f…4763: MASTERNODE → SLASHED</title>
     <id>urn:xdc-open-data:event:859856e00e65f552</id>
