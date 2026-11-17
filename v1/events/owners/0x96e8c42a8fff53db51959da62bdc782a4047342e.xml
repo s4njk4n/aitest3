@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>XDC Open Data: events for owner xdc96e8…342e</title>
+  <subtitle>Status changes, signing gaps and reward problems for the masternodes of 0x96e8c42a8fff53db51959da62bdc782a4047342e (xdc form: xdc96e8c42a8fff53db51959da62bdc782a4047342e). Information only.</subtitle>
+  <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x96e8c42a8fff53db51959da62bdc782a4047342e.xml" rel="self"/>
+  <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
+  <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x96e8c42a8fff53db51959da62bdc782a4047342e.xml</id>
+  <updated>2026-11-17T20:53:47Z</updated>
+  <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] New candidate xdcf13c…03bb</title>
+    <id>urn:xdc-open-data:event:6a400d7e8af8abdb</id>
+    <updated>2026-11-17T20:53:47Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc8174…33c5</title>
+    <id>urn:xdc-open-data:event:a75bb887c64d716f</id>
+    <updated>2026-11-17T20:53:47Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc2652…e1cb</title>
+    <id>urn:xdc-open-data:event:94dd64adadadf049</id>
+    <updated>2026-11-17T20:53:47Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+</feed>
