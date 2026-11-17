@@ -12,6 +12,11 @@
       "date": "2026-11-15",
       "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-15.json",
       "csv": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-15.csv"
+    },
+    {
+      "date": "2026-11-16",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-16.json",
+      "csv": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-16.csv"
     }
   ]
 }
