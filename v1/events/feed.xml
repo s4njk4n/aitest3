@@ -4,8 +4,218 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-17T02:30:56Z</updated>
+  <updated>2026-11-17T11:47:07Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] xdcd6f1…aa68: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:6cf8d9d6ec8cf4ca</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcb84b…c2aa: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:12892c0807f613ac</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdca4ae…f83d</title>
+    <id>urn:xdc-open-data:event:db5ff944d14b983b</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc8615…9f1c</title>
+    <id>urn:xdc-open-data:event:35857781462301e0</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc745a…fcd5</title>
+    <id>urn:xdc-open-data:event:0e516e16eec6352f</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc5c71…8576</title>
+    <id>urn:xdc-open-data:event:9a30c46b368c49e7</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc2a4b…de17</title>
+    <id>urn:xdc-open-data:event:6b72c42152268c77</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc1ffc…6f3e</title>
+    <id>urn:xdc-open-data:event:e80a13185e6d3c88</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc0fb4…8322</title>
+    <id>urn:xdc-open-data:event:63334019ba5ea077</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[info] New candidate xdc0302…cd57</title>
+    <id>urn:xdc-open-data:event:6379823d9d8f4258</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="candidate_added"/>
+    <content type="text">Proposed with 10000000.0 XDC staked; status STANDBY.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdcdef4…0619: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:904f3c6818988bd0</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdcd5bb…41e4: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:49c56b33e3ebd86d</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdcd2fe…2caf: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:27dcfaa61cbb1428</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdcd22f…29b9: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:4ea0b7a1dca94998</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdcc7d4…b2bb: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:6289a32e58152200</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdcc02a…dc37: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:3d4a5af7087a6500</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdc609c…f819: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:2f2878b439c95632</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdc4e11…95d9: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:c484885d7f3a1652</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdc241f…7c05: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:0ba09376a1f4d029</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[warning] xdc03d9…c9ff: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:6fc17f2f629ce175</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcec4a…5440: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:c4e66e81418cb7e5</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdce2bc…5db7: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:3583addee1d620f6</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcdb2e…5ec5: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:21fbfc45830af552</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcbbd2…5cfe: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:4abf832d9c9e37a0</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc4b70…b746: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:844e579a3874e416</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc450d…b4ec: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:30a6a7a0160a25f8</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc3056…8fbe: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:abc6f63c1551d028</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc25c6…eaff: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:9e86281fad7c2eb9</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc1aff…12b4: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:5fcdd29ae8ae256c</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
+  <entry>
+    <title>[info] xdce451…6d85: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:c76e9e79ebb06e8a</id>
+    <updated>2026-11-17T11:47:07Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
   <entry>
     <title>[critical] xdcd6f1…aa68: MASTERNODE → SLASHED</title>
     <id>urn:xdc-open-data:event:1f830dd4a82ea7a9</id>
@@ -145,61 +355,5 @@
     <updated>2026-11-14T20:43:50Z</updated>
     <category term="owner_below_typical"/>
     <content type="text">Epoch 121905: 31.139363 XDC vs 42.001931 expected for 1 node(s); about 0.26 node(s)' worth missing.</content>
-  </entry>
-  <entry>
-    <title>[info] xdc68a2…7f5a: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:77b0628ef97511f4</id>
-    <updated>2026-11-14T20:43:50Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] xdc1f91…eb20: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:a993a71730f43c8d</id>
-    <updated>2026-11-14T20:43:50Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[critical] xdc830d…34a1: MASTERNODE → SLASHED</title>
-    <id>urn:xdc-open-data:event:08abc612c9d26597</id>
-    <updated>2026-11-14T15:49:31Z</updated>
-    <category term="status_slashed"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[critical] xdc68a2…7f5a: MASTERNODE → SLASHED</title>
-    <id>urn:xdc-open-data:event:8d9175882a8ee79a</id>
-    <updated>2026-11-14T15:49:31Z</updated>
-    <category term="status_slashed"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[critical] xdc1f91…eb20: MASTERNODE → SLASHED</title>
-    <id>urn:xdc-open-data:event:f9896ce6055c1209</id>
-    <updated>2026-11-14T15:49:31Z</updated>
-    <category term="status_slashed"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[critical] xdca34e…d013: MASTERNODE → SLASHED</title>
-    <id>urn:xdc-open-data:event:e4d1fdfd7c4bebd4</id>
-    <updated>2026-11-14T15:49:31Z</updated>
-    <category term="status_slashed"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] xdc8d95…31a6: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:ca8601dae1d6cc62</id>
-    <updated>2026-11-14T15:49:31Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] xdc59eb…64e9: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:27cb80c14c2dba06</id>
-    <updated>2026-11-14T15:49:31Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
   </entry>
 </feed>
