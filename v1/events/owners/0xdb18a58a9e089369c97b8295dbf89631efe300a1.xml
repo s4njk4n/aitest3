@@ -5,8 +5,15 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0xdb18a58a9e089369c97b8295dbf89631efe300a1.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0xdb18a58a9e089369c97b8295dbf89631efe300a1.xml</id>
-  <updated>2026-11-14T20:43:50Z</updated>
+  <updated>2026-11-18T02:55:38Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[warning] xdcc67c…96ab: MASTERNODE → STANDBY</title>
+    <id>urn:xdc-open-data:event:e1a887fa5aef0e40</id>
+    <updated>2026-11-18T02:55:38Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
   <entry>
     <title>[info] Owner xdcdb18…00a1 is back to the typical reward</title>
     <id>urn:xdc-open-data:event:62d84b7faaac8370</id>

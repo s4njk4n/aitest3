@@ -5,6 +5,20 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x4a642fa4923a655001d6319a5ce526baf4c53623.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x4a642fa4923a655001d6319a5ce526baf4c53623.xml</id>
-  <updated>2026-01-01T00:00:00Z</updated>
+  <updated>2026-11-18T02:55:38Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] Owner xdc4a64…3623 is back to the typical reward</title>
+    <id>urn:xdc-open-data:event:4bfa6a0d490883e6</id>
+    <updated>2026-11-18T02:55:38Z</updated>
+    <category term="owner_recovered"/>
+    <content type="text">Epoch 121972: 42.480469 XDC.</content>
+  </entry>
+  <entry>
+    <title>[warning] Owner xdc4a64…3623 earned 86 % of typical</title>
+    <id>urn:xdc-open-data:event:ec799f6f9270dadd</id>
+    <updated>2026-11-18T02:55:38Z</updated>
+    <category term="owner_below_typical"/>
+    <content type="text">Epoch 121971: 36.266925 XDC vs 42.069632 expected for 1 node(s); about 0.14 node(s)' worth missing.</content>
+  </entry>
 </feed>
