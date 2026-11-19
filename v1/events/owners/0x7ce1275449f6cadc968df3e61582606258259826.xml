@@ -5,8 +5,15 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x7ce1275449f6cadc968df3e61582606258259826.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x7ce1275449f6cadc968df3e61582606258259826.xml</id>
-  <updated>2026-11-18T20:30:01Z</updated>
+  <updated>2026-11-19T11:34:24Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] xdcf04f…9a03: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:66f78d8a1819f811</id>
+    <updated>2026-11-19T11:34:24Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
   <entry>
     <title>[warning] xdcf04f…9a03: MASTERNODE → STANDBY</title>
     <id>urn:xdc-open-data:event:17dc4b40a165bfa6</id>

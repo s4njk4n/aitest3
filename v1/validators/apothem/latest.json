@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators.v1.json",
   "version": "1",
-  "generated_at": "2026-11-19T02:33:50Z",
+  "generated_at": "2026-11-19T11:33:27Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -17,26 +17,26 @@
   "governance_note": "The governance object on each candidate comes from the XDC governance dApp API (https://master.apothem.network/api): the last block the node signed, as seen by that site's crawler, the data centre registered there. not_signing_recently means a MASTERNODE has not signed for more than 1800 blocks (about an hour); it is left out when that site's data looks out of date. The governance site numbers epochs by block number, which differs from the XDPoS 2.0 epoch numbers (by consensus round) used everywhere in this feed.",
   "history_note": "history_7d / history_30d on each candidate count epochs recorded by this feed in the last 7 / 30 UTC days ending on the most recent recorded day: epochs it was an eligible masternode and epochs it was slashed. They fill up as the feed runs, or after a backfill.",
   "summary": {
-    "block_number": 85565852,
-    "epoch": 95773,
-    "epoch_switch_block": 85565139,
+    "block_number": 85581498,
+    "epoch": 95791,
+    "epoch_switch_block": 85581254,
     "candidates": 138,
     "by_status": {
       "MASTERNODE": {
-        "count": 105,
-        "stake_wei": "1050000000000000000000000000",
-        "stake_xdc": 1050000000.0
+        "count": 107,
+        "stake_wei": "1070000000000000000000000000",
+        "stake_xdc": 1070000000.0
       },
       "SLASHED": {
-        "count": 33,
-        "stake_wei": "330225000000000000000000000",
-        "stake_xdc": 330225000.0
+        "count": 31,
+        "stake_wei": "310225000000000000000000000",
+        "stake_xdc": 310225000.0
       }
     },
     "total_stake_wei": "1380225000000000000000000000",
     "total_stake_xdc": 1380225000.0,
     "unique_owners": 105,
-    "masternode_owners": 80,
+    "masternode_owners": 82,
     "owners_with_several_masternodes": 1,
     "parameters": {
       "min_candidate_stake_wei": "10000000000000000000000000",
@@ -48,11 +48,11 @@
       "min_voter_stake_xdc": 25000.0
     },
     "governance_api": "https://master.apothem.network/api",
-    "masternodes_not_signing_recently": null,
+    "masternodes_not_signing_recently": 0,
     "status_differs_from_governance": 138,
     "owner_concentration": {
       "one_third": 11,
-      "one_half": 28,
+      "one_half": 29,
       "note": "Fewest owner addresses that together hold more than 1/3 (or 1/2) of masternode seats. One organisation may use several owner addresses, so real concentration can be higher."
     }
   },
@@ -246,9 +246,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x0be8d7a199ccdc04b1a1c4f7d723307b25d20eeb",
@@ -262,9 +263,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x0c1f08aa6b9faf0b506fcaa22b7c18d9b9899155",
@@ -278,9 +280,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x0dc32713f06f5dc52e152f0fbdfe01b490ff1642",
@@ -294,9 +297,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x0e6e9e836dec1793280a898be8022f15a1a3d71d",
@@ -310,9 +314,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x0f6b35250007ca9356be94e9d7dbc4df1f5e424a",
@@ -326,9 +331,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581480,
+        "blocks_since_last_signed": 18
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x11c3637d2848ebdc190d56d8b81348c21446e866",
@@ -342,9 +348,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x1551a4cf018dfd5f29946826bbd82879ef1c7c91",
@@ -358,9 +365,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x1a1b58d133effb6ba1631da7297d8cd58f65fa73",
@@ -374,9 +382,27 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
+    },
+    {
+      "candidate": "0x1a56b4eb82410bf6c9af800b2834a351c5166ccd",
+      "owner": "0xf5217ceebec77fc2b9babd2f298c20b6069a3bdb",
+      "status": "MASTERNODE",
+      "stake_wei": "10000000000000000000000000",
+      "stake_xdc": 10000000.0,
+      "owner_stake_xdc": 10000000.0,
+      "votes_xdc": 0.0,
+      "other_voters": 0,
+      "governance": {
+        "name": null,
+        "status": "STANDBY",
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x1ddf83310f7bc9ebc9ec13ff07fa72a5d0c6b70d",
@@ -390,9 +416,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x1e870937601fc462513e1b8708b21ceb08f8ec47",
@@ -406,9 +433,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x1eb06f579b5dc0cb1b29917ef3f2ba0e3a7b1e1c",
@@ -422,9 +450,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x1f65c24cd6d8a7125544fa81cc97fd9ba54f69bd",
@@ -438,9 +467,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x1f9143c47f4e8c602a66206a41eae49518f5eb20",
@@ -454,9 +484,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x219ad4fc274b5c82bca6600f32ebd6063feb6837",
@@ -470,9 +501,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x230ff79374ea54ae32752b1223e575322a1e1b7f",
@@ -486,9 +518,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x29ab85cbba0cf5f8de262e962261b260d47d5422",
@@ -502,9 +535,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x29ac90052996b94d4a17b015d5eeafea21fe6928",
@@ -518,9 +552,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x2d0fa4912bd4c65b392075be9a6bf29c43d8c3ee",
@@ -534,9 +569,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x2d4448421330d9052ca6d2606e1c4139f1a39ccf",
@@ -550,9 +586,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x30d0b4177dbce851e31a3aff87512a49ef6425ae",
@@ -566,9 +603,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x3176fd7a840920d3b2869a46fed4231e4e4d4103",
@@ -582,9 +620,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x32fb028453207699d7c15bb66377bcf9b29fb0fc",
@@ -598,9 +637,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x33fb554db5a905e3faa77c2e88c55cd497a30998",
@@ -614,9 +654,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x34f48c6407d9778ba848c0ae01f36d63a58fa791",
@@ -630,9 +671,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x3586c36b24e75f2cb76a683a5f6d8d68842c0480",
@@ -646,9 +688,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x36625699d2976d3935fe2e0112935f6bd73cb46a",
@@ -662,9 +705,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x3899bc4aaff3958bef29c63966aed3efa01988b7",
@@ -678,9 +722,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x3efa4d1d78391cc0929f7d7e01e9eeaaac8f4862",
@@ -694,9 +739,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x40964fcdd7cd130d6938976b06885d1a914480b4",
@@ -710,9 +756,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x45afe257f28f70333d91b2978d7d4d0013d04c48",
@@ -726,9 +773,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x47963d7b79447ebca9d340bd40e5ebbd472f133a",
@@ -742,9 +790,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x489229f15b429632a23dd66909855edf579ae6d8",
@@ -758,9 +807,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x4a7c23a8cedfa42a828d4887378c921ffeaf739a",
@@ -774,9 +824,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x4b9355b79e390c28184c8c80d0fc8b6d78278f2d",
@@ -790,9 +841,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x4f987ba2a6b04f7a489e676e4cb0bfa31b68b558",
@@ -806,9 +858,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x5394f863fd950734f3cca2c24b3d891cf88382c0",
@@ -822,9 +875,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x56496d265f0780c662eda1d6fd04cfba6c6c1079",
@@ -838,9 +892,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x59ebbff1abd4c9307b745b23bdd73e4fbffd64e9",
@@ -854,9 +909,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x5ae9b7c0534cd2885f78e71a6909526abf6d9f94",
@@ -870,9 +926,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x5b2a8c945cf13c2496cf176e5d303ca4ba636e1c",
@@ -886,9 +943,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x5b71b764059e39f5b93ad07ced36476cc95966f4",
@@ -902,9 +960,27 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
+    },
+    {
+      "candidate": "0x610279c76cbf6ac02e3410a3b1a588ad14c43724",
+      "owner": "0xd77f76e5dbbeb4f6d404e14e4e26c6852f3218c4",
+      "status": "MASTERNODE",
+      "stake_wei": "10000000000000000000000000",
+      "stake_xdc": 10000000.0,
+      "owner_stake_xdc": 10000000.0,
+      "votes_xdc": 0.0,
+      "other_voters": 0,
+      "governance": {
+        "name": null,
+        "status": "STANDBY",
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x6fc272ab476844576e8a088d19d9820366e56bc6",
@@ -918,9 +994,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x702e6d6c93a3829883f97bd0ffdeafaa33903ded",
@@ -934,9 +1011,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x70e0038d2ec66c5737f2561efcb60c10588cc7af",
@@ -950,9 +1028,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x725b73ae791ca1eb1b0dd24e586d1b5db04c56db",
@@ -966,9 +1045,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581420,
+        "blocks_since_last_signed": 78
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x7a8ef0452bbf25aa10441968cdf80071fcfb688b",
@@ -982,9 +1062,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x7afb39880a3fb1c943b6eddc6899bee12ce026d8",
@@ -998,9 +1079,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x7d4953d9a2b055467dac460726842f30d6598c0e",
@@ -1014,9 +1096,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x7d9779581e47bd617586bee50a93bf7d46127246",
@@ -1030,9 +1113,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x81ac7b84abc4ee6e8e021963b113ee8cd2a7732d",
@@ -1046,9 +1130,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x830d6f8a258e31448438d3ae6895e993a1f534a1",
@@ -1062,9 +1147,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x85e7614e5da94087e82fd5ce4430ec487fa25330",
@@ -1078,9 +1164,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x8767e56fe79aff44d1edcfd7dbaed1b1499c7b3d",
@@ -1094,9 +1181,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x882f9385d81dd8ec17bd5fbf0852559ce8fb8853",
@@ -1110,9 +1198,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x8d9532faf1690dd03b4822b6953052fe597231a6",
@@ -1126,9 +1215,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x8edd51c004fbb2935ddd751aa6c11046e49233eb",
@@ -1142,9 +1232,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x90c87c9ff588e9268a1c7c79a5986886e98c2f04",
@@ -1158,9 +1249,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x934f3a61a09581ba493d770472f714fe98499385",
@@ -1174,9 +1266,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x93eea33bc34371ad5fe0e5741199bf8e038ad19b",
@@ -1190,9 +1283,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x93f8fe066ab281efa3559b7f6c8ad992e90373c7",
@@ -1206,9 +1300,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x94a1e02cc29a10059bfa6315e28bcab0ec588c48",
@@ -1222,9 +1317,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x954776d6de5d492644f927335924b2e899b18379",
@@ -1238,9 +1334,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x9594884daf2acde67e89095702459b06dd60c302",
@@ -1254,9 +1351,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x98aef2ef032a0d09e1d62bff15d353d4e7faa810",
@@ -1270,9 +1368,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x9a1dbc86c0fb006926781eaf3fb655005323e832",
@@ -1286,9 +1385,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x9b0e0dcef19291482c355f53e6548ac4f161b2e0",
@@ -1302,9 +1402,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x9c01822aea01eb3a2c07c3c15db1c7e5a0f16a15",
@@ -1318,9 +1419,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x9c5b33fc32cf8126be3436c3a59db6067b4a577f",
@@ -1334,9 +1436,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xa4833ca46e31a289828cb0c909a3d3ea5fca671e",
@@ -1350,9 +1453,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xa6cb2af7e61662f8628aa057166848d6dc304aac",
@@ -1366,9 +1470,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb132e5c97eb400cb12eeaf6c3e34653ac0f5a2bf",
@@ -1382,9 +1487,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb1d6b18ca16dc2b683c8dba295c7288bb54a9ee2",
@@ -1398,9 +1504,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb3f385f184b546a10c95785e2a6a1fac33b06396",
@@ -1414,9 +1521,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb4cbbf49169181a0abad3b010f4d66a7e1f8027a",
@@ -1430,9 +1538,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb52012a854a190b4a53b5e5122144ffad4b8a926",
@@ -1446,9 +1555,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb56b3c1366978824b32ed2587deaee4d7c1d61a8",
@@ -1462,9 +1572,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb7ae526e99f58e2d2e9e007557a900de12ca0731",
@@ -1478,9 +1589,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb84bf95eaf3f18f4893a1f3057f38fb0544ac2aa",
@@ -1494,9 +1606,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xb9427630e12056f377c03c735f17169bd06f5756",
@@ -1510,9 +1623,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xbdb17fe37b052c333b66732f1c846112b2ba3594",
@@ -1526,9 +1640,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xcd13ed39d35ffdcf3c6d982cfd75883517f392fb",
@@ -1542,9 +1657,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xd1eaae87818901e392ad1f4c8f6db37218f8a9be",
@@ -1558,9 +1674,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xd4bf8f15de3218f401530403a865843596eab2c8",
@@ -1574,9 +1691,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xd6f1314f450b0a391b99a8aad8e6f2be2482aa68",
@@ -1590,9 +1708,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xd9285aaba32a2b38541de12126d969bd8da90ded",
@@ -1606,9 +1725,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xd99fca36b3a2b0a0ef42ec9ee48bbe0ef41880f5",
@@ -1622,9 +1742,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xdf4fdb608608f11b69d7b19ceaf5e065b3274763",
@@ -1638,9 +1759,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xdfdea182ed9da5353ecf0304bcb6730464674a78",
@@ -1654,9 +1776,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xe1eab5deb83423cd5eda06f6001539a4a6fce698",
@@ -1670,9 +1793,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xe33b0306b5fe85e2ba6faa8746442c9f6016edd0",
@@ -1686,9 +1810,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xe8501f428d7ecc974506ffc436fcceec926ede93",
@@ -1702,9 +1827,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xe899ec7529fee507fa8584a5c9bb55a51b202ed5",
@@ -1718,9 +1844,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xebaaecc0d4c9cb79cf0ece78b1da00e668b190f6",
@@ -1734,9 +1861,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xec3e3edaa7f52077fda7b02f1395f90c3a07558b",
@@ -1750,9 +1878,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xecb2c07451c654722647da09884bc95aa436fede",
@@ -1766,9 +1895,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xed09594d602bb2c747f26df803942f7c523c73e5",
@@ -1782,9 +1912,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xed29b1b855862c631ee00059a099cf7f6c2e54b0",
@@ -1798,9 +1929,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xeed9287ee1ba6912a4fe62aafb5d747262ed3644",
@@ -1814,9 +1946,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xf035b13a41d60aa21236fecd9ffae7ec489d30a0",
@@ -1830,9 +1963,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xf3d1a287a2dfa59db0726bcf184ff619fef8a275",
@@ -1846,9 +1980,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xf51e524da1f4aaa5a43c6f959c8ad36309353823",
@@ -1862,9 +1997,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xf75c1b2d102c4033624396f35e9bfd2b3897999b",
@@ -1878,9 +2014,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xff2bdd428f765cc5592eec019cb7ffff886e41c0",
@@ -1894,9 +2031,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0xfffee9d20a8b70145711433f5d53fc35ad753c42",
@@ -1910,9 +2048,10 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
-      }
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
+      },
+      "not_signing_recently": false
     },
     {
       "candidate": "0x536483bf8fb819f7768de179aadab33ea3fd6159",
@@ -1927,7 +2066,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84332985,
-        "blocks_since_last_signed": 1232867
+        "blocks_since_last_signed": 1248513
       }
     },
     {
@@ -1942,8 +2081,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563960,
-        "blocks_since_last_signed": 1892
+        "last_signed_block": 85581480,
+        "blocks_since_last_signed": 18
       }
     },
     {
@@ -1959,7 +2098,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84673965,
-        "blocks_since_last_signed": 891887
+        "blocks_since_last_signed": 907533
       }
     },
     {
@@ -2024,22 +2163,6 @@
         "status": "STANDBY",
         "last_signed_block": null,
         "blocks_since_last_signed": null
-      }
-    },
-    {
-      "candidate": "0x1a56b4eb82410bf6c9af800b2834a351c5166ccd",
-      "owner": "0xf5217ceebec77fc2b9babd2f298c20b6069a3bdb",
-      "status": "SLASHED",
-      "stake_wei": "10000000000000000000000000",
-      "stake_xdc": 10000000.0,
-      "owner_stake_xdc": 10000000.0,
-      "votes_xdc": 0.0,
-      "other_voters": 0,
-      "governance": {
-        "name": null,
-        "status": "STANDBY",
-        "last_signed_block": 85540305,
-        "blocks_since_last_signed": 25547
       }
     },
     {
@@ -2119,23 +2242,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84493650,
-        "blocks_since_last_signed": 1072202
-      }
-    },
-    {
-      "candidate": "0x610279c76cbf6ac02e3410a3b1a588ad14c43724",
-      "owner": "0xd77f76e5dbbeb4f6d404e14e4e26c6852f3218c4",
-      "status": "SLASHED",
-      "stake_wei": "10000000000000000000000000",
-      "stake_xdc": 10000000.0,
-      "owner_stake_xdc": 10000000.0,
-      "votes_xdc": 0.0,
-      "other_voters": 0,
-      "governance": {
-        "name": null,
-        "status": "STANDBY",
-        "last_signed_block": 85540305,
-        "blocks_since_last_signed": 25547
+        "blocks_since_last_signed": 1087848
       }
     },
     {
@@ -2151,7 +2258,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 85554765,
-        "blocks_since_last_signed": 11087
+        "blocks_since_last_signed": 26733
       }
     },
     {
@@ -2246,8 +2353,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85563990,
-        "blocks_since_last_signed": 1862
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
       }
     },
     {
@@ -2278,8 +2385,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": null,
-        "blocks_since_last_signed": null
+        "last_signed_block": 85581495,
+        "blocks_since_last_signed": 3
       }
     },
     {
@@ -2375,7 +2482,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84652080,
-        "blocks_since_last_signed": 913772
+        "blocks_since_last_signed": 929418
       }
     },
     {
