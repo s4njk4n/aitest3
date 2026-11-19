@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json",
   "version": "1",
-  "generated_at": "2026-11-19T11:34:24Z",
+  "generated_at": "2026-11-19T20:32:58Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -19,7 +19,7 @@
       "network": "mainnet",
       "chain_id": 50,
       "stats_source": "wss://stats1.xinfin.network/primus",
-      "nodes_reporting": 466,
+      "nodes_reporting": 488,
       "versions": [
         {
           "version": "v3.0.0-testnet-2",
@@ -31,15 +31,19 @@
         },
         {
           "version": "v2.9.0-devnet",
-          "nodes": 1
+          "nodes": 2
+        },
+        {
+          "version": "v2.8.2-testnet",
+          "nodes": 3
         },
         {
           "version": "v2.7.1-stable",
-          "nodes": 78
+          "nodes": 83
         },
         {
           "version": "v2.7.0-stable",
-          "nodes": 259
+          "nodes": 265
         },
         {
           "version": "v2.7.0-devnet",
@@ -47,7 +51,7 @@
         },
         {
           "version": "v2.6.8-stable",
-          "nodes": 116
+          "nodes": 122
         },
         {
           "version": "v2.4.2-stable",
@@ -59,7 +63,7 @@
         },
         {
           "version": "v2.2.4-stable",
-          "nodes": 3
+          "nodes": 4
         },
         {
           "version": "v2.2.3-stable",
@@ -85,10 +89,10 @@
         "by_candidate": {},
         "on_latest_release_pct": null
       },
-      "on_latest_release_pct": 17.4,
+      "on_latest_release_pct": 18.4,
       "upgrades": {
-        "head_block": 109527023,
-        "avg_block_time_seconds": 8.692,
+        "head_block": 109540963,
+        "avg_block_time_seconds": 3.77,
         "upcoming": [],
         "source": "params/config_networks.go in XinFinOrg/XDPoSChain (latest release and master)"
       }
@@ -105,7 +109,7 @@
         },
         {
           "version": "v3.0.0-testnet-2",
-          "nodes": 127
+          "nodes": 124
         },
         {
           "version": "v3.0.0-devnet",
@@ -121,7 +125,7 @@
         },
         {
           "version": "v2.8.2-testnet",
-          "nodes": 4
+          "nodes": 6
         },
         {
           "version": "v2.7.0-devnet",
@@ -136,13 +140,17 @@
           "nodes": 1
         },
         {
+          "version": "v2.4.6-beta1",
+          "nodes": 1
+        },
+        {
           "version": "v1.17.10-stable",
           "nodes": 1
         }
       ],
       "masternodes": {
-        "total": 107,
-        "reporting": 94,
+        "total": 108,
+        "reporting": 93,
         "versions": [
           {
             "version": "v3.0.0-testnet-2-8bea8665",
@@ -150,7 +158,7 @@
           },
           {
             "version": "v3.0.0-testnet-2",
-            "masternodes": 93
+            "masternodes": 92
           }
         ],
         "by_candidate": {
@@ -159,6 +167,7 @@
           "0x0c1f08aa6b9faf0b506fcaa22b7c18d9b9899155": "v3.0.0-testnet-2",
           "0x0dc32713f06f5dc52e152f0fbdfe01b490ff1642": "v3.0.0-testnet-2",
           "0x0e6e9e836dec1793280a898be8022f15a1a3d71d": "v3.0.0-testnet-2",
+          "0x0eb4d381d8c54ec7f1fe975a772174c2fcf082fc": "v3.0.0-testnet-2",
           "0x0f6b35250007ca9356be94e9d7dbc4df1f5e424a": "v3.0.0-testnet-2-8bea8665",
           "0x1551a4cf018dfd5f29946826bbd82879ef1c7c91": "v3.0.0-testnet-2",
           "0x1a1b58d133effb6ba1631da7297d8cd58f65fa73": "v3.0.0-testnet-2",
@@ -166,8 +175,8 @@
           "0x1eb06f579b5dc0cb1b29917ef3f2ba0e3a7b1e1c": "v3.0.0-testnet-2",
           "0x219ad4fc274b5c82bca6600f32ebd6063feb6837": "v3.0.0-testnet-2",
           "0x230ff79374ea54ae32752b1223e575322a1e1b7f": "v3.0.0-testnet-2",
+          "0x28f0c3fe9c3dc810b0b7ee39dc3f4a0af6cb65e7": "v3.0.0-testnet-2",
           "0x29ab85cbba0cf5f8de262e962261b260d47d5422": "v3.0.0-testnet-2",
-          "0x29ac90052996b94d4a17b015d5eeafea21fe6928": "v3.0.0-testnet-2",
           "0x2d0fa4912bd4c65b392075be9a6bf29c43d8c3ee": "v3.0.0-testnet-2",
           "0x2d4448421330d9052ca6d2606e1c4139f1a39ccf": "v3.0.0-testnet-2",
           "0x30d0b4177dbce851e31a3aff87512a49ef6425ae": "v3.0.0-testnet-2",
@@ -181,7 +190,6 @@
           "0x45afe257f28f70333d91b2978d7d4d0013d04c48": "v3.0.0-testnet-2",
           "0x47963d7b79447ebca9d340bd40e5ebbd472f133a": "v3.0.0-testnet-2",
           "0x489229f15b429632a23dd66909855edf579ae6d8": "v3.0.0-testnet-2",
-          "0x4a7c23a8cedfa42a828d4887378c921ffeaf739a": "v3.0.0-testnet-2",
           "0x4b9355b79e390c28184c8c80d0fc8b6d78278f2d": "v3.0.0-testnet-2",
           "0x4f987ba2a6b04f7a489e676e4cb0bfa31b68b558": "v3.0.0-testnet-2",
           "0x5394f863fd950734f3cca2c24b3d891cf88382c0": "v3.0.0-testnet-2",
@@ -198,24 +206,23 @@
           "0x7d4953d9a2b055467dac460726842f30d6598c0e": "v3.0.0-testnet-2",
           "0x7d9779581e47bd617586bee50a93bf7d46127246": "v3.0.0-testnet-2",
           "0x81ac7b84abc4ee6e8e021963b113ee8cd2a7732d": "v3.0.0-testnet-2",
+          "0x85e7614e5da94087e82fd5ce4430ec487fa25330": "v3.0.0-testnet-2",
           "0x8767e56fe79aff44d1edcfd7dbaed1b1499c7b3d": "v3.0.0-testnet-2",
           "0x882f9385d81dd8ec17bd5fbf0852559ce8fb8853": "v3.0.0-testnet-2",
           "0x8d9532faf1690dd03b4822b6953052fe597231a6": "v3.0.0-testnet-2",
           "0x8edd51c004fbb2935ddd751aa6c11046e49233eb": "v3.0.0-testnet-2",
-          "0x90c87c9ff588e9268a1c7c79a5986886e98c2f04": "v3.0.0-testnet-2",
           "0x934f3a61a09581ba493d770472f714fe98499385": "v3.0.0-testnet-2",
           "0x93eea33bc34371ad5fe0e5741199bf8e038ad19b": "v3.0.0-testnet-2",
           "0x93f8fe066ab281efa3559b7f6c8ad992e90373c7": "v3.0.0-testnet-2",
           "0x94a1e02cc29a10059bfa6315e28bcab0ec588c48": "v3.0.0-testnet-2",
-          "0x954776d6de5d492644f927335924b2e899b18379": "v3.0.0-testnet-2",
           "0x9594884daf2acde67e89095702459b06dd60c302": "v3.0.0-testnet-2",
           "0x98aef2ef032a0d09e1d62bff15d353d4e7faa810": "v3.0.0-testnet-2",
           "0x9a1dbc86c0fb006926781eaf3fb655005323e832": "v3.0.0-testnet-2",
-          "0x9b0e0dcef19291482c355f53e6548ac4f161b2e0": "v3.0.0-testnet-2",
           "0x9c01822aea01eb3a2c07c3c15db1c7e5a0f16a15": "v3.0.0-testnet-2",
           "0x9c5b33fc32cf8126be3436c3a59db6067b4a577f": "v3.0.0-testnet-2",
           "0xa4833ca46e31a289828cb0c909a3d3ea5fca671e": "v3.0.0-testnet-2",
           "0xa6cb2af7e61662f8628aa057166848d6dc304aac": "v3.0.0-testnet-2",
+          "0xaeab361123d43cfb341e1ed4ff9da2cda1919bcf": "v3.0.0-testnet-2",
           "0xb132e5c97eb400cb12eeaf6c3e34653ac0f5a2bf": "v3.0.0-testnet-2",
           "0xb1d6b18ca16dc2b683c8dba295c7288bb54a9ee2": "v3.0.0-testnet-2",
           "0xb3f385f184b546a10c95785e2a6a1fac33b06396": "v3.0.0-testnet-2",
@@ -251,16 +258,16 @@
         },
         "on_latest_release_pct": 100.0
       },
-      "on_latest_release_pct": 95.8,
+      "on_latest_release_pct": 95.1,
       "upgrades": {
-        "head_block": 85581531,
-        "avg_block_time_seconds": 2.077,
+        "head_block": 85597247,
+        "avg_block_time_seconds": 2.036,
         "upcoming": [
           {
             "fork": "PragueBlock",
             "block": 87633000,
-            "blocks_to_go": 2051469,
-            "eta": "2027-01-07T19:09:23.113000Z",
+            "blocks_to_go": 2035753,
+            "eta": "2027-01-06T19:52:49.108000Z",
             "in_latest_release": false,
             "note": "Only in development code (master), not yet in a release"
           }
