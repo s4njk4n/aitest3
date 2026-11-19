@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/validators.v1.json",
   "version": "1",
-  "generated_at": "2026-11-18T20:29:25Z",
+  "generated_at": "2026-11-19T02:33:50Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -17,26 +17,26 @@
   "governance_note": "The governance object on each candidate comes from the XDC governance dApp API (https://master.apothem.network/api): the last block the node signed, as seen by that site's crawler, the data centre registered there. not_signing_recently means a MASTERNODE has not signed for more than 1800 blocks (about an hour); it is left out when that site's data looks out of date. The governance site numbers epochs by block number, which differs from the XDPoS 2.0 epoch numbers (by consensus round) used everywhere in this feed.",
   "history_note": "history_7d / history_30d on each candidate count epochs recorded by this feed in the last 7 / 30 UTC days ending on the most recent recorded day: epochs it was an eligible masternode and epochs it was slashed. They fill up as the feed runs, or after a backfill.",
   "summary": {
-    "block_number": 85555335,
-    "epoch": 95762,
-    "epoch_switch_block": 85555300,
+    "block_number": 85565852,
+    "epoch": 95773,
+    "epoch_switch_block": 85565139,
     "candidates": 138,
     "by_status": {
       "MASTERNODE": {
-        "count": 106,
-        "stake_wei": "1060050000000000000000000000",
-        "stake_xdc": 1060050000.0
+        "count": 105,
+        "stake_wei": "1050000000000000000000000000",
+        "stake_xdc": 1050000000.0
       },
       "SLASHED": {
-        "count": 32,
-        "stake_wei": "320175000000000000000000000",
-        "stake_xdc": 320175000.0
+        "count": 33,
+        "stake_wei": "330225000000000000000000000",
+        "stake_xdc": 330225000.0
       }
     },
     "total_stake_wei": "1380225000000000000000000000",
     "total_stake_xdc": 1380225000.0,
     "unique_owners": 105,
-    "masternode_owners": 81,
+    "masternode_owners": 80,
     "owners_with_several_masternodes": 1,
     "parameters": {
       "min_candidate_stake_wei": "10000000000000000000000000",
@@ -52,7 +52,7 @@
     "status_differs_from_governance": 138,
     "owner_concentration": {
       "one_third": 11,
-      "one_half": 29,
+      "one_half": 28,
       "note": "Fewest owner addresses that together hold more than 1/3 (or 1/2) of masternode seats. One organisation may use several owner addresses, so real concentration can be higher."
     }
   },
@@ -198,13 +198,6 @@
       "stake_xdc": 10000000.0
     },
     {
-      "owner": "0x4ddff6d16cd303bd12397df30cc45bad825429df",
-      "nodes": 1,
-      "masternodes": 1,
-      "stake_wei": "10050000000000000000000000",
-      "stake_xdc": 10050000.0
-    },
-    {
       "owner": "0x4e27b506048db828dd7796898c2db8e924b60de7",
       "nodes": 1,
       "masternodes": 1,
@@ -231,25 +224,16 @@
       "masternodes": 1,
       "stake_wei": "10000000000000000000000000",
       "stake_xdc": 10000000.0
+    },
+    {
+      "owner": "0x55495a8530762ab56bce2d498e46b93d4aa01701",
+      "nodes": 1,
+      "masternodes": 1,
+      "stake_wei": "10000000000000000000000000",
+      "stake_xdc": 10000000.0
     }
   ],
   "candidates": [
-    {
-      "candidate": "0xa34e91459a95965a812c0585fd5b1d74d77ed013",
-      "owner": "0x4ddff6d16cd303bd12397df30cc45bad825429df",
-      "status": "MASTERNODE",
-      "stake_wei": "10050000000000000000000000",
-      "stake_xdc": 10050000.0,
-      "owner_stake_xdc": 10000000.0,
-      "votes_xdc": 50000.0,
-      "other_voters": 1,
-      "governance": {
-        "name": null,
-        "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
-      }
-    },
     {
       "candidate": "0x05a18817360bab4a2fab4958ab43beea66985828",
       "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
@@ -262,8 +246,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -278,8 +262,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -294,8 +278,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -310,8 +294,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -326,8 +310,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -342,8 +326,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -358,8 +342,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -374,8 +358,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -390,8 +374,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -406,8 +390,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -422,8 +406,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -438,8 +422,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -454,8 +438,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -470,8 +454,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -486,8 +470,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -502,8 +486,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -518,8 +502,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -534,8 +518,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -550,8 +534,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -566,8 +550,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -582,8 +566,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -598,8 +582,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -614,8 +598,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -630,8 +614,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -646,8 +630,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -662,8 +646,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -678,8 +662,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -694,8 +678,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -710,8 +694,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -726,8 +710,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -742,8 +726,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -758,8 +742,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -774,8 +758,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -790,8 +774,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -806,8 +790,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -822,8 +806,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -838,8 +822,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -854,8 +838,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -870,8 +854,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -886,8 +870,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553310,
-        "blocks_since_last_signed": 2025
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -902,8 +886,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -918,8 +902,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -934,8 +918,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -950,8 +934,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -966,8 +950,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -982,8 +966,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -998,8 +982,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1014,8 +998,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1030,8 +1014,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1046,8 +1030,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1062,8 +1046,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1078,8 +1062,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1094,8 +1078,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1110,8 +1094,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1126,8 +1110,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1142,8 +1126,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1158,8 +1142,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1174,8 +1158,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1190,8 +1174,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1206,8 +1190,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1222,8 +1206,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1238,8 +1222,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1254,8 +1238,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1270,8 +1254,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1286,8 +1270,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1302,8 +1286,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1318,8 +1302,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1334,8 +1318,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1350,8 +1334,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1366,8 +1350,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1382,8 +1366,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1398,8 +1382,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1414,8 +1398,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1430,8 +1414,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1446,8 +1430,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1462,8 +1446,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1478,8 +1462,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1494,8 +1478,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1510,8 +1494,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1526,8 +1510,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1542,8 +1526,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1558,8 +1542,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1574,8 +1558,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1590,8 +1574,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1606,8 +1590,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1622,8 +1606,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1638,8 +1622,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1654,8 +1638,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1670,8 +1654,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1686,8 +1670,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1702,8 +1686,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1718,8 +1702,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1734,8 +1718,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1750,8 +1734,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1766,8 +1750,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1782,8 +1766,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1798,8 +1782,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553295,
-        "blocks_since_last_signed": 2040
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1814,8 +1798,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1830,8 +1814,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1846,8 +1830,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1862,8 +1846,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1878,8 +1862,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1894,8 +1878,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1910,8 +1894,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1926,8 +1910,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -1943,7 +1927,23 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84332985,
-        "blocks_since_last_signed": 1222350
+        "blocks_since_last_signed": 1232867
+      }
+    },
+    {
+      "candidate": "0xa34e91459a95965a812c0585fd5b1d74d77ed013",
+      "owner": "0x4ddff6d16cd303bd12397df30cc45bad825429df",
+      "status": "SLASHED",
+      "stake_wei": "10050000000000000000000000",
+      "stake_xdc": 10050000.0,
+      "owner_stake_xdc": 10000000.0,
+      "votes_xdc": 50000.0,
+      "other_voters": 1,
+      "governance": {
+        "name": null,
+        "status": "STANDBY",
+        "last_signed_block": 85563960,
+        "blocks_since_last_signed": 1892
       }
     },
     {
@@ -1959,7 +1959,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84673965,
-        "blocks_since_last_signed": 881370
+        "blocks_since_last_signed": 891887
       }
     },
     {
@@ -2039,7 +2039,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 85540305,
-        "blocks_since_last_signed": 15030
+        "blocks_since_last_signed": 25547
       }
     },
     {
@@ -2119,7 +2119,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84493650,
-        "blocks_since_last_signed": 1061685
+        "blocks_since_last_signed": 1072202
       }
     },
     {
@@ -2135,7 +2135,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 85540305,
-        "blocks_since_last_signed": 15030
+        "blocks_since_last_signed": 25547
       }
     },
     {
@@ -2150,8 +2150,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85554765,
+        "blocks_since_last_signed": 11087
       }
     },
     {
@@ -2246,8 +2246,8 @@
       "governance": {
         "name": null,
         "status": "STANDBY",
-        "last_signed_block": 85553325,
-        "blocks_since_last_signed": 2010
+        "last_signed_block": 85563990,
+        "blocks_since_last_signed": 1862
       }
     },
     {
@@ -2375,7 +2375,7 @@
         "name": null,
         "status": "STANDBY",
         "last_signed_block": 84652080,
-        "blocks_since_last_signed": 903255
+        "blocks_since_last_signed": 913772
       }
     },
     {
