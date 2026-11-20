@@ -5,8 +5,15 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x4ffd3ba6ff14a759d4077a9e3932e9627fe4e2cd.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x4ffd3ba6ff14a759d4077a9e3932e9627fe4e2cd.xml</id>
-  <updated>2026-11-19T20:32:58Z</updated>
+  <updated>2026-11-20T02:19:31Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] Owner xdc4ffd…e2cd is back to the typical reward</title>
+    <id>urn:xdc-open-data:event:6e96d8a6b0fc8031</id>
+    <updated>2026-11-20T02:19:31Z</updated>
+    <category term="owner_recovered"/>
+    <content type="text">Epoch 122004: 39.873418 XDC.</content>
+  </entry>
   <entry>
     <title>[warning] Owner xdc4ffd…e2cd earned 88 % of typical</title>
     <id>urn:xdc-open-data:event:1fc02507e71f9937</id>
