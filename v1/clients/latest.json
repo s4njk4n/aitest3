@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json",
   "version": "1",
-  "generated_at": "2026-11-21T01:30:11Z",
+  "generated_at": "2026-11-21T09:44:08Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -19,14 +19,10 @@
       "network": "mainnet",
       "chain_id": 50,
       "stats_source": "wss://stats1.xinfin.network/primus",
-      "nodes_reporting": 490,
+      "nodes_reporting": 487,
       "versions": [
         {
           "version": "v3.0.0-testnet-2",
-          "nodes": 1
-        },
-        {
-          "version": "v3.0.0-devnet",
           "nodes": 1
         },
         {
@@ -43,7 +39,7 @@
         },
         {
           "version": "v2.7.0-stable",
-          "nodes": 265
+          "nodes": 264
         },
         {
           "version": "v2.7.0-devnet",
@@ -51,7 +47,7 @@
         },
         {
           "version": "v2.6.8-stable",
-          "nodes": 123
+          "nodes": 122
         },
         {
           "version": "v2.4.2-stable",
@@ -89,10 +85,10 @@
         "by_candidate": {},
         "on_latest_release_pct": null
       },
-      "on_latest_release_pct": 18.6,
+      "on_latest_release_pct": 18.5,
       "upgrades": {
-        "head_block": 109581122,
-        "avg_block_time_seconds": 2.583,
+        "head_block": 109593137,
+        "avg_block_time_seconds": 2.793,
         "upcoming": [],
         "source": "params/config_networks.go in XinFinOrg/XDPoSChain (latest release and master)"
       }
@@ -109,7 +105,7 @@
         },
         {
           "version": "v3.0.0-testnet-2",
-          "nodes": 124
+          "nodes": 125
         },
         {
           "version": "v3.0.0-devnet",
@@ -125,7 +121,7 @@
         },
         {
           "version": "v2.8.2-testnet",
-          "nodes": 8
+          "nodes": 7
         },
         {
           "version": "v2.7.0-devnet",
@@ -150,7 +146,7 @@
       ],
       "masternodes": {
         "total": 108,
-        "reporting": 92,
+        "reporting": 94,
         "versions": [
           {
             "version": "v3.0.0-testnet-2-8bea8665",
@@ -158,7 +154,7 @@
           },
           {
             "version": "v3.0.0-testnet-2",
-            "masternodes": 91
+            "masternodes": 93
           }
         ],
         "by_candidate": {
@@ -184,6 +180,7 @@
           "0x32fb028453207699d7c15bb66377bcf9b29fb0fc": "v3.0.0-testnet-2",
           "0x33fb554db5a905e3faa77c2e88c55cd497a30998": "v3.0.0-testnet-2",
           "0x34f48c6407d9778ba848c0ae01f36d63a58fa791": "v3.0.0-testnet-2",
+          "0x3586c36b24e75f2cb76a683a5f6d8d68842c0480": "v3.0.0-testnet-2",
           "0x36625699d2976d3935fe2e0112935f6bd73cb46a": "v3.0.0-testnet-2",
           "0x3899bc4aaff3958bef29c63966aed3efa01988b7": "v3.0.0-testnet-2",
           "0x45afe257f28f70333d91b2978d7d4d0013d04c48": "v3.0.0-testnet-2",
@@ -242,6 +239,7 @@
           "0xe71bf07a2f502bd7dd8a92a10e13b441ee72b908": "v3.0.0-testnet-2",
           "0xe899ec7529fee507fa8584a5c9bb55a51b202ed5": "v3.0.0-testnet-2",
           "0xeae878c4ee2bfe1f9b3583f30fb2e48c85de3969": "v3.0.0-testnet-2",
+          "0xebaaecc0d4c9cb79cf0ece78b1da00e668b190f6": "v3.0.0-testnet-2",
           "0xec3e3edaa7f52077fda7b02f1395f90c3a07558b": "v3.0.0-testnet-2",
           "0xecb2c07451c654722647da09884bc95aa436fede": "v3.0.0-testnet-2",
           "0xed09594d602bb2c747f26df803942f7c523c73e5": "v3.0.0-testnet-2",
@@ -259,14 +257,14 @@
       },
       "on_latest_release_pct": 95.1,
       "upgrades": {
-        "head_block": 85647744,
-        "avg_block_time_seconds": 2.067,
+        "head_block": 85662084,
+        "avg_block_time_seconds": 2.019,
         "upcoming": [
           {
             "fork": "PragueBlock",
             "block": 87633000,
-            "blocks_to_go": 1985256,
-            "eta": "2027-01-07T13:22:14.152000Z",
+            "blocks_to_go": 1970916,
+            "eta": "2027-01-06T11:05:26.404000Z",
             "in_latest_release": false,
             "note": "Only in development code (master), not yet in a release"
           }
