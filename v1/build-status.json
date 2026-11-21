@@ -1,10 +1,10 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/build-status.v1.json",
-  "last_build_at": "2026-11-21T17:25:51Z",
+  "last_build_at": "2026-11-21T23:09:09Z",
   "steps": {
     "epoch_rewards": {
       "ok": true,
-      "result": "Processed epochs 122034..122039; chain is at epoch 122141",
+      "result": "Processed epochs 122040..122045; chain is at epoch 122150",
       "notes": []
     },
     "validators": {
@@ -21,12 +21,12 @@
     },
     "yield": {
       "ok": true,
-      "result": "Updated (1469.1924 XDC/day per typical node over 4.13 days)",
+      "result": "Updated (1470.7362 XDC/day per typical node over 4.29 days)",
       "notes": []
     },
     "clients": {
       "ok": true,
-      "result": "Updated (mainnet: 490 nodes reporting, 0 upcoming upgrade(s))",
+      "result": "Updated (mainnet: 491 nodes reporting, 0 upcoming upgrade(s))",
       "notes": [
         "Network config at v2.7.1 unavailable: HTTP Error 404: Not Found",
         "mainnet stats https://stats1.xinfin.network: HTTP Error 404: Not Found",
@@ -45,7 +45,7 @@
     },
     "events": {
       "ok": true,
-      "result": "14 new event(s), 1 owner feed(s) updated, 1 feed file(s) written",
+      "result": "3 new event(s), 0 owner feed(s) updated",
       "notes": []
     },
     "catalog": {
