@@ -5,8 +5,15 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x8fda661df251b4c3b4e1e832d426c6f889878529.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x8fda661df251b4c3b4e1e832d426c6f889878529.xml</id>
-  <updated>2026-11-19T20:32:58Z</updated>
+  <updated>2026-11-22T11:25:57Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[warning] Owner xdc8fda…8529 earned 90 % of typical</title>
+    <id>urn:xdc-open-data:event:041e8c3e7f95b8ab</id>
+    <updated>2026-11-22T11:25:57Z</updated>
+    <category term="owner_below_typical"/>
+    <content type="text">Epoch 122057: 585.212805 XDC vs 650.69116 expected for 15 node(s); about 1.51 node(s)' worth missing.</content>
+  </entry>
   <entry>
     <title>[info] xdce451…6d85: SLASHED → MASTERNODE</title>
     <id>urn:xdc-open-data:event:0676d0745a41be85</id>

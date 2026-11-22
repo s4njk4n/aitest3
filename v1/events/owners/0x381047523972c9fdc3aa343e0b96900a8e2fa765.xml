@@ -5,8 +5,15 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x381047523972c9fdc3aa343e0b96900a8e2fa765.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x381047523972c9fdc3aa343e0b96900a8e2fa765.xml</id>
-  <updated>2026-11-21T09:44:08Z</updated>
+  <updated>2026-11-22T11:25:57Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[warning] Owner xdc3810…a765 earned 87 % of typical</title>
+    <id>urn:xdc-open-data:event:b79119eceaeef268</id>
+    <updated>2026-11-22T11:25:57Z</updated>
+    <category term="owner_below_typical"/>
+    <content type="text">Epoch 122057: 37.650055 XDC vs 43.379411 expected for 1 node(s); about 0.13 node(s)' worth missing.</content>
+  </entry>
   <entry>
     <title>[info] xdc25c6…eaff: STANDBY → MASTERNODE</title>
     <id>urn:xdc-open-data:event:01fe7a33ea121889</id>
