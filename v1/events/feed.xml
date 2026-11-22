@@ -4,8 +4,22 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-22T11:25:57Z</updated>
+  <updated>2026-11-22T19:34:28Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] Owner xdc3810…a765 is back to the typical reward</title>
+    <id>urn:xdc-open-data:event:023e18fe14b5b241</id>
+    <updated>2026-11-22T19:34:28Z</updated>
+    <category term="owner_recovered"/>
+    <content type="text">Epoch 122058: 41.242363 XDC.</content>
+  </entry>
+  <entry>
+    <title>[info] Owner xdc8fda…8529 is back to the typical reward</title>
+    <id>urn:xdc-open-data:event:581ecd0ee4da2e52</id>
+    <updated>2026-11-22T19:34:28Z</updated>
+    <category term="owner_recovered"/>
+    <content type="text">Epoch 122058: 583.503055 XDC.</content>
+  </entry>
   <entry>
     <title>[warning] Owner xdc3810…a765 earned 87 % of typical</title>
     <id>urn:xdc-open-data:event:b79119eceaeef268</id>
@@ -340,20 +354,6 @@
     <id>urn:xdc-open-data:event:023a367f4da10d08</id>
     <updated>2026-11-20T20:08:28Z</updated>
     <category term="status_slashed"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[warning] xdcb942…5756: MASTERNODE → STANDBY</title>
-    <id>urn:xdc-open-data:event:64c01cf76cea289a</id>
-    <updated>2026-11-20T20:08:28Z</updated>
-    <category term="status_standby"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[warning] xdcb84b…c2aa: MASTERNODE → STANDBY</title>
-    <id>urn:xdc-open-data:event:c62860e2b7b34e1d</id>
-    <updated>2026-11-20T20:08:28Z</updated>
-    <category term="status_standby"/>
     <content type="text">Status changed at the current epoch switch on apothem.</content>
   </entry>
 </feed>
