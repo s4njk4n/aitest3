@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
   "version": "1",
-  "generated_at": "2026-11-21T23:13:20Z",
+  "generated_at": "2026-11-22T03:12:24Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,6 +9,28 @@
   "license": "CC-BY-4.0",
   "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
   "events": [
+    {
+      "time": "2026-11-22T03:12:24Z",
+      "type": "status_slashed",
+      "severity": "critical",
+      "network": "apothem",
+      "title": "xdcb84b…c2aa: MASTERNODE → SLASHED",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xb84bf95eaf3f18f4893a1f3057f38fb0544ac2aa",
+      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
+      "id": "97da60b8fbc7833c"
+    },
+    {
+      "time": "2026-11-22T03:12:24Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdcb5e5…76f4: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xb5e5acab644dcbdf64103af723be8d62ccec76f4",
+      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
+      "id": "6b5b2c45473a568a"
+    },
     {
       "time": "2026-11-21T23:13:20Z",
       "type": "status_slashed",

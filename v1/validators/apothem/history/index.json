@@ -42,6 +42,11 @@
       "date": "2026-11-21",
       "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/history/2026-11-21.ndjson",
       "lines": 4
+    },
+    {
+      "date": "2026-11-22",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/validators/apothem/history/2026-11-22.ndjson",
+      "lines": 1
     }
   ]
 }
