@@ -31,7 +31,12 @@
     {
       "date": "2026-11-19",
       "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/history/2026-11-19.ndjson",
-      "lines": 22
+      "lines": 23
+    },
+    {
+      "date": "2026-11-20",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/history/2026-11-20.ndjson",
+      "lines": 5
     }
   ]
 }

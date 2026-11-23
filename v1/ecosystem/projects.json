@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/ecosystem-projects.v1.json",
   "version": "1",
-  "generated_at": "2026-11-23T09:01:18Z",
+  "generated_at": "2026-11-23T21:18:12Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
