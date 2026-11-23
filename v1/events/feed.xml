@@ -4,8 +4,29 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-23T00:51:34Z</updated>
+  <updated>2026-11-23T09:01:18Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[critical] xdcb5e5…76f4: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:7d17396d727a010a</id>
+    <updated>2026-11-23T09:01:18Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcb84b…c2aa: SLASHED → STANDBY</title>
+    <id>urn:xdc-open-data:event:283bce553cc78803</id>
+    <updated>2026-11-23T09:01:18Z</updated>
+    <category term="status_standby"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcdf4f…4763: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:5572e56c426a33b5</id>
+    <updated>2026-11-23T09:01:18Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
   <entry>
     <title>[info] Owner xdcb252…9238 is back to the typical reward</title>
     <id>urn:xdc-open-data:event:eb41f1c71fa5c10a</id>
@@ -334,26 +355,5 @@
     <updated>2026-11-21T09:44:08Z</updated>
     <category term="status_masternode"/>
     <content type="text">Status changed at the current epoch switch on mainnet.</content>
-  </entry>
-  <entry>
-    <title>[critical] xdcd03d…83fc: MASTERNODE → SLASHED</title>
-    <id>urn:xdc-open-data:event:f89b0dc74868b484</id>
-    <updated>2026-11-21T01:30:11Z</updated>
-    <category term="status_slashed"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[warning] xdcd99f…80f5: MASTERNODE → STANDBY</title>
-    <id>urn:xdc-open-data:event:96451764a9a328b2</id>
-    <updated>2026-11-21T01:30:11Z</updated>
-    <category term="status_standby"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] xdc23a0…169a: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:594101b228fbf376</id>
-    <updated>2026-11-21T01:30:11Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
   </entry>
 </feed>
