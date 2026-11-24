@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json",
   "version": "1",
-  "generated_at": "2026-11-23T21:18:12Z",
+  "generated_at": "2026-11-24T06:00:05Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -35,7 +35,7 @@
         },
         {
           "version": "v2.7.1-stable",
-          "nodes": 86
+          "nodes": 85
         },
         {
           "version": "v2.7.0-stable",
@@ -47,7 +47,7 @@
         },
         {
           "version": "v2.6.8-stable",
-          "nodes": 120
+          "nodes": 121
         },
         {
           "version": "v2.4.2-stable",
@@ -85,10 +85,10 @@
         "by_candidate": {},
         "on_latest_release_pct": null
       },
-      "on_latest_release_pct": 18.9,
+      "on_latest_release_pct": 18.7,
       "upgrades": {
-        "head_block": 109673990,
-        "avg_block_time_seconds": 2.503,
+        "head_block": 109687734,
+        "avg_block_time_seconds": 2.293,
         "upcoming": [],
         "source": "params/config_networks.go in XinFinOrg/XDPoSChain (latest release and master)"
       }
@@ -105,7 +105,7 @@
         },
         {
           "version": "v3.0.0-testnet-2",
-          "nodes": 125
+          "nodes": 126
         },
         {
           "version": "v3.0.0-devnet",
@@ -129,7 +129,7 @@
         },
         {
           "version": "v2.6.7-testnet",
-          "nodes": 3
+          "nodes": 2
         },
         {
           "version": "v2.6.6-testnet",
@@ -250,16 +250,16 @@
         },
         "on_latest_release_pct": 100.0
       },
-      "on_latest_release_pct": 95.1,
+      "on_latest_release_pct": 95.8,
       "upgrades": {
-        "head_block": 85766404,
-        "avg_block_time_seconds": 2.029,
+        "head_block": 85781558,
+        "avg_block_time_seconds": 2.03,
         "upcoming": [
           {
             "fork": "PragueBlock",
             "block": 87633000,
-            "blocks_to_go": 1866596,
-            "eta": "2027-01-06T17:20:15.284000Z",
+            "blocks_to_go": 1851442,
+            "eta": "2027-01-06T18:00:31.260000Z",
             "in_latest_release": false,
             "note": "Only in development code (master), not yet in a release"
           }
