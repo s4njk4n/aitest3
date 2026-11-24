@@ -5,8 +5,15 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x2af5ab4d36743a43d37752a41ecc778a6e5429cb.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0x2af5ab4d36743a43d37752a41ecc778a6e5429cb.xml</id>
-  <updated>2026-11-19T11:34:24Z</updated>
+  <updated>2026-11-24T17:38:08Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[critical] xdc44d2…9505: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:e9feb3226d1ab05d</id>
+    <updated>2026-11-24T17:38:08Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on mainnet.</content>
+  </entry>
   <entry>
     <title>[info] xdc0407…9487: SLASHED → MASTERNODE</title>
     <id>urn:xdc-open-data:event:8fe7be7c933616fd</id>

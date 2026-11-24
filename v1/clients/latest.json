@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/clients.v1.json",
   "version": "1",
-  "generated_at": "2026-11-24T06:00:05Z",
+  "generated_at": "2026-11-24T17:38:06Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -19,7 +19,7 @@
       "network": "mainnet",
       "chain_id": 50,
       "stats_source": "wss://stats1.xinfin.network/primus",
-      "nodes_reporting": 487,
+      "nodes_reporting": 486,
       "versions": [
         {
           "version": "v3.0.0-testnet-2",
@@ -35,11 +35,11 @@
         },
         {
           "version": "v2.7.1-stable",
-          "nodes": 85
+          "nodes": 87
         },
         {
           "version": "v2.7.0-stable",
-          "nodes": 264
+          "nodes": 263
         },
         {
           "version": "v2.7.0-devnet",
@@ -47,7 +47,7 @@
         },
         {
           "version": "v2.6.8-stable",
-          "nodes": 121
+          "nodes": 119
         },
         {
           "version": "v2.4.2-stable",
@@ -85,10 +85,10 @@
         "by_candidate": {},
         "on_latest_release_pct": null
       },
-      "on_latest_release_pct": 18.7,
+      "on_latest_release_pct": 19.1,
       "upgrades": {
-        "head_block": 109687734,
-        "avg_block_time_seconds": 2.293,
+        "head_block": 109702103,
+        "avg_block_time_seconds": 2.488,
         "upcoming": [],
         "source": "params/config_networks.go in XinFinOrg/XDPoSChain (latest release and master)"
       }
@@ -97,7 +97,7 @@
       "network": "apothem",
       "chain_id": 51,
       "stats_source": "https://api.apothem.network",
-      "nodes_reporting": 144,
+      "nodes_reporting": 143,
       "versions": [
         {
           "version": "v3.0.0-testnet-2-8bea8665",
@@ -105,7 +105,7 @@
         },
         {
           "version": "v3.0.0-testnet-2",
-          "nodes": 126
+          "nodes": 125
         },
         {
           "version": "v3.0.0-devnet",
@@ -156,7 +156,6 @@
         "by_candidate": {
           "0x05a18817360bab4a2fab4958ab43beea66985828": "v3.0.0-testnet-2",
           "0x0be8d7a199ccdc04b1a1c4f7d723307b25d20eeb": "v3.0.0-testnet-2",
-          "0x0c1f08aa6b9faf0b506fcaa22b7c18d9b9899155": "v3.0.0-testnet-2",
           "0x0dc32713f06f5dc52e152f0fbdfe01b490ff1642": "v3.0.0-testnet-2",
           "0x0e6e9e836dec1793280a898be8022f15a1a3d71d": "v3.0.0-testnet-2",
           "0x0eb4d381d8c54ec7f1fe975a772174c2fcf082fc": "v3.0.0-testnet-2",
@@ -179,6 +178,7 @@
           "0x3586c36b24e75f2cb76a683a5f6d8d68842c0480": "v3.0.0-testnet-2",
           "0x36625699d2976d3935fe2e0112935f6bd73cb46a": "v3.0.0-testnet-2",
           "0x3899bc4aaff3958bef29c63966aed3efa01988b7": "v3.0.0-testnet-2",
+          "0x3efa4d1d78391cc0929f7d7e01e9eeaaac8f4862": "v3.0.0-testnet-2",
           "0x45afe257f28f70333d91b2978d7d4d0013d04c48": "v3.0.0-testnet-2",
           "0x489229f15b429632a23dd66909855edf579ae6d8": "v3.0.0-testnet-2",
           "0x4b9355b79e390c28184c8c80d0fc8b6d78278f2d": "v3.0.0-testnet-2",
@@ -188,6 +188,7 @@
           "0x59ebbff1abd4c9307b745b23bdd73e4fbffd64e9": "v3.0.0-testnet-2",
           "0x5b71b764059e39f5b93ad07ced36476cc95966f4": "v3.0.0-testnet-2",
           "0x5df57b8cca482d69d5274e38231dcec7da2781d0": "v3.0.0-testnet-2",
+          "0x6d7eb76e527c847642aba7ea1c7ac856e2d527cb": "v3.0.0-testnet-2",
           "0x6fc272ab476844576e8a088d19d9820366e56bc6": "v3.0.0-testnet-2",
           "0x702e6d6c93a3829883f97bd0ffdeafaa33903ded": "v3.0.0-testnet-2",
           "0x70e0038d2ec66c5737f2561efcb60c10588cc7af": "v3.0.0-testnet-2",
@@ -243,7 +244,6 @@
           "0xeed9287ee1ba6912a4fe62aafb5d747262ed3644": "v3.0.0-testnet-2",
           "0xf035b13a41d60aa21236fecd9ffae7ec489d30a0": "v3.0.0-testnet-2",
           "0xf31268d8fa1b23c6c6569148858659242e56c40d": "v3.0.0-testnet-2",
-          "0xf3d1a287a2dfa59db0726bcf184ff619fef8a275": "v3.0.0-testnet-2",
           "0xf51e524da1f4aaa5a43c6f959c8ad36309353823": "v3.0.0-testnet-2",
           "0xf75c1b2d102c4033624396f35e9bfd2b3897999b": "v3.0.0-testnet-2",
           "0xfffee9d20a8b70145711433f5d53fc35ad753c42": "v3.0.0-testnet-2"
@@ -252,14 +252,14 @@
       },
       "on_latest_release_pct": 95.8,
       "upgrades": {
-        "head_block": 85781558,
-        "avg_block_time_seconds": 2.03,
+        "head_block": 85801900,
+        "avg_block_time_seconds": 2.024,
         "upcoming": [
           {
             "fork": "PragueBlock",
             "block": 87633000,
-            "blocks_to_go": 1851442,
-            "eta": "2027-01-06T18:00:31.260000Z",
+            "blocks_to_go": 1831100,
+            "eta": "2027-01-06T15:07:10.400000Z",
             "in_latest_release": false,
             "note": "Only in development code (master), not yet in a release"
           }

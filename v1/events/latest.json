@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
   "version": "1",
-  "generated_at": "2026-11-24T06:00:05Z",
+  "generated_at": "2026-11-24T17:38:08Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,6 +9,72 @@
   "license": "CC-BY-4.0",
   "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
   "events": [
+    {
+      "time": "2026-11-24T17:38:08Z",
+      "type": "status_standby",
+      "severity": "warning",
+      "network": "apothem",
+      "title": "xdcf3d1…a275: MASTERNODE → STANDBY",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xf3d1a287a2dfa59db0726bcf184ff619fef8a275",
+      "owner": "0xbd23f756733e85c4e925968db8cfac14075860c5",
+      "id": "6650b3d7029ff10a"
+    },
+    {
+      "time": "2026-11-24T17:38:08Z",
+      "type": "status_standby",
+      "severity": "warning",
+      "network": "apothem",
+      "title": "xdc0c1f…9155: MASTERNODE → STANDBY",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x0c1f08aa6b9faf0b506fcaa22b7c18d9b9899155",
+      "owner": "0x023c7598016f8745a63aadac11b52fff32d5eb3b",
+      "id": "c0d15609dc8db940"
+    },
+    {
+      "time": "2026-11-24T17:38:08Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdc6d7e…27cb: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x6d7eb76e527c847642aba7ea1c7ac856e2d527cb",
+      "owner": "0xf9b83ca2b00d0f6b5ad2f792bc1f82a80506c6d9",
+      "id": "9b36d334231b218a"
+    },
+    {
+      "time": "2026-11-24T17:38:08Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdcdf4f…4763: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xdf4fdb608608f11b69d7b19ceaf5e065b3274763",
+      "owner": "0xe2328997dd8e156924ba5274446f5792f94b6e07",
+      "id": "81b4d96b0e3a423d"
+    },
+    {
+      "time": "2026-11-24T17:38:08Z",
+      "type": "status_slashed",
+      "severity": "critical",
+      "network": "mainnet",
+      "title": "xdc44d2…9505: MASTERNODE → SLASHED",
+      "detail": "Status changed at the current epoch switch on mainnet.",
+      "candidate": "0x44d21022e104d605235c863cf86c96045fad9505",
+      "owner": "0x2af5ab4d36743a43d37752a41ecc778a6e5429cb",
+      "id": "e9feb3226d1ab05d"
+    },
+    {
+      "time": "2026-11-24T17:38:08Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "mainnet",
+      "title": "xdcd5bb…41e4: STANDBY → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on mainnet.",
+      "candidate": "0xd5bb37763625bc16f2ad0791d87e2726004241e4",
+      "owner": "0x1442fee459ed2aa40e645045ccba3e84f12f2211",
+      "id": "d3a0837332f921c6"
+    },
     {
       "time": "2026-11-23T21:18:12Z",
       "type": "status_slashed",
@@ -3242,72 +3308,6 @@
       "candidate": "0xa6cb2af7e61662f8628aa057166848d6dc304aac",
       "owner": "0xf7af5f1659ddf52ba1f461fe4460a8e87bb37059",
       "id": "58add9dd14c07863"
-    },
-    {
-      "time": "2026-11-16T18:32:03Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "apothem",
-      "title": "xdc1a56…6ccd: SLASHED → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0x1a56b4eb82410bf6c9af800b2834a351c5166ccd",
-      "owner": "0xf5217ceebec77fc2b9babd2f298c20b6069a3bdb",
-      "id": "c7c6b2a92146a9c1"
-    },
-    {
-      "time": "2026-11-16T18:32:03Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "apothem",
-      "title": "xdca34e…d013: SLASHED → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0xa34e91459a95965a812c0585fd5b1d74d77ed013",
-      "owner": "0x4ddff6d16cd303bd12397df30cc45bad825429df",
-      "id": "44bf9a6ce06b0d7e"
-    },
-    {
-      "time": "2026-11-16T07:59:51Z",
-      "type": "status_slashed",
-      "severity": "critical",
-      "network": "apothem",
-      "title": "xdca34e…d013: MASTERNODE → SLASHED",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0xa34e91459a95965a812c0585fd5b1d74d77ed013",
-      "owner": "0x4ddff6d16cd303bd12397df30cc45bad825429df",
-      "id": "3e22323285127b9b"
-    },
-    {
-      "time": "2026-11-16T07:59:51Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "apothem",
-      "title": "xdc830d…34a1: SLASHED → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0x830d6f8a258e31448438d3ae6895e993a1f534a1",
-      "owner": "0xc7034d655de1d2271cf3f5ae7c61b372db2754ec",
-      "id": "93330ce39e0383c9"
-    },
-    {
-      "time": "2026-11-16T07:59:51Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "apothem",
-      "title": "xdc1f91…eb20: SLASHED → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0x1f9143c47f4e8c602a66206a41eae49518f5eb20",
-      "owner": "0x5fbd60e6458424950a0d8fa18cc3b27c5c6df4ac",
-      "id": "3d1d518eb75b4a74"
-    },
-    {
-      "time": "2026-11-16T01:03:27Z",
-      "type": "status_slashed",
-      "severity": "critical",
-      "network": "apothem",
-      "title": "xdcdf4f…4763: MASTERNODE → SLASHED",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0xdf4fdb608608f11b69d7b19ceaf5e065b3274763",
-      "owner": "0xe2328997dd8e156924ba5274446f5792f94b6e07",
-      "id": "859856e00e65f552"
     }
   ]
 }
