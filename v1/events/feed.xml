@@ -4,8 +4,22 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-25T12:50:57Z</updated>
+  <updated>2026-11-25T22:30:54Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[critical] xdc6102…3724: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:a580bca17a81ffce</id>
+    <updated>2026-11-25T22:30:54Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc98ae…a810: SLASHED → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:60bb8c4cb0f041ae</id>
+    <updated>2026-11-25T22:30:54Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
   <entry>
     <title>[critical] xdc98ae…a810: MASTERNODE → SLASHED</title>
     <id>urn:xdc-open-data:event:f77b2f8e0c428618</id>
@@ -339,20 +353,6 @@
     <title>[info] xdc1f91…eb20: SLASHED → MASTERNODE</title>
     <id>urn:xdc-open-data:event:f8fbc7bd2a26f969</id>
     <updated>2026-11-21T17:29:01Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[critical] xdc1f91…eb20: MASTERNODE → SLASHED</title>
-    <id>urn:xdc-open-data:event:c20f3bc4f4b7d7ac</id>
-    <updated>2026-11-21T09:44:08Z</updated>
-    <category term="status_slashed"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] xdcebaa…90f6: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:560a3207974255bf</id>
-    <updated>2026-11-21T09:44:08Z</updated>
     <category term="status_masternode"/>
     <content type="text">Status changed at the current epoch switch on apothem.</content>
   </entry>

@@ -30,304 +30,310 @@
     122102,
     122103,
     122104,
-    122105
+    122105,
+    122106,
+    122107,
+    122108,
+    122109,
+    122110,
+    122111
   ],
   "owners": {
     "0x7c7a907182fd3bceabf71b5885d3c5d482e24e51": {
-      "reward_wei": "31360629012236932569556",
-      "reward_xdc": 31360.629012,
-      "epochs_paid": 29,
+      "reward_wei": "37844056962711846635789",
+      "reward_xdc": 37844.056963,
+      "epochs_paid": 35,
       "node_count": 26
     },
     "0x2af5ab4d36743a43d37752a41ecc778a6e5429cb": {
-      "reward_wei": "19343661540753559248316",
-      "reward_xdc": 19343.661541,
-      "epochs_paid": 29,
+      "reward_wei": "23344006471179808491167",
+      "reward_xdc": 23344.006471,
+      "epochs_paid": 35,
       "node_count": 16
     },
     "0x8fda661df251b4c3b4e1e832d426c6f889878529": {
-      "reward_wei": "19200343558942074035560",
-      "reward_xdc": 19200.343559,
-      "epochs_paid": 29,
+      "reward_wei": "23201373404961228329125",
+      "reward_xdc": 23201.373405,
+      "epochs_paid": 35,
       "node_count": 16
     },
     "0xbdc8b17dc576c39f2ec8e329290a02a45dda5b86": {
-      "reward_wei": "2425821383574360112964",
-      "reward_xdc": 2425.821384,
-      "epochs_paid": 29,
+      "reward_wei": "2926652090031280879860",
+      "reward_xdc": 2926.65209,
+      "epochs_paid": 35,
       "node_count": 2
     },
     "0xefaca25648b059dd2dcc66192a373a845246c659": {
-      "reward_wei": "2425821383574360112964",
-      "reward_xdc": 2425.821384,
-      "epochs_paid": 29,
+      "reward_wei": "2926652090031280879860",
+      "reward_xdc": 2926.65209,
+      "epochs_paid": 35,
       "node_count": 2
     },
     "0x02d0b9391e0899b3bcdcba578a7f71c3fb6cfc0d": {
-      "reward_wei": "2421542031628388966351",
-      "reward_xdc": 2421.542032,
-      "epochs_paid": 29,
+      "reward_wei": "2922372738085309733247",
+      "reward_xdc": 2922.372738,
+      "epochs_paid": 35,
       "node_count": 2
     },
     "0x71bc51dba5be106365b47ea5814544c0118b2964": {
-      "reward_wei": "2409574227584812404663",
-      "reward_xdc": 2409.574228,
-      "epochs_paid": 29,
+      "reward_wei": "2909014112261863871409",
+      "reward_xdc": 2909.014112,
+      "epochs_paid": 35,
       "node_count": 2
     },
     "0x0439d206c7063c5f6e9c5d8d0b8d72b9694260b9": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x073e37b3599eeddbed0a45265cd847a20f602332": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x0c4a39e93abdcf32e96bd9734008d950fc61288c": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x2041b046a13f1f3df2814e676bf277df572329d9": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x25738e49877406a35579e1f157437805a346e679": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x260d432a6c7af08dfc894e481f576d9174a30b85": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x26ee94e2f4d62513b99be979ddf66bd5ea1857b9": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x2891c17e166e0e8e799797025a6e3e6a1faf6984": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x2a2c24a060d4d0cb67f35230ce42b58d917468c3": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x32da5dddcca4d798969eaa56ca8f666b44a8ef4e": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x3997a9f7c83912f36273137538203a3bde54e511": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x3a028346b6782e5df9a948e12f1fd31eeb020c6a": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x40da05d4f0b9d18ef80b19597d7889e3d752d394": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x4a642fa4923a655001d6319a5ce526baf4c53623": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x6c26d244eff70cdadb23fb804e857940224282e7": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x6d5d650e67c2c85e007f445ab8e2cbb0db415dac": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x6f1a7fa70198848e700bf9465417231190570729": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x719a49901f15dc30786d72c1d77cf9a6ab11967e": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x7dbbeb843d14eb9f90e61d9b9d1be057b633c18d": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x858a4a09d4e09fc46287a1131142a0969a87d22f": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x87066c1b4b09a3da8ccc4955be43f1e336729cb3": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x9a46aad8b1e2d60f9e6a5bfbf83adba45643ca37": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x9ce51899587d5830b7dae11cacb4aa65469e415d": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xa7add4eb0f230aacfcea6fa124f7d7e6ec9c6b21": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xa8d415e758da80d25d590940b74986d7371c70ea": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xa942dacd45464320d70affa8049076151ac31622": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xb3839fc72c4d2b63680758c7b89bf3b88dd84d56": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xb792d739bc989a571a80a70bc0a7269fa4df14be": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xbd9b7c0bb2601d82285e2f6aa27dd44f18df5d08": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xcad4221e8f75c27f8bcb16f80b891fb90c6bf732": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xdb18a58a9e089369c97b8295dbf89631efe300a1": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xe5d0f918866941b5616fb8628dd7f2701520b529": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xf1465e15e9f77deda43587476290365d76b40ecf": {
-      "reward_wei": "1212910691787180056482",
-      "reward_xdc": 1212.910692,
-      "epochs_paid": 29,
+      "reward_wei": "1463326045015640439930",
+      "reward_xdc": 1463.326045,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xf8af784a77cbc33f0a65154c8467d9dd7e612d4f": {
-      "reward_wei": "1212214636102725300102",
-      "reward_xdc": 1212.214636,
-      "epochs_paid": 29,
-      "node_count": 1
-    },
-    "0x7182e42e1e3702e610483db2b5ec15d49a0fd927": {
-      "reward_wei": "1212199454233837239982",
-      "reward_xdc": 1212.199454,
-      "epochs_paid": 29,
-      "node_count": 1
-    },
-    "0xf9e63d35dfbca6b516f0688a7cddd448c7ed3f2e": {
-      "reward_wei": "1212199454233837239982",
-      "reward_xdc": 1212.199454,
-      "epochs_paid": 29,
+      "reward_wei": "1461933394903941101507",
+      "reward_xdc": 1461.933395,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x2b1e64284856bb6a64ced31028f04401b208a893": {
-      "reward_wei": "1211503398549382483602",
-      "reward_xdc": 1211.503399,
-      "epochs_paid": 29,
+      "reward_wei": "1461918751777842867050",
+      "reward_xdc": 1461.918752,
+      "epochs_paid": 35,
+      "node_count": 1
+    },
+    "0x7182e42e1e3702e610483db2b5ec15d49a0fd927": {
+      "reward_wei": "1461918213035053041387",
+      "reward_xdc": 1461.918213,
+      "epochs_paid": 35,
+      "node_count": 1
+    },
+    "0xf9e63d35dfbca6b516f0688a7cddd448c7ed3f2e": {
+      "reward_wei": "1461918213035053041387",
+      "reward_xdc": 1461.918213,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xbdb54e5caa88dc7f09e3e38026acdbe3723bb546": {
-      "reward_wei": "1211486526477183247587",
-      "reward_xdc": 1211.486526,
-      "epochs_paid": 29,
+      "reward_wei": "1461901879705643631035",
+      "reward_xdc": 1461.90188,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x43d34067b5d1fe171477549371d1eda625769cb3": {
-      "reward_wei": "1210084546724906099251",
-      "reward_xdc": 1210.084547,
-      "epochs_paid": 29,
+      "reward_wei": "1459803305526121900656",
+      "reward_xdc": 1459.803306,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0xf9e04fc5d11dc497c24ab765162aaa792a926b62": {
-      "reward_wei": "1208672278430464183029",
-      "reward_xdc": 1208.672278,
-      "epochs_paid": 29,
+      "reward_wei": "1459087631658924566477",
+      "reward_xdc": 1459.087632,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x139aea957d4b389a93fb1e21c9a3e76c6938cd69": {
-      "reward_wei": "1207930606822316118288",
-      "reward_xdc": 1207.930607,
-      "epochs_paid": 29,
+      "reward_wei": "1457649365623531919693",
+      "reward_xdc": 1457.649366,
+      "epochs_paid": 35,
       "node_count": 1
     },
     "0x37404e4d0f8b3f5b06c9004e2cf6170ae00700f6": {
-      "reward_wei": "1200263131153918691461",
-      "reward_xdc": 1200.263131,
-      "epochs_paid": 29,
+      "reward_wei": "1449981889955134492866",
+      "reward_xdc": 1449.98189,
+      "epochs_paid": 35,
       "node_count": 1
     }
   },
-  "generated_at": "2026-11-25T12:48:29Z",
+  "generated_at": "2026-11-25T22:29:11Z",
   "note": "Information only; not tax advice. Totals of rewards credited to each owner address on this UTC day (all of the owner's nodes combined). An epoch listed under an owner's unverified is not in that owner's totals: its measured figure could not be fully explained, so check it against your own records."
 }
