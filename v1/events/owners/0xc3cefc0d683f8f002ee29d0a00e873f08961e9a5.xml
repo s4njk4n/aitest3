@@ -5,8 +5,22 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0xc3cefc0d683f8f002ee29d0a00e873f08961e9a5.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/owners/0xc3cefc0d683f8f002ee29d0a00e873f08961e9a5.xml</id>
-  <updated>2026-11-21T09:44:08Z</updated>
+  <updated>2026-11-26T15:09:15Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[info] Owner xdcc3ce…e9a5 is back to the typical reward</title>
+    <id>urn:xdc-open-data:event:06309206dfd28d62</id>
+    <updated>2026-11-26T15:09:15Z</updated>
+    <category term="owner_recovered"/>
+    <content type="text">Epoch 122319: 40.23845 XDC.</content>
+  </entry>
+  <entry>
+    <title>[warning] Owner xdcc3ce…e9a5 earned 88 % of typical</title>
+    <id>urn:xdc-open-data:event:41194ec77d7a1f37</id>
+    <updated>2026-11-26T15:09:15Z</updated>
+    <category term="owner_below_typical"/>
+    <content type="text">Epoch 122317: 36.867812 XDC vs 41.830786 expected for 1 node(s); about 0.12 node(s)' worth missing.</content>
+  </entry>
   <entry>
     <title>[info] xdc1a1a…aab8: STANDBY → MASTERNODE</title>
     <id>urn:xdc-open-data:event:a99388ca3c7a401f</id>
