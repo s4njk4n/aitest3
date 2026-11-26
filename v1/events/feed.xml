@@ -4,8 +4,22 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-25T22:30:54Z</updated>
+  <updated>2026-11-26T05:00:54Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[critical] xdcd6f1…aa68: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:b21a20df1fc67284</id>
+    <updated>2026-11-26T05:00:54Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcf3d1…a275: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:03e1a946ffba4c5c</id>
+    <updated>2026-11-26T05:00:54Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
   <entry>
     <title>[critical] xdc6102…3724: MASTERNODE → SLASHED</title>
     <id>urn:xdc-open-data:event:a580bca17a81ffce</id>
@@ -338,20 +352,6 @@
   <entry>
     <title>[info] xdc80cd…a215: STANDBY → MASTERNODE</title>
     <id>urn:xdc-open-data:event:c54c643113f3127b</id>
-    <updated>2026-11-21T17:29:01Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] New candidate xdc46a0…af45</title>
-    <id>urn:xdc-open-data:event:039a7828a8ab0176</id>
-    <updated>2026-11-21T17:29:01Z</updated>
-    <category term="candidate_added"/>
-    <content type="text">Proposed with 10000000.0 XDC staked; status MASTERNODE.</content>
-  </entry>
-  <entry>
-    <title>[info] xdc1f91…eb20: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:f8fbc7bd2a26f969</id>
     <updated>2026-11-21T17:29:01Z</updated>
     <category term="status_masternode"/>
     <content type="text">Status changed at the current epoch switch on apothem.</content>

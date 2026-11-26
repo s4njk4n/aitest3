@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
   "version": "1",
-  "generated_at": "2026-11-25T22:30:54Z",
+  "generated_at": "2026-11-26T05:00:54Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,6 +9,28 @@
   "license": "CC-BY-4.0",
   "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
   "events": [
+    {
+      "time": "2026-11-26T05:00:54Z",
+      "type": "status_slashed",
+      "severity": "critical",
+      "network": "apothem",
+      "title": "xdcd6f1…aa68: MASTERNODE → SLASHED",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xd6f1314f450b0a391b99a8aad8e6f2be2482aa68",
+      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
+      "id": "b21a20df1fc67284"
+    },
+    {
+      "time": "2026-11-26T05:00:54Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdcf3d1…a275: STANDBY → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xf3d1a287a2dfa59db0726bcf184ff619fef8a275",
+      "owner": "0xbd23f756733e85c4e925968db8cfac14075860c5",
+      "id": "03e1a946ffba4c5c"
+    },
     {
       "time": "2026-11-25T22:30:54Z",
       "type": "status_slashed",
@@ -3286,28 +3308,6 @@
       "candidate": "0x1aff171caa8c1ea93bac4c27676f356d054412b4",
       "owner": "0xd8b425999fa934b0e8a407e9ab1eab0a8a2711c4",
       "id": "5fcdd29ae8ae256c"
-    },
-    {
-      "time": "2026-11-17T11:47:07Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdce451…6d85: SLASHED → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0xe45141d1688e287723f4c21185429c02eb9b6d85",
-      "owner": "0x8fda661df251b4c3b4e1e832d426c6f889878529",
-      "id": "c76e9e79ebb06e8a"
-    },
-    {
-      "time": "2026-11-17T02:30:56Z",
-      "type": "status_slashed",
-      "severity": "critical",
-      "network": "apothem",
-      "title": "xdcd6f1…aa68: MASTERNODE → SLASHED",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0xd6f1314f450b0a391b99a8aad8e6f2be2482aa68",
-      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
-      "id": "1f830dd4a82ea7a9"
     }
   ]
 }
