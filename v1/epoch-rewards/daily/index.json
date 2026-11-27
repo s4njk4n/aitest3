@@ -47,6 +47,11 @@
       "date": "2026-11-26",
       "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-26.json",
       "csv": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-26.csv"
+    },
+    {
+      "date": "2026-11-27",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-27.json",
+      "csv": "https://xdcoutpost.xyz/XDC_Open_Data/v1/epoch-rewards/daily/2026-11-27.csv"
     }
   ]
 }

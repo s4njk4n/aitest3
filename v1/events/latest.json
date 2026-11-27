@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
   "version": "1",
-  "generated_at": "2026-11-27T08:20:14Z",
+  "generated_at": "2026-11-27T18:56:42Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,6 +9,28 @@
   "license": "CC-BY-4.0",
   "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
   "events": [
+    {
+      "time": "2026-11-27T18:56:42Z",
+      "type": "status_standby",
+      "severity": "warning",
+      "network": "apothem",
+      "title": "xdc5b71…66f4: MASTERNODE → STANDBY",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x5b71b764059e39f5b93ad07ced36476cc95966f4",
+      "owner": "0x645cd78e8a71ae40194d2c3b7b7912744e24335e",
+      "id": "ad0fbc9e79360354"
+    },
+    {
+      "time": "2026-11-27T18:56:42Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdcb5e5…76f4: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xb5e5acab644dcbdf64103af723be8d62ccec76f4",
+      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
+      "id": "22f47256c247fdb9"
+    },
     {
       "time": "2026-11-27T08:20:14Z",
       "type": "status_slashed",
@@ -3286,28 +3308,6 @@
       "candidate": "0xa4ae19d36d5d4eb29780889654342ad189fff83d",
       "owner": "0x7dbbeb843d14eb9f90e61d9b9d1be057b633c18d",
       "id": "db5ff944d14b983b"
-    },
-    {
-      "time": "2026-11-17T11:47:07Z",
-      "type": "candidate_added",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "New candidate xdc8615…9f1c",
-      "detail": "Proposed with 10000000.0 XDC staked; status STANDBY.",
-      "candidate": "0x86157bdfd455c73c39ce6c4d59c162d887879f1c",
-      "owner": "0xa942dacd45464320d70affa8049076151ac31622",
-      "id": "35857781462301e0"
-    },
-    {
-      "time": "2026-11-17T11:47:07Z",
-      "type": "candidate_added",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "New candidate xdc745a…fcd5",
-      "detail": "Proposed with 10000000.0 XDC staked; status STANDBY.",
-      "candidate": "0x745aa409f7f3b924612816de8cf0e53c436dfcd5",
-      "owner": "0xf1465e15e9f77deda43587476290365d76b40ecf",
-      "id": "0e516e16eec6352f"
     }
   ]
 }
