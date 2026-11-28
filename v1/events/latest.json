@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
   "version": "1",
-  "generated_at": "2026-11-28T01:58:51Z",
+  "generated_at": "2026-11-28T10:21:03Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,6 +9,83 @@
   "license": "CC-BY-4.0",
   "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
   "events": [
+    {
+      "time": "2026-11-28T10:21:03Z",
+      "type": "status_standby",
+      "severity": "warning",
+      "network": "apothem",
+      "title": "xdcff2b…41c0: MASTERNODE → STANDBY",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xff2bdd428f765cc5592eec019cb7ffff886e41c0",
+      "owner": "0x5417acc5fe0693b5e73565f5ea6647eb176e7258",
+      "id": "08ffc63699f36625"
+    },
+    {
+      "time": "2026-11-28T10:21:03Z",
+      "type": "status_standby",
+      "severity": "warning",
+      "network": "apothem",
+      "title": "xdc5b71…66f4: MASTERNODE → STANDBY",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x5b71b764059e39f5b93ad07ced36476cc95966f4",
+      "owner": "0x645cd78e8a71ae40194d2c3b7b7912744e24335e",
+      "id": "f52e6a5560596119"
+    },
+    {
+      "time": "2026-11-28T10:21:03Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdcebaa…90f6: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xebaaecc0d4c9cb79cf0ece78b1da00e668b190f6",
+      "owner": "0x6fe4457b7225c5c9c106be8b685d5ab870be84f6",
+      "id": "6dca94a1512fc30c"
+    },
+    {
+      "time": "2026-11-28T10:21:03Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdc6102…3724: SLASHED → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x610279c76cbf6ac02e3410a3b1a588ad14c43724",
+      "owner": "0xd77f76e5dbbeb4f6d404e14e4e26c6852f3218c4",
+      "id": "183db2db0f506628"
+    },
+    {
+      "time": "2026-11-28T10:21:03Z",
+      "type": "status_slashed",
+      "severity": "critical",
+      "network": "mainnet",
+      "title": "xdc4288…3ad4: MASTERNODE → SLASHED",
+      "detail": "Status changed at the current epoch switch on mainnet.",
+      "candidate": "0x4288545139bb238d1671b96e8f8016b0b3793ad4",
+      "owner": "0x7c7a907182fd3bceabf71b5885d3c5d482e24e51",
+      "id": "725acedae04dbc68"
+    },
+    {
+      "time": "2026-11-28T10:21:03Z",
+      "type": "candidate_added",
+      "severity": "info",
+      "network": "mainnet",
+      "title": "New candidate xdc4e2a…9012",
+      "detail": "Proposed with 10000000.0 XDC staked; status STANDBY.",
+      "candidate": "0x4e2a9a02c17bd9d860b9c81cdc4a2208dc559012",
+      "owner": "0xcfeea12dabb6739bbce7c616403bc8e891bf930f",
+      "id": "23e8322c5f21b8d0"
+    },
+    {
+      "time": "2026-11-28T10:21:03Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "mainnet",
+      "title": "xdcd5bb…41e4: STANDBY → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on mainnet.",
+      "candidate": "0xd5bb37763625bc16f2ad0791d87e2726004241e4",
+      "owner": "0x1442fee459ed2aa40e645045ccba3e84f12f2211",
+      "id": "dfe6fc8bd149cca5"
+    },
     {
       "time": "2026-11-28T01:58:51Z",
       "type": "status_slashed",
@@ -3231,83 +3308,6 @@
       "candidate": "0xf04f32c46f1a16663bc7f6409b35b33f3daa9a03",
       "owner": "0x7ce1275449f6cadc968df3e61582606258259826",
       "id": "350b7abe3bb9007d"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdce8e8…729d: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0xe8e8194c0a8e5a32306c7a86052a4e8ca4b8729d",
-      "owner": "0x71bc51dba5be106365b47ea5814544c0118b2964",
-      "id": "03c61541505f799c"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdcdef4…0619: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0xdef4bd67f9e2627ca495b5f71794fab1bab40619",
-      "owner": "0x71bc51dba5be106365b47ea5814544c0118b2964",
-      "id": "6bceab05bc17ea15"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdc609c…f819: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0x609cc32e7513135349fbe9ebd78ea8cdcfd9f819",
-      "owner": "0x5f6bf90870efb427609c31004673998eb9a371c4",
-      "id": "7fdd65e1a041ee09"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdc3589…23e7: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0x35898873c021f9f4fa01a76c7fa595159f5523e7",
-      "owner": "0x71bc51dba5be106365b47ea5814544c0118b2964",
-      "id": "249cd2b3b965e733"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdc03d9…c9ff: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0x03d9e17ae3ff2c6712e44e25b09ac5ee91f6c9ff",
-      "owner": "0x139aea957d4b389a93fb1e21c9a3e76c6938cd69",
-      "id": "9ae8c39dc485d63c"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdcf5e2…9e09: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0xf5e2dd6f08e5d6c1d9825615c7656e2466449e09",
-      "owner": "0xefaca25648b059dd2dcc66192a373a845246c659",
-      "id": "ba661014f84487af"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdc825c…dc93: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0x825c8fd54dfed61dc9fa39ff919c2e25003fdc93",
-      "owner": "0xefaca25648b059dd2dcc66192a373a845246c659",
-      "id": "0ae5de43debb85a5"
     }
   ]
 }
