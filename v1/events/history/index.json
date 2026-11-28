@@ -72,6 +72,11 @@
       "date": "2026-11-27",
       "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/history/2026-11-27.ndjson",
       "lines": 16
+    },
+    {
+      "date": "2026-11-28",
+      "url": "https://xdcoutpost.xyz/XDC_Open_Data/v1/events/history/2026-11-28.ndjson",
+      "lines": 4
     }
   ]
 }

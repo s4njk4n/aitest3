@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/events.v1.json",
   "version": "1",
-  "generated_at": "2026-11-27T18:56:42Z",
+  "generated_at": "2026-11-28T01:58:51Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,6 +9,50 @@
   "license": "CC-BY-4.0",
   "note": "Most recent first. Each change is reported once, when this feed first sees it (checked hourly). Atom feed of everything: feed.xml. One owner's Mainnet events: owners/<owner address, lowercase 0x>.xml.",
   "events": [
+    {
+      "time": "2026-11-28T01:58:51Z",
+      "type": "status_slashed",
+      "severity": "critical",
+      "network": "apothem",
+      "title": "xdcebaa…90f6: MASTERNODE → SLASHED",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xebaaecc0d4c9cb79cf0ece78b1da00e668b190f6",
+      "owner": "0x6fe4457b7225c5c9c106be8b685d5ab870be84f6",
+      "id": "5d3debe30ebc42f2"
+    },
+    {
+      "time": "2026-11-28T01:58:51Z",
+      "type": "status_slashed",
+      "severity": "critical",
+      "network": "apothem",
+      "title": "xdcb5e5…76f4: MASTERNODE → SLASHED",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xb5e5acab644dcbdf64103af723be8d62ccec76f4",
+      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
+      "id": "efc88445f31fc4d8"
+    },
+    {
+      "time": "2026-11-28T01:58:51Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdcff2b…41c0: STANDBY → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0xff2bdd428f765cc5592eec019cb7ffff886e41c0",
+      "owner": "0x5417acc5fe0693b5e73565f5ea6647eb176e7258",
+      "id": "8822e9e81c79c1cc"
+    },
+    {
+      "time": "2026-11-28T01:58:51Z",
+      "type": "status_masternode",
+      "severity": "info",
+      "network": "apothem",
+      "title": "xdc5b71…66f4: STANDBY → MASTERNODE",
+      "detail": "Status changed at the current epoch switch on apothem.",
+      "candidate": "0x5b71b764059e39f5b93ad07ced36476cc95966f4",
+      "owner": "0x645cd78e8a71ae40194d2c3b7b7912744e24335e",
+      "id": "79d44fd011c704cd"
+    },
     {
       "time": "2026-11-27T18:56:42Z",
       "type": "status_standby",
@@ -3264,50 +3308,6 @@
       "candidate": "0x825c8fd54dfed61dc9fa39ff919c2e25003fdc93",
       "owner": "0xefaca25648b059dd2dcc66192a373a845246c659",
       "id": "0ae5de43debb85a5"
-    },
-    {
-      "time": "2026-11-17T20:53:47Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "xdca465…bdb2: STANDBY → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on mainnet.",
-      "candidate": "0xa4657c02208797985adedcbd048efc82291dbdb2",
-      "owner": "0x37404e4d0f8b3f5b06c9004e2cf6170ae00700f6",
-      "id": "33a0043f6e370421"
-    },
-    {
-      "time": "2026-11-17T11:47:07Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "apothem",
-      "title": "xdcd6f1…aa68: SLASHED → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0xd6f1314f450b0a391b99a8aad8e6f2be2482aa68",
-      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
-      "id": "6cf8d9d6ec8cf4ca"
-    },
-    {
-      "time": "2026-11-17T11:47:07Z",
-      "type": "status_masternode",
-      "severity": "info",
-      "network": "apothem",
-      "title": "xdcb84b…c2aa: SLASHED → MASTERNODE",
-      "detail": "Status changed at the current epoch switch on apothem.",
-      "candidate": "0xb84bf95eaf3f18f4893a1f3057f38fb0544ac2aa",
-      "owner": "0xa65010026b83368ca05df6e8b467985d6de3eac5",
-      "id": "12892c0807f613ac"
-    },
-    {
-      "time": "2026-11-17T11:47:07Z",
-      "type": "candidate_added",
-      "severity": "info",
-      "network": "mainnet",
-      "title": "New candidate xdca4ae…f83d",
-      "detail": "Proposed with 10000000.0 XDC staked; status STANDBY.",
-      "candidate": "0xa4ae19d36d5d4eb29780889654342ad189fff83d",
-      "owner": "0x7dbbeb843d14eb9f90e61d9b9d1be057b633c18d",
-      "id": "db5ff944d14b983b"
     }
   ]
 }

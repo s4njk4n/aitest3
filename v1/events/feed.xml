@@ -4,8 +4,36 @@
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/v1/events/feed.xml" rel="self"/>
   <link href="https://xdcoutpost.xyz/XDC_Open_Data/"/>
   <id>https://xdcoutpost.xyz/XDC_Open_Data/v1/events/</id>
-  <updated>2026-11-27T18:56:42Z</updated>
+  <updated>2026-11-28T01:58:51Z</updated>
   <author><name>XDC Outpost</name></author>
+  <entry>
+    <title>[critical] xdcebaa…90f6: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:5d3debe30ebc42f2</id>
+    <updated>2026-11-28T01:58:51Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[critical] xdcb5e5…76f4: MASTERNODE → SLASHED</title>
+    <id>urn:xdc-open-data:event:efc88445f31fc4d8</id>
+    <updated>2026-11-28T01:58:51Z</updated>
+    <category term="status_slashed"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdcff2b…41c0: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:8822e9e81c79c1cc</id>
+    <updated>2026-11-28T01:58:51Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
+  <entry>
+    <title>[info] xdc5b71…66f4: STANDBY → MASTERNODE</title>
+    <id>urn:xdc-open-data:event:79d44fd011c704cd</id>
+    <updated>2026-11-28T01:58:51Z</updated>
+    <category term="status_masternode"/>
+    <content type="text">Status changed at the current epoch switch on apothem.</content>
+  </entry>
   <entry>
     <title>[warning] xdc5b71…66f4: MASTERNODE → STANDBY</title>
     <id>urn:xdc-open-data:event:ad0fbc9e79360354</id>
@@ -327,33 +355,5 @@
     <updated>2026-11-23T00:51:34Z</updated>
     <category term="owner_recovered"/>
     <content type="text">Epoch 122067: 41.896797 XDC.</content>
-  </entry>
-  <entry>
-    <title>[warning] Owner xdcb252…9238 earned 83 % of typical</title>
-    <id>urn:xdc-open-data:event:c7827d07f15760c5</id>
-    <updated>2026-11-23T00:51:34Z</updated>
-    <category term="owner_below_typical"/>
-    <content type="text">Epoch 122066: 34.861201 XDC vs 42.123951 expected for 1 node(s); about 0.17 node(s)' worth missing.</content>
-  </entry>
-  <entry>
-    <title>[warning] xdcf3d1…a275: MASTERNODE → STANDBY</title>
-    <id>urn:xdc-open-data:event:bce12b793ff762f0</id>
-    <updated>2026-11-23T00:51:34Z</updated>
-    <category term="status_standby"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] xdcb5e5…76f4: SLASHED → MASTERNODE</title>
-    <id>urn:xdc-open-data:event:d3844045f884e18d</id>
-    <updated>2026-11-23T00:51:34Z</updated>
-    <category term="status_masternode"/>
-    <content type="text">Status changed at the current epoch switch on apothem.</content>
-  </entry>
-  <entry>
-    <title>[info] Owner xdc3810…a765 is back to the typical reward</title>
-    <id>urn:xdc-open-data:event:023e18fe14b5b241</id>
-    <updated>2026-11-22T19:34:28Z</updated>
-    <category term="owner_recovered"/>
-    <content type="text">Epoch 122058: 41.242363 XDC.</content>
   </entry>
 </feed>

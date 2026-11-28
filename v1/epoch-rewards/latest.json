@@ -1,7 +1,7 @@
 {
   "$schema": "https://xdcoutpost.xyz/XDC_Open_Data/v1/schemas/epoch-rewards.v1.json",
   "version": "1",
-  "generated_at": "2026-11-27T18:55:05Z",
+  "generated_at": "2026-11-28T01:56:58Z",
   "update_interval_seconds": 3600,
   "stale_after_seconds": 10800,
   "source": "XDC Outpost (xdcoutpost.xyz)",
@@ -9,11 +9,11 @@
   "license": "CC-BY-4.0",
   "network": "mainnet",
   "chain_id": 50,
-  "paid_in_epoch": 122337,
-  "rewarded_epoch": 122335,
-  "paid_at_block": 109777585,
-  "paid_at_block_hash": "0x33ff5b7182d8a8bc80807448fc3394448b60a430744eae150e39eadf736bb4fe",
-  "paid_at_time": "2026-11-27T01:40:42Z",
+  "paid_in_epoch": 122343,
+  "rewarded_epoch": 122341,
+  "paid_at_block": 109782932,
+  "paid_at_block_hash": "0x7c523f59c634d2501d9f0454c66270e7993517e400fa1bc4bf6738a1342d4618",
+  "paid_at_time": "2026-11-27T05:32:33Z",
   "method": "reward_files",
   "method_note": "Exact protocol figures from eth_getRewardByHash.",
   "data_from": "https://rpc.plugin.global/xdcmainnet",
@@ -29,8 +29,8 @@
   },
   "price": null,
   "typical_node_reward": {
-    "reward_wei": "41679530719357826466",
-    "reward_xdc": 41.679531,
+    "reward_wei": "41771554436752674636",
+    "reward_xdc": 41.771554,
     "from_single_node_owners": 44,
     "note": "Median reward of owners running exactly one masternode: what one fully working node earned this epoch. Each node's share depends on how many signing transactions it sent."
   },
@@ -40,436 +40,410 @@
     "owners_paid": 50,
     "owners_unverified": 0,
     "owners_with_several_nodes": 6,
-    "owner_rewards_wei": "4499999999999999997445",
+    "owner_rewards_wei": "4499999999999999999775",
     "owner_rewards_xdc": 4500.0,
     "implied_all_rewards_xdc": 5000.0,
     "owners_below_typical": 1,
-    "shortfall_nodes": 0.03
+    "shortfall_nodes": 0.27
   },
   "owners": [
     {
       "owner": "0x7c7a907182fd3bceabf71b5885d3c5d482e24e51",
-      "reward_wei": "1083667798703303488116",
-      "reward_xdc": 1083.667799,
+      "reward_wei": "1083936438011327879115",
+      "reward_xdc": 1083.936438,
       "node_count": 26,
-      "expected_wei": "1083667798703303488116",
-      "expected_xdc": 1083.667799,
-      "vs_typical": 1.0,
-      "shortfall_xdc": 0.0,
-      "shortfall_nodes": 0.0,
+      "expected_wei": "1086060415355569540536",
+      "expected_xdc": 1086.060415,
+      "vs_typical": 0.998,
+      "shortfall_xdc": 2.123977,
+      "shortfall_nodes": 0.05,
       "below_typical": false,
       "nodes": [
         {
           "candidate": "0xe79ef2d92a8e4d758d78dfcc8e61b2fa377ee78d",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x9200e4fe8959f0268eb9daf06aba4756e595b99f",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x00021c85d8cf9ef6c73e8f95740f8e874e4c9d1f",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x76df51309c6367678635a3ea76d1482666f55a05",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x9bbf9e3af8a473124a17656f0e84d99aa8b51864",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x75ea95b0e9a56417ce1434aac37b0afcba0c5221",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x349563f9b0e3167f816cc39b272e3f888e23d3f3",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x226ddc05e1adc6872285d95d4277a498fdce375b",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xb570b13fa9ca093347448dc600ed0d09333ac9fa",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x7fca0e918c06ff0b4e51ecf76670e07714e44a9c",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x2e32b4db98ae68ea725212040f5f29abc61ce18f",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xe8bc0e78114ad8dc4290eaed78bcb9e3f5b91e32",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x2a4559e84ca53e00b05d9d53086005432926a992",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x6f356f6a7ff84c46f59fee691a2a161494871eec",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xc7bf1cd426e6f47d879fbaba789d7c5740ce9b4b",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x695ce237df312f9a6c6a5386b91b37ae249d07dd",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x4288545139bb238d1671b96e8f8016b0b3793ad4",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x3dd28884ec3ea0904f0f6697c31b7d273a899480",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x58f25975086b8d23c028ebb651be064da0360367",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x8eeeeafaca49e507bc9bba121dac97ec75774ff2",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xa9c2b73ba170ddf37bc92fee1bafaf54e138ce87",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x618e706c531e57f44a739cef129bf08cbd912d6a",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x9e057cebf2101a5e3e57906b834a2a82893b7739",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0xd64c15787bb52bbfe0d195df0d954725469a318e",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xa828c2381bb91fc96cc269de73b99a4314ac4b5b",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x391f3d21d9062ebbdd958e436b26d4b40928658c",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x2af5ab4d36743a43d37752a41ecc778a6e5429cb",
-      "reward_wei": "666872491509725223456",
-      "reward_xdc": 666.872492,
+      "reward_wei": "665512901195720578948",
+      "reward_xdc": 665.512901,
       "node_count": 16,
-      "expected_wei": "666872491509725223456",
-      "expected_xdc": 666.872492,
-      "vs_typical": 1.0,
-      "shortfall_xdc": 0.0,
-      "shortfall_nodes": 0.0,
+      "expected_wei": "668344870988042794176",
+      "expected_xdc": 668.344871,
+      "vs_typical": 0.9958,
+      "shortfall_xdc": 2.83197,
+      "shortfall_nodes": 0.07,
       "below_typical": false,
       "nodes": [
         {
           "candidate": "0x83e12760c1e324b16fe68bc23ffc69b37d17ee23",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x21396ca79a433a20b5904c9a77aa9a4f110ef80e",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x2edd3a45eaa753d1a40897730e1b89cbc9619f06",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xf480c3a498edc29d57e1d9bccb45759f1930442d",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x361faefbcd1c1b7f2d18723d178633202ccc5858",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xde1470c0f478ca7efd151be5a13c2addcfff328c",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x44d21022e104d605235c863cf86c96045fad9505",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xfab275bfc83c3bc8aa17c16ed5a0b4e60caca299",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xa45457cc0153092a7e717e8e6d41221b827c28ae",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xeb0f1565b5d3bbf4489deb67972b814ee84c6cb7",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xe02ca8d829b3e0185d168c62aeef3960e6c0882e",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x6e5bbbf0d9d1851599a21676c99b1a8cc012753d",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x7b0704722600979fd7da53afb1618aab3b9ddeb4",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x0407b8f788fbd763280212be6f7a672351009487",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x64e2e07bb17d978108824219741b9cc9e52b4443",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xebf8e4904fe2bd561475e9e0e65a3336c56f83d3",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         }
       ]
     },
     {
       "owner": "0x8fda661df251b4c3b4e1e832d426c6f889878529",
-      "reward_wei": "666872491509725223456",
-      "reward_xdc": 666.872492,
+      "reward_wei": "664804908747640025141",
+      "reward_xdc": 664.804909,
       "node_count": 16,
-      "expected_wei": "666872491509725223456",
-      "expected_xdc": 666.872492,
-      "vs_typical": 1.0,
-      "shortfall_xdc": 0.0,
-      "shortfall_nodes": 0.0,
+      "expected_wei": "668344870988042794176",
+      "expected_xdc": 668.344871,
+      "vs_typical": 0.9947,
+      "shortfall_xdc": 3.539962,
+      "shortfall_nodes": 0.08,
       "below_typical": false,
       "nodes": [
         {
           "candidate": "0x5454edee66858dfcc14871cc8b26f57ef528bedc",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x070eed0a2c77650dd41599920b5a0089dc60bfe6",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0xbb0830e2d006d557541935362a621d002b0d6b00",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x7c0f72d80d9d8b822e2fb217e56be732a12fc8c9",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x249f443d5c8400d7bc638a199d1f458b47a41a47",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x370b541c7a48ec62f55bf45819a98f3f14640481",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x74f297c0197bab5ecf21add9ad9ced96ad42b61f",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xef7ce03b7fdea2d0bf2ad6e0a1e9b0f2ed547447",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xe45141d1688e287723f4c21185429c02eb9b6d85",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xa6de68568ee540d217fa1514dfaf894d5449df9c",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xb594c78a71763d543d10358b2dde579ff041319a",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x621996eb1d03a6e9614ddf150f6123c5602c8418",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         },
         {
           "candidate": "0x449bed0b27afe708a30a481329733bcbcba2bc21",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x0f0c5cb5e6284c977d9c4b47e5dcd3eb0ccafeed",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x079d87904cd707143dd39c8be595bbe7a2181fb4",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x3b8a906602422fe9f316e6fa0c1728cfaa238766",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41063561988672120829",
           "basis": "exact",
-          "reward_xdc": 41.679531
-        }
-      ]
-    },
-    {
-      "owner": "0x02d0b9391e0899b3bcdcba578a7f71c3fb6cfc0d",
-      "reward_wei": "83359061438715652932",
-      "reward_xdc": 83.359061,
-      "node_count": 2,
-      "expected_wei": "83359061438715652932",
-      "expected_xdc": 83.359061,
-      "vs_typical": 1.0,
-      "shortfall_xdc": 0.0,
-      "shortfall_nodes": 0.0,
-      "below_typical": false,
-      "nodes": [
-        {
-          "candidate": "0x90c87c9ff588e9268a1c7c79a5986886e98c2f04",
-          "reward_wei": "41679530719357826466",
-          "basis": "exact",
-          "reward_xdc": 41.679531
-        },
-        {
-          "candidate": "0x047ffe1fc7f6d0b7168c4ccc312221089629f470",
-          "reward_wei": "41679530719357826466",
-          "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.063562
         }
       ]
     },
     {
       "owner": "0xbdc8b17dc576c39f2ec8e329290a02a45dda5b86",
-      "reward_wei": "83359061438715652932",
-      "reward_xdc": 83.359061,
+      "reward_wei": "83543108873505349272",
+      "reward_xdc": 83.543109,
       "node_count": 2,
-      "expected_wei": "83359061438715652932",
-      "expected_xdc": 83.359061,
+      "expected_wei": "83543108873505349272",
+      "expected_xdc": 83.543109,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -477,25 +451,25 @@
       "nodes": [
         {
           "candidate": "0x49d3fa92eec838f644e8cacf2c93533d29b6c713",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0x785076b971f2a90b029b680f90d4d609060c01d5",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xefaca25648b059dd2dcc66192a373a845246c659",
-      "reward_wei": "83359061438715652932",
-      "reward_xdc": 83.359061,
+      "reward_wei": "83543108873505349272",
+      "reward_xdc": 83.543109,
       "node_count": 2,
-      "expected_wei": "83359061438715652932",
-      "expected_xdc": 83.359061,
+      "expected_wei": "83543108873505349272",
+      "expected_xdc": 83.543109,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -503,25 +477,51 @@
       "nodes": [
         {
           "candidate": "0x825c8fd54dfed61dc9fa39ff919c2e25003fdc93",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         },
         {
           "candidate": "0xf5e2dd6f08e5d6c1d9825615c7656e2466449e09",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
+        }
+      ]
+    },
+    {
+      "owner": "0x02d0b9391e0899b3bcdcba578a7f71c3fb6cfc0d",
+      "reward_wei": "82835116425424795465",
+      "reward_xdc": 82.835116,
+      "node_count": 2,
+      "expected_wei": "83543108873505349272",
+      "expected_xdc": 83.543109,
+      "vs_typical": 0.9915,
+      "shortfall_xdc": 0.707992,
+      "shortfall_nodes": 0.02,
+      "below_typical": false,
+      "nodes": [
+        {
+          "candidate": "0x90c87c9ff588e9268a1c7c79a5986886e98c2f04",
+          "reward_wei": "41063561988672120829",
+          "basis": "exact",
+          "reward_xdc": 41.063562
+        },
+        {
+          "candidate": "0x047ffe1fc7f6d0b7168c4ccc312221089629f470",
+          "reward_wei": "41771554436752674636",
+          "basis": "exact",
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x0439d206c7063c5f6e9c5d8d0b8d72b9694260b9",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -529,19 +529,19 @@
       "nodes": [
         {
           "candidate": "0x0302d914d3ebdfddcc721849c723a278c4b8cd57",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x073e37b3599eeddbed0a45265cd847a20f602332",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -549,19 +549,19 @@
       "nodes": [
         {
           "candidate": "0x241ff0d3096e2e0b477780f9f551918a06827c05",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x0c4a39e93abdcf32e96bd9734008d950fc61288c",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -569,39 +569,19 @@
       "nodes": [
         {
           "candidate": "0x4e111142fbf2edacc4ab122feb54b031dc3d95d9",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
-        }
-      ]
-    },
-    {
-      "owner": "0x139aea957d4b389a93fb1e21c9a3e76c6938cd69",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
-      "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
-      "vs_typical": 1.0,
-      "shortfall_xdc": 0.0,
-      "shortfall_nodes": 0.0,
-      "below_typical": false,
-      "nodes": [
-        {
-          "candidate": "0x03d9e17ae3ff2c6712e44e25b09ac5ee91f6c9ff",
-          "reward_wei": "41679530719357826466",
-          "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x1b7b6ac4696315722cefce201bb629a670860391",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -609,19 +589,19 @@
       "nodes": [
         {
           "candidate": "0xe494fe5a38b7212ab999152d1d45adab8d84a8a7",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x2041b046a13f1f3df2814e676bf277df572329d9",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -629,19 +609,19 @@
       "nodes": [
         {
           "candidate": "0x2a591f3d64f3ce6b1d2afeead839ad76aab9feb2",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x25738e49877406a35579e1f157437805a346e679",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -649,19 +629,19 @@
       "nodes": [
         {
           "candidate": "0x8073ef86c487ae24a3a84c125e5aa04827eef7da",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x26ee94e2f4d62513b99be979ddf66bd5ea1857b9",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -669,19 +649,19 @@
       "nodes": [
         {
           "candidate": "0xe25c05d454d3f1f4ed882cc4c846e3d4f8528a54",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x2891c17e166e0e8e799797025a6e3e6a1faf6984",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -689,19 +669,19 @@
       "nodes": [
         {
           "candidate": "0x45840d88f10cee7dfb7bf06c6cec544c283a0fb8",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x2a2c24a060d4d0cb67f35230ce42b58d917468c3",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -709,19 +689,19 @@
       "nodes": [
         {
           "candidate": "0x65c90c2d3e99d8366f90db7f4d25f23a0a569d49",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x2b1e64284856bb6a64ced31028f04401b208a893",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -729,19 +709,19 @@
       "nodes": [
         {
           "candidate": "0x5ccd696142579395534fca84d471a403cb06b89e",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x32da5dddcca4d798969eaa56ca8f666b44a8ef4e",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -749,19 +729,19 @@
       "nodes": [
         {
           "candidate": "0x39ee018a85e4469a1b335efe014067e315bd6594",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x37404e4d0f8b3f5b06c9004e2cf6170ae00700f6",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -769,19 +749,19 @@
       "nodes": [
         {
           "candidate": "0xa4657c02208797985adedcbd048efc82291dbdb2",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x381047523972c9fdc3aa343e0b96900a8e2fa765",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -789,19 +769,19 @@
       "nodes": [
         {
           "candidate": "0x25c65b4b379ac37cf78357c4915f73677022eaff",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x3a028346b6782e5df9a948e12f1fd31eeb020c6a",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -809,19 +789,19 @@
       "nodes": [
         {
           "candidate": "0xa70b87c39a1237ba53953a1da04b23d4db28eace",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x40da05d4f0b9d18ef80b19597d7889e3d752d394",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -829,19 +809,19 @@
       "nodes": [
         {
           "candidate": "0xbbd2d417a8b6f1b1d7a267cd1d7402b443f35cfe",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x43d34067b5d1fe171477549371d1eda625769cb3",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -849,19 +829,19 @@
       "nodes": [
         {
           "candidate": "0x149e78f60288316210fb55a96deefeadb24fb0fe",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x4a642fa4923a655001d6319a5ce526baf4c53623",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -869,19 +849,19 @@
       "nodes": [
         {
           "candidate": "0xcc8247cfaed1950dfd6dd4bc23a0ecab014c3b6c",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x5f6bf90870efb427609c31004673998eb9a371c4",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -889,19 +869,19 @@
       "nodes": [
         {
           "candidate": "0x609cc32e7513135349fbe9ebd78ea8cdcfd9f819",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x6c26d244eff70cdadb23fb804e857940224282e7",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -909,19 +889,19 @@
       "nodes": [
         {
           "candidate": "0x5c71fb385fab72e2225bce8150cdf26510178576",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x6d5d650e67c2c85e007f445ab8e2cbb0db415dac",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -929,19 +909,19 @@
       "nodes": [
         {
           "candidate": "0xa72ce94a09db26dce57a4852409abc2fff07a962",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x7182e42e1e3702e610483db2b5ec15d49a0fd927",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -949,19 +929,19 @@
       "nodes": [
         {
           "candidate": "0xb1693d224d4fd70ad6c9c9bdc44faa3ce21fb40d",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x719a49901f15dc30786d72c1d77cf9a6ab11967e",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -969,19 +949,19 @@
       "nodes": [
         {
           "candidate": "0xd22fdac1459760f698618d927bbe22249e2b29b9",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x71bc51dba5be106365b47ea5814544c0118b2964",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -989,19 +969,19 @@
       "nodes": [
         {
           "candidate": "0x7525f63e5f739ef952fbea50c1dc97ef5d5bd984",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x7abb0e898e91ce2344361bf9f8a0d11645b9752f",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1009,19 +989,19 @@
       "nodes": [
         {
           "candidate": "0xb38aba47a5563fa4aedc2a649ef819b9fb160b6a",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x7dbbeb843d14eb9f90e61d9b9d1be057b633c18d",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1029,19 +1009,19 @@
       "nodes": [
         {
           "candidate": "0xa4ae19d36d5d4eb29780889654342ad189fff83d",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x858a4a09d4e09fc46287a1131142a0969a87d22f",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1049,19 +1029,19 @@
       "nodes": [
         {
           "candidate": "0x2f6802e8379d06cac135e9296f0b5b4132da1bd4",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x87066c1b4b09a3da8ccc4955be43f1e336729cb3",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1069,19 +1049,19 @@
       "nodes": [
         {
           "candidate": "0xd7a6686d289575477f043afda62c9b51b8698f4a",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x9a46aad8b1e2d60f9e6a5bfbf83adba45643ca37",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1089,19 +1069,19 @@
       "nodes": [
         {
           "candidate": "0x63443ffdb5c139c3bbab97d3b06ee0674d75ab7f",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0x9ce51899587d5830b7dae11cacb4aa65469e415d",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1109,19 +1089,19 @@
       "nodes": [
         {
           "candidate": "0xa43a99c9752166ec30c8369ce1e84de43be1e617",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xa7add4eb0f230aacfcea6fa124f7d7e6ec9c6b21",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1129,19 +1109,19 @@
       "nodes": [
         {
           "candidate": "0xb9a3a97f6a02a86483bf02cb33f8b33d2d117708",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xa8d415e758da80d25d590940b74986d7371c70ea",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1149,19 +1129,19 @@
       "nodes": [
         {
           "candidate": "0x2a4b9bb37da753fa9977d8e9b01f8afe3bcdde17",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xa942dacd45464320d70affa8049076151ac31622",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1169,19 +1149,19 @@
       "nodes": [
         {
           "candidate": "0x86157bdfd455c73c39ce6c4d59c162d887879f1c",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xb3839fc72c4d2b63680758c7b89bf3b88dd84d56",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1189,19 +1169,19 @@
       "nodes": [
         {
           "candidate": "0xa4f1f2c07ede2f1adb454b9dd0db346f28dc1cc1",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xb792d739bc989a571a80a70bc0a7269fa4df14be",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1209,19 +1189,19 @@
       "nodes": [
         {
           "candidate": "0x450d714e65f4de007937c56fb1c4686efd4fb4ec",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xbd9b7c0bb2601d82285e2f6aa27dd44f18df5d08",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1229,19 +1209,19 @@
       "nodes": [
         {
           "candidate": "0x8f2fb5da850042b7da5097061f098493f8ec6dd8",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xbdb54e5caa88dc7f09e3e38026acdbe3723bb546",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1249,19 +1229,19 @@
       "nodes": [
         {
           "candidate": "0xaf3db8ad8154820303adc6be0d9b10ef8e33024f",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xcad4221e8f75c27f8bcb16f80b891fb90c6bf732",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1269,19 +1249,19 @@
       "nodes": [
         {
           "candidate": "0x0fb4e7896323b83354fcc30be6482202c2bb8322",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xe5d0f918866941b5616fb8628dd7f2701520b529",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1289,19 +1269,19 @@
       "nodes": [
         {
           "candidate": "0x1ffce0c4606928d10d43d5532c5a0b8263596f3e",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xf1465e15e9f77deda43587476290365d76b40ecf",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1309,19 +1289,19 @@
       "nodes": [
         {
           "candidate": "0x745aa409f7f3b924612816de8cf0e53c436dfcd5",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xf8af784a77cbc33f0a65154c8467d9dd7e612d4f",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1329,19 +1309,19 @@
       "nodes": [
         {
           "candidate": "0x619f838ea2a12cdb508e759c3e0697e021d52ceb",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xf9e04fc5d11dc497c24ab765162aaa792a926b62",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1349,19 +1329,19 @@
       "nodes": [
         {
           "candidate": "0x1a7c3d7481adc7e067f2f73f35f44143d7bf02d4",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
         }
       ]
     },
     {
       "owner": "0xf9e63d35dfbca6b516f0688a7cddd448c7ed3f2e",
-      "reward_wei": "41679530719357826466",
-      "reward_xdc": 41.679531,
+      "reward_wei": "41771554436752674636",
+      "reward_xdc": 41.771554,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
       "vs_typical": 1.0,
       "shortfall_xdc": 0.0,
       "shortfall_nodes": 0.0,
@@ -1369,29 +1349,49 @@
       "nodes": [
         {
           "candidate": "0x74d3ac0efc4c22ea05150d7501c95c610b130c4b",
-          "reward_wei": "41679530719357826466",
+          "reward_wei": "41771554436752674636",
           "basis": "exact",
-          "reward_xdc": 41.679531
+          "reward_xdc": 41.771554
+        }
+      ]
+    },
+    {
+      "owner": "0x139aea957d4b389a93fb1e21c9a3e76c6938cd69",
+      "reward_wei": "41063561988672120829",
+      "reward_xdc": 41.063562,
+      "node_count": 1,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
+      "vs_typical": 0.9831,
+      "shortfall_xdc": 0.707992,
+      "shortfall_nodes": 0.02,
+      "below_typical": false,
+      "nodes": [
+        {
+          "candidate": "0x03d9e17ae3ff2c6712e44e25b09ac5ee91f6c9ff",
+          "reward_wei": "41063561988672120829",
+          "basis": "exact",
+          "reward_xdc": 41.063562
         }
       ]
     },
     {
       "owner": "0xc3cefc0d683f8f002ee29d0a00e873f08961e9a5",
-      "reward_wei": "40290213028712565583",
-      "reward_xdc": 40.290213,
+      "reward_wei": "40355569540591567021",
+      "reward_xdc": 40.35557,
       "node_count": 1,
-      "expected_wei": "41679530719357826466",
-      "expected_xdc": 41.679531,
-      "vs_typical": 0.9667,
-      "shortfall_xdc": 1.389318,
+      "expected_wei": "41771554436752674636",
+      "expected_xdc": 41.771554,
+      "vs_typical": 0.9661,
+      "shortfall_xdc": 1.415985,
       "shortfall_nodes": 0.03,
       "below_typical": true,
       "nodes": [
         {
           "candidate": "0x1a1a8229e4a2fa06f73a564092976ba2dfe6aab8",
-          "reward_wei": "40290213028712565583",
+          "reward_wei": "40355569540591567021",
           "basis": "exact",
-          "reward_xdc": 40.290213
+          "reward_xdc": 40.35557
         }
       ]
     }
